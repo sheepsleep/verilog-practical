@@ -1,0 +1,258 @@
+//
+// Written by Synplify
+// Synplify 8.1.0, Build 539R.
+// Fri Dec 16 18:27:37 2005
+//
+// Source file index table:
+// Object locations will have the form <file>:<line>
+// file 0 "noname"
+// file 1 "\c:\eda\synplicity\fpga_81\lib\altera\altera.v "
+// file 2 "\c:\eda\synplicity\fpga_81\lib\altera\stratix.v "
+// file 3 "\c:\eda\synplicity\fpga_81\lib\altera\altera_mf.v "
+// file 4 "\c:\eda\synplicity\fpga_81\lib\altera\altera_lpm.v "
+// file 5 "\c:\prj\example-6-1\fsm\state2\state2.v "
+
+// VQM4.1+ 
+module state2 (
+  nrst,
+  clk,
+  i1,
+  i2,
+  o1,
+  o2,
+  err
+);
+input nrst ;
+input clk ;
+input i1 ;
+input i2 ;
+output o1 /* synthesis syn_tristate = 1 */;
+output o2 /* synthesis syn_tristate = 1 */;
+output err /* synthesis syn_tristate = 1 */;
+wire nrst ;
+wire clk ;
+wire i1 ;
+wire i2 ;
+wire o1 ;
+wire o2 ;
+wire err ;
+wire [1:0] CS;
+wire VCC ;
+wire GND ;
+wire clk_c ;
+wire i2_c ;
+wire i1_c ;
+wire nrst_c ;
+wire o2_x ;
+wire err_0_x ;
+wire err_x ;
+wire N_4 ;
+wire N_3 ;
+wire N_2 ;
+wire N_1 ;
+wire nrst_c_i ;
+//@1:1
+  assign VCC = 1'b1;
+//@1:1
+  assign GND = 1'b0;
+// @5:28
+  stratix_lcell CS_1__Z (
+	.regout(CS[1]),
+	.clk(clk_c),
+	.dataa(i2_c),
+	.datab(i1_c),
+	.datac(CS[0]),
+	.datad(CS[1]),
+	.aclr(nrst_c_i),
+	.sclr(GND),
+	.sload(GND),
+	.ena(VCC),
+	.inverta(GND),
+	.aload(GND),
+	.regcascin(GND)
+);
+defparam CS_1__Z.operation_mode="normal";
+defparam CS_1__Z.output_mode="reg_only";
+defparam CS_1__Z.lut_mask="cba4";
+defparam CS_1__Z.synch_mode="off";
+defparam CS_1__Z.sum_lutc_input="datac";
+// @5:28
+  stratix_lcell CS_0__Z (
+	.regout(CS[0]),
+	.clk(clk_c),
+	.dataa(i2_c),
+	.datab(i1_c),
+	.datac(CS[0]),
+	.datad(CS[1]),
+	.aclr(nrst_c_i),
+	.sclr(GND),
+	.sload(GND),
+	.ena(VCC),
+	.inverta(GND),
+	.aload(GND),
+	.regcascin(GND)
+);
+defparam CS_0__Z.operation_mode="normal";
+defparam CS_0__Z.output_mode="reg_only";
+defparam CS_0__Z.lut_mask="c17c";
+defparam CS_0__Z.synch_mode="off";
+defparam CS_0__Z.sum_lutc_input="datac";
+// @5:36
+  stratix_lcell o2_x_cZ (
+	.combout(o2_x),
+	.dataa(nrst_c),
+	.datab(CS[1]),
+	.datac(VCC),
+	.datad(VCC),
+	.aclr(GND),
+	.sclr(GND),
+	.sload(GND),
+	.ena(VCC),
+	.inverta(GND),
+	.aload(GND),
+	.regcascin(GND)
+);
+defparam o2_x_cZ.operation_mode="normal";
+defparam o2_x_cZ.output_mode="comb_only";
+defparam o2_x_cZ.lut_mask="8888";
+defparam o2_x_cZ.synch_mode="off";
+defparam o2_x_cZ.sum_lutc_input="datac";
+// @5:36
+  stratix_lcell err_0_x_cZ (
+	.combout(err_0_x),
+	.dataa(nrst_c),
+	.datab(CS[0]),
+	.datac(VCC),
+	.datad(VCC),
+	.aclr(GND),
+	.sclr(GND),
+	.sload(GND),
+	.ena(VCC),
+	.inverta(GND),
+	.aload(GND),
+	.regcascin(GND)
+);
+defparam err_0_x_cZ.operation_mode="normal";
+defparam err_0_x_cZ.output_mode="comb_only";
+defparam err_0_x_cZ.lut_mask="8888";
+defparam err_0_x_cZ.synch_mode="off";
+defparam err_0_x_cZ.sum_lutc_input="datac";
+// @5:36
+  stratix_lcell err_x_cZ (
+	.combout(err_x),
+	.dataa(nrst_c),
+	.datab(CS[0]),
+	.datac(CS[1]),
+	.datad(VCC),
+	.aclr(GND),
+	.sclr(GND),
+	.sload(GND),
+	.ena(VCC),
+	.inverta(GND),
+	.aload(GND),
+	.regcascin(GND)
+);
+defparam err_x_cZ.operation_mode="normal";
+defparam err_x_cZ.output_mode="comb_only";
+defparam err_x_cZ.lut_mask="8080";
+defparam err_x_cZ.synch_mode="off";
+defparam err_x_cZ.sum_lutc_input="datac";
+// @5:14
+  stratix_io i2_in (
+	.padio(i2),
+	.combout(i2_c),
+	.datain(GND),
+	.oe(GND),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam i2_in.operation_mode = "input";
+// @5:14
+  stratix_io i1_in (
+	.padio(i1),
+	.combout(i1_c),
+	.datain(GND),
+	.oe(GND),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam i1_in.operation_mode = "input";
+// @5:13
+  stratix_io clk_in (
+	.padio(clk),
+	.combout(clk_c),
+	.datain(GND),
+	.oe(GND),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam clk_in.operation_mode = "input";
+// @5:13
+  stratix_io nrst_in (
+	.padio(nrst),
+	.combout(nrst_c),
+	.datain(GND),
+	.oe(GND),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam nrst_in.operation_mode = "input";
+// @5:15
+  stratix_io err_out (
+	.padio(err),
+	.datain(err_x),
+	.oe(VCC),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam err_out.operation_mode = "output";
+// @5:15
+  stratix_io o2_out (
+	.padio(o2),
+	.datain(o2_x),
+	.oe(VCC),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam o2_out.operation_mode = "output";
+// @5:15
+  stratix_io o1_out (
+	.padio(o1),
+	.datain(err_0_x),
+	.oe(VCC),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam o1_out.operation_mode = "output";
+//@5:28
+  assign  nrst_c_i = ~ nrst_c;
+endmodule /* state2 */
+

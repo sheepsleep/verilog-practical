@@ -1,0 +1,12 @@
+@P:  Worst Slack : -0.480
+@P:  ram_basic|clk - Estimated Frequency : 312.8 MHz
+@P:  ram_basic|clk - Requested Frequency : 368.0 MHz
+@P:  ram_basic|clk - Estimated Period : 3.197
+@P:  ram_basic|clk - Requested Period : 2.717
+@P:  ram_basic|clk - Slack : -0.480
+@P: ram_basic Part : xc3s50tq144-4
+@P: ram_basic I/O primitives : 25
+@P: ram_basic I/O Register bits : 0
+@P: ram_basic Register bits (Non I/O) : 8 (0%)
+@P: ram_basic Single Port Rams (RAM64X1S) : 8
+@P: ram_basic Total Luts : 35 (2%)

@@ -1,0 +1,577 @@
+# Logging session transcript to file "C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/logfe450c.0"
+//  Precision Synthesis 2005a.56OEM_Lattice (Production Release) Tue May 24 01:00:50 PDT 2005
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2005, All Rights Reserved.
+//             Portions copyright 1991-2004 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Windows 2000 Administrator@LATTICE-WESTOR Service Pack 4 5.00.2195 i686
+//  
+//  Start time Mon Jan 16 09:36:32 2006
+# -------------------------------------------------
+
+# Logging session transcript to file "C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/logfe450c.0"
+# 
+# COMMAND: new_project -name "case" -folder "C:/prj/Example-4-10/case/PrecisionRTL" -createimpl_name "case_impl_1"
+# 
+# Info: Saved project file: 'C:/prj/Example-4-10/case/PrecisionRTL/case.psp'.
+# Info: Input directory: C:/prj/Example-4-10/case/PrecisionRTL/
+# Moving session transcript to file "C:/prj/Example-4-10/case/PrecisionRTL/precision.log"
+# Info: Created project case in folder 'C:/prj/Example-4-10/case/PrecisionRTL/'.
+# Info: Created directory: 'C:/prj/Example-4-10/case/PrecisionRTL/case_impl_1/'.
+# Info: Saved project file: 'C:/prj/Example-4-10/case/PrecisionRTL/case.psp'.
+# Info: Saved implementation file: 'C:/prj/Example-4-10/case/PrecisionRTL/case_impl_1/case_impl_1.psi'.
+# Info: Created implementation case_impl_1 in project case.
+# Info: Created directory: 'C:/prj/Example-4-10/case/PrecisionRTL/case_temp_1/'.
+# Info: Results directory: C:/prj/Example-4-10/case/PrecisionRTL/case_temp_1/
+# Appending project transcript to file "C:/prj/Example-4-10/case/PrecisionRTL/case_temp_1/precision.log"
+# Info: Activated implementation case_impl_1 in project case.
+new_project -name "case" -folder "C:/prj/Example-4-10/case/PrecisionRTL" -createimpl_name "case_impl_1"
+# 
+# COMMAND: add_input_file ../case1.v
+# 
+add_input_file ../case1.v
+# 
+# COMMAND: setup_design -manufacturer Lattice -family LatticeEC -part LFEC20E -speed 3 -package FPBGA672
+# 
+# Info: Setting up the design to use synthesis library "lattice_ec.syn"
+# Info: Setting Part to: "LFEC20E"
+# Info: Setting Process to: "3"
+# Info: Setting Package to: "FPBGA672"
+setup_design -manufacturer Lattice -family LatticeEC -part LFEC20E -speed 3 -package FPBGA672
+# 
+# COMMAND: compile
+# 
+# Info: Reading file: 'C:/eda/ispTOOLS5_0/precision/pkgs/psr/techlibs/lattice_ec.syn'.
+# Info: hdl-analyze, Release RTLC-Precision 2005a.10
+# Info: 1002: Analyzing input file "C:/prj/Example-4-10/case/PrecisionRTL/../case1.v" ...
+# Info: Top of Design has been set to: case1.
+# Info: Current working directory: 'C:/prj/Example-4-10/case/PrecisionRTL/case_temp_1/'.
+# Info: RTLC-Driver, Release RTLC-Precision 2005a.10
+# Info: Last compiled on May 13 2005 21:07:55
+# Info: 4512: Initializing...
+# Info: 4504: Partitioning design .... 
+# Info: RTLCompiler, Release RTLC-Precision 2005a.10
+# Info: Last compiled on May 13 2005 21:12:47
+# Info: 4512: Initializing...
+# Info: 4522: Root Module case1: Pre-processing... 
+# Info: 4523: Root Module case1: Compiling... 
+# Info: 4842: Compilation successfully completed.
+# Info: 4835: Total CPU time taken for compilation: 0.4 secs.  
+# Info: 4856: Total lines of RTL compiled: 15.
+# Info: Current working directory: 'C:/prj/Example-4-10/case/PrecisionRTL/case_temp_1/'.
+# Info: Finished compiling design.
+compile
+# 
+# COMMAND: synthesize
+# 
+# Info: Current working directory: 'C:/prj/Example-4-10/case/PrecisionRTL/case_temp_1/'.
+# -- Optimizing design .work.case1.INTERFACE
+# Info: report_timing: There are no timing constraints; no timing information available
+# Info: report_timing: There are no timing constraints; no timing information available
+# Info: report_timing: There are no timing constraints; no timing information available
+# Info: Timing information and timing constraints are not present.
+# -- Saving the design database in C:/prj/Example-4-10/case/PrecisionRTL/case_temp_1/case1.xdb
+# Info: Writing file: 'C:/prj/Example-4-10/case/PrecisionRTL/case_temp_1/case1.edf'.
+# Info: Writing file: 'C:/prj/Example-4-10/case/PrecisionRTL/case_temp_1/case1.prf'.
+# Info: Finished synthesizing design.
+# C:/prj/Example-4-10/case/PrecisionRTL/case_temp_1/precision_tech.sdc
+synthesize
+# 
+# COMMAND: view_schematic .work.case1.INTERFACE_XRTL
+# 
+view_schematic .work.case1.INTERFACE_XRTL
+# 
+# COMMAND: view_schematic .work.case1.INTERFACE
+# 
+view_schematic .work.case1.INTERFACE
+# 
+# COMMAND: view_schematic .work.case1.INTERFACE_XRTL
+# 
+view_schematic .work.case1.INTERFACE_XRTL
+# 
+# COMMAND: view_schematic .work.case1.INTERFACE
+# 
+view_schematic .work.case1.INTERFACE
+# 
+# COMMAND: save_impl
+# 
+# Info: Saved implementation file: 'C:/prj/Example-4-10/case/PrecisionRTL/case_temp_1/case_impl_1.psi'.
+# Info: Created directory: 'C:/prj/Example-4-10/case/PrecisionRTL/case_impl_1/'.
+# Info: Saved implementation case_impl_1 in project case.
+save_impl
+# 
+# COMMAND: close_project
+# 
+# Info: Saved project file: 'C:/prj/Example-4-10/case/PrecisionRTL/case.psp'.
+# Info: Closed project: case.
+close_project
+# 
+# COMMAND: new_project -name "if_mult" -folder "C:/prj/Example-4-10/if_mult/PrecisionRTL" -createimpl_name "if_mult_impl_1"
+# 
+# Info: Saved project file: 'C:/prj/Example-4-10/if_mult/PrecisionRTL/if_mult.psp'.
+# Info: Input directory: C:/prj/Example-4-10/if_mult/PrecisionRTL/
+# Moving session transcript to file "C:/prj/Example-4-10/if_mult/PrecisionRTL/precision.log"
+# Info: Created project if_mult in folder 'C:/prj/Example-4-10/if_mult/PrecisionRTL/'.
+# Info: Created directory: 'C:/prj/Example-4-10/if_mult/PrecisionRTL/if_mult_impl_1/'.
+# Info: Saved project file: 'C:/prj/Example-4-10/if_mult/PrecisionRTL/if_mult.psp'.
+# Info: Saved implementation file: 'C:/prj/Example-4-10/if_mult/PrecisionRTL/if_mult_impl_1/if_mult_impl_1.psi'.
+# Info: Created implementation if_mult_impl_1 in project if_mult.
+# Info: Created directory: 'C:/prj/Example-4-10/if_mult/PrecisionRTL/if_mult_temp_1/'.
+# Info: Results directory: C:/prj/Example-4-10/if_mult/PrecisionRTL/if_mult_temp_1/
+# Appending project transcript to file "C:/prj/Example-4-10/if_mult/PrecisionRTL/if_mult_temp_1/precision.log"
+# Info: Activated implementation if_mult_impl_1 in project if_mult.
+new_project -name "if_mult" -folder "C:/prj/Example-4-10/if_mult/PrecisionRTL" -createimpl_name "if_mult_impl_1"
+# 
+# COMMAND: add_input_file ../mult_if.v
+# 
+add_input_file ../mult_if.v
+# 
+# COMMAND: setup_design -manufacturer Lattice -family LatticeEC -part LFEC20E -speed 3 -package FPBGA672
+# 
+# Info: Setting up the design to use synthesis library "lattice_ec.syn"
+# Info: Setting Part to: "LFEC20E"
+# Info: Setting Process to: "3"
+# Info: Setting Package to: "FPBGA672"
+setup_design -manufacturer Lattice -family LatticeEC -part LFEC20E -speed 3 -package FPBGA672
+# 
+# COMMAND: save_impl
+# 
+# Info: Saved implementation file: 'C:/prj/Example-4-10/if_mult/PrecisionRTL/if_mult_temp_1/if_mult_impl_1.psi'.
+# Info: Created directory: 'C:/prj/Example-4-10/if_mult/PrecisionRTL/if_mult_impl_1/'.
+# Info: Saved implementation if_mult_impl_1 in project if_mult.
+save_impl
+# 
+# COMMAND: compile
+# 
+# Info: Reading file: 'C:/eda/ispTOOLS5_0/precision/pkgs/psr/techlibs/lattice_ec.syn'.
+# Info: hdl-analyze, Release RTLC-Precision 2005a.10
+# Info: 1002: Analyzing input file "C:/prj/Example-4-10/if_mult/PrecisionRTL/../mult_if.v" ...
+# Info: Top of Design has been set to: mult_if.
+# Info: Current working directory: 'C:/prj/Example-4-10/if_mult/PrecisionRTL/if_mult_temp_1/'.
+# Info: RTLC-Driver, Release RTLC-Precision 2005a.10
+# Info: Last compiled on May 13 2005 21:07:55
+# Info: 4512: Initializing...
+# Info: 4504: Partitioning design .... 
+# Info: RTLCompiler, Release RTLC-Precision 2005a.10
+# Info: Last compiled on May 13 2005 21:12:47
+# Info: 4512: Initializing...
+# Info: 4522: Root Module mult_if: Pre-processing... 
+# Info: 4523: Root Module mult_if: Compiling... 
+# Info: 4842: Compilation successfully completed.
+# Info: 4835: Total CPU time taken for compilation: 0.4 secs.  
+# Info: 4856: Total lines of RTL compiled: 13.
+# Info: Current working directory: 'C:/prj/Example-4-10/if_mult/PrecisionRTL/if_mult_temp_1/'.
+# Info: Finished compiling design.
+compile
+# 
+# COMMAND: synthesize
+# 
+# Info: Current working directory: 'C:/prj/Example-4-10/if_mult/PrecisionRTL/if_mult_temp_1/'.
+# -- Optimizing design .work.mult_if.INTERFACE
+# Info: report_timing: There are no timing constraints; no timing information available
+# Info: report_timing: There are no timing constraints; no timing information available
+# Info: report_timing: There are no timing constraints; no timing information available
+# Info: Timing information and timing constraints are not present.
+# -- Saving the design database in C:/prj/Example-4-10/if_mult/PrecisionRTL/if_mult_temp_1/mult_if.xdb
+# Info: Writing file: 'C:/prj/Example-4-10/if_mult/PrecisionRTL/if_mult_temp_1/mult_if.edf'.
+# Info: Writing file: 'C:/prj/Example-4-10/if_mult/PrecisionRTL/if_mult_temp_1/mult_if.prf'.
+# Info: Finished synthesizing design.
+# C:/prj/Example-4-10/if_mult/PrecisionRTL/if_mult_temp_1/precision_tech.sdc
+synthesize
+# 
+# COMMAND: view_schematic .work.mult_if.INTERFACE_XRTL
+# 
+view_schematic .work.mult_if.INTERFACE_XRTL
+# 
+# COMMAND: view_schematic .work.mult_if.INTERFACE
+# 
+view_schematic .work.mult_if.INTERFACE
+# 
+# COMMAND: save_impl
+# 
+# Info: Saved implementation file: 'C:/prj/Example-4-10/if_mult/PrecisionRTL/if_mult_temp_1/if_mult_impl_1.psi'.
+# Info: Created directory: 'C:/prj/Example-4-10/if_mult/PrecisionRTL/if_mult_impl_1/'.
+# Info: Saved implementation if_mult_impl_1 in project if_mult.
+save_impl
+# 
+# COMMAND: close_project
+# 
+# Info: Saved project file: 'C:/prj/Example-4-10/if_mult/PrecisionRTL/if_mult.psp'.
+# Info: Closed project: if_mult.
+close_project
+# 
+# COMMAND: new_project -name "if_single" -folder "C:/prj/Example-4-10/if_single/PrecisionRTL" -createimpl_name "if_single_impl_1"
+# 
+# Info: Saved project file: 'C:/prj/Example-4-10/if_single/PrecisionRTL/if_single.psp'.
+# Info: Input directory: C:/prj/Example-4-10/if_single/PrecisionRTL/
+# Moving session transcript to file "C:/prj/Example-4-10/if_single/PrecisionRTL/precision.log"
+# Info: Created project if_single in folder 'C:/prj/Example-4-10/if_single/PrecisionRTL/'.
+# Info: Created directory: 'C:/prj/Example-4-10/if_single/PrecisionRTL/if_single_impl_1/'.
+# Info: Saved project file: 'C:/prj/Example-4-10/if_single/PrecisionRTL/if_single.psp'.
+# Info: Saved implementation file: 'C:/prj/Example-4-10/if_single/PrecisionRTL/if_single_impl_1/if_single_impl_1.psi'.
+# Info: Created implementation if_single_impl_1 in project if_single.
+# Info: Created directory: 'C:/prj/Example-4-10/if_single/PrecisionRTL/if_single_temp_1/'.
+# Info: Results directory: C:/prj/Example-4-10/if_single/PrecisionRTL/if_single_temp_1/
+# Appending project transcript to file "C:/prj/Example-4-10/if_single/PrecisionRTL/if_single_temp_1/precision.log"
+# Info: Activated implementation if_single_impl_1 in project if_single.
+new_project -name "if_single" -folder "C:/prj/Example-4-10/if_single/PrecisionRTL" -createimpl_name "if_single_impl_1"
+# 
+# COMMAND: add_input_file ../single_if.v
+# 
+add_input_file ../single_if.v
+# 
+# COMMAND: setup_design -manufacturer Lattice -family LatticeEC -part LFEC20E -speed 3 -package FPBGA672
+# 
+# Info: Setting up the design to use synthesis library "lattice_ec.syn"
+# Info: Setting Part to: "LFEC20E"
+# Info: Setting Process to: "3"
+# Info: Setting Package to: "FPBGA672"
+setup_design -manufacturer Lattice -family LatticeEC -part LFEC20E -speed 3 -package FPBGA672
+# 
+# COMMAND: save_impl
+# 
+# Info: Saved implementation file: 'C:/prj/Example-4-10/if_single/PrecisionRTL/if_single_temp_1/if_single_impl_1.psi'.
+# Info: Created directory: 'C:/prj/Example-4-10/if_single/PrecisionRTL/if_single_impl_1/'.
+# Info: Saved implementation if_single_impl_1 in project if_single.
+save_impl
+# 
+# COMMAND: compile
+# 
+# Info: Reading file: 'C:/eda/ispTOOLS5_0/precision/pkgs/psr/techlibs/lattice_ec.syn'.
+# Info: hdl-analyze, Release RTLC-Precision 2005a.10
+# Info: 1002: Analyzing input file "C:/prj/Example-4-10/if_single/PrecisionRTL/../single_if.v" ...
+# Info: Top of Design has been set to: single_if.
+# Info: Current working directory: 'C:/prj/Example-4-10/if_single/PrecisionRTL/if_single_temp_1/'.
+# Info: RTLC-Driver, Release RTLC-Precision 2005a.10
+# Info: Last compiled on May 13 2005 21:07:55
+# Info: 4512: Initializing...
+# Info: 4504: Partitioning design .... 
+# Info: RTLCompiler, Release RTLC-Precision 2005a.10
+# Info: Last compiled on May 13 2005 21:12:47
+# Info: 4512: Initializing...
+# Info: 4522: Root Module single_if: Pre-processing... 
+# Info: 4523: Root Module single_if: Compiling... 
+# Info: 4842: Compilation successfully completed.
+# Info: 4835: Total CPU time taken for compilation: 0.4 secs.  
+# Info: 4856: Total lines of RTL compiled: 17.
+# Info: Current working directory: 'C:/prj/Example-4-10/if_single/PrecisionRTL/if_single_temp_1/'.
+# Info: Finished compiling design.
+compile
+# 
+# COMMAND: synthesize
+# 
+# Info: Current working directory: 'C:/prj/Example-4-10/if_single/PrecisionRTL/if_single_temp_1/'.
+# -- Optimizing design .work.single_if.INTERFACE
+# Info: report_timing: There are no timing constraints; no timing information available
+# Info: report_timing: There are no timing constraints; no timing information available
+# Info: report_timing: There are no timing constraints; no timing information available
+# Info: Timing information and timing constraints are not present.
+# -- Saving the design database in C:/prj/Example-4-10/if_single/PrecisionRTL/if_single_temp_1/single_if.xdb
+# Info: Writing file: 'C:/prj/Example-4-10/if_single/PrecisionRTL/if_single_temp_1/single_if.edf'.
+# Info: Writing file: 'C:/prj/Example-4-10/if_single/PrecisionRTL/if_single_temp_1/single_if.prf'.
+# Info: Finished synthesizing design.
+# C:/prj/Example-4-10/if_single/PrecisionRTL/if_single_temp_1/precision_tech.sdc
+synthesize
+# 
+# COMMAND: view_schematic .work.single_if.INTERFACE_XRTL
+# 
+view_schematic .work.single_if.INTERFACE_XRTL
+# 
+# COMMAND: view_schematic .work.single_if.INTERFACE
+# 
+view_schematic .work.single_if.INTERFACE
+# 
+# COMMAND: save_impl
+# 
+# Info: Saved implementation file: 'C:/prj/Example-4-10/if_single/PrecisionRTL/if_single_temp_1/if_single_impl_1.psi'.
+# Info: Created directory: 'C:/prj/Example-4-10/if_single/PrecisionRTL/if_single_impl_1/'.
+# Info: Saved implementation if_single_impl_1 in project if_single.
+save_impl
+# 
+# COMMAND: close_project
+# 
+# Info: Saved project file: 'C:/prj/Example-4-10/if_single/PrecisionRTL/if_single.psp'.
+# Info: Closed project: if_single.
+close_project
+# 
+# COMMAND: new_project -name "decode_case" -folder "C:/prj/Example-4-10/decode/case" -createimpl_name "decode_case_impl_1"
+# 
+# Info: Saved project file: 'C:/prj/Example-4-10/decode/case/decode_case.psp'.
+# Info: Input directory: C:/prj/Example-4-10/decode/case/
+# Moving session transcript to file "C:/prj/Example-4-10/decode/case/precision.log"
+# Info: Created project decode_case in folder 'C:/prj/Example-4-10/decode/case/'.
+# Info: Created directory: 'C:/prj/Example-4-10/decode/case/decode_case_impl_1/'.
+# Info: Saved project file: 'C:/prj/Example-4-10/decode/case/decode_case.psp'.
+# Info: Saved implementation file: 'C:/prj/Example-4-10/decode/case/decode_case_impl_1/decode_case_impl_1.psi'.
+# Info: Created implementation decode_case_impl_1 in project decode_case.
+# Info: Created directory: 'C:/prj/Example-4-10/decode/case/decode_case_temp_1/'.
+# Info: Results directory: C:/prj/Example-4-10/decode/case/decode_case_temp_1/
+# Appending project transcript to file "C:/prj/Example-4-10/decode/case/decode_case_temp_1/precision.log"
+# Info: Activated implementation decode_case_impl_1 in project decode_case.
+new_project -name "decode_case" -folder "C:/prj/Example-4-10/decode/case" -createimpl_name "decode_case_impl_1"
+# 
+# COMMAND: add_input_file case_decode.v
+# 
+add_input_file case_decode.v
+# 
+# COMMAND: setup_design -manufacturer Lattice -family LatticeEC -part LFEC20E -speed 3 -package FPBGA672
+# 
+# Info: Setting up the design to use synthesis library "lattice_ec.syn"
+# Info: Setting Part to: "LFEC20E"
+# Info: Setting Process to: "3"
+# Info: Setting Package to: "FPBGA672"
+setup_design -manufacturer Lattice -family LatticeEC -part LFEC20E -speed 3 -package FPBGA672
+# 
+# COMMAND: save_impl
+# 
+# Info: Saved implementation file: 'C:/prj/Example-4-10/decode/case/decode_case_temp_1/decode_case_impl_1.psi'.
+# Info: Created directory: 'C:/prj/Example-4-10/decode/case/decode_case_impl_1/'.
+# Info: Saved implementation decode_case_impl_1 in project decode_case.
+save_impl
+# 
+# COMMAND: compile
+# 
+# Info: Reading file: 'C:/eda/ispTOOLS5_0/precision/pkgs/psr/techlibs/lattice_ec.syn'.
+# Info: hdl-analyze, Release RTLC-Precision 2005a.10
+# Info: 1002: Analyzing input file "C:/prj/Example-4-10/decode/case/case_decode.v" ...
+# Info: Top of Design has been set to: case_decode.
+# Info: Current working directory: 'C:/prj/Example-4-10/decode/case/decode_case_temp_1/'.
+# Info: RTLC-Driver, Release RTLC-Precision 2005a.10
+# Info: Last compiled on May 13 2005 21:07:55
+# Info: 4512: Initializing...
+# Info: 4504: Partitioning design .... 
+# Info: RTLCompiler, Release RTLC-Precision 2005a.10
+# Info: Last compiled on May 13 2005 21:12:47
+# Info: 4512: Initializing...
+# Info: 4522: Root Module case_decode: Pre-processing... 
+# Info: 4523: Root Module case_decode: Compiling... 
+# Info: 4842: Compilation successfully completed.
+# Info: 4835: Total CPU time taken for compilation: 0.5 secs.  
+# Info: 4856: Total lines of RTL compiled: 25.
+# Info: Current working directory: 'C:/prj/Example-4-10/decode/case/decode_case_temp_1/'.
+# Info: Finished compiling design.
+compile
+# 
+# COMMAND: synthesize
+# 
+# Info: Current working directory: 'C:/prj/Example-4-10/decode/case/decode_case_temp_1/'.
+# -- Optimizing design .work.case_decode.INTERFACE
+# Info: report_timing: There are no timing constraints; no timing information available
+# Info: report_timing: There are no timing constraints; no timing information available
+# Info: report_timing: There are no timing constraints; no timing information available
+# Info: Timing information and timing constraints are not present.
+# -- Saving the design database in C:/prj/Example-4-10/decode/case/decode_case_temp_1/case_decode.xdb
+# Info: Writing file: 'C:/prj/Example-4-10/decode/case/decode_case_temp_1/case_decode.edf'.
+# Info: Writing file: 'C:/prj/Example-4-10/decode/case/decode_case_temp_1/case_decode.prf'.
+# Info: Finished synthesizing design.
+# C:/prj/Example-4-10/decode/case/decode_case_temp_1/precision_tech.sdc
+synthesize
+# 
+# COMMAND: view_schematic .work.case_decode.INTERFACE_XRTL
+# 
+view_schematic .work.case_decode.INTERFACE_XRTL
+# 
+# COMMAND: view_schematic .work.case_decode.INTERFACE
+# 
+view_schematic .work.case_decode.INTERFACE
+# 
+# COMMAND: save_impl
+# 
+# Info: Saved implementation file: 'C:/prj/Example-4-10/decode/case/decode_case_temp_1/decode_case_impl_1.psi'.
+# Info: Created directory: 'C:/prj/Example-4-10/decode/case/decode_case_impl_1/'.
+# Info: Saved implementation decode_case_impl_1 in project decode_case.
+save_impl
+# 
+# COMMAND: close_project
+# 
+# Info: Saved project file: 'C:/prj/Example-4-10/decode/case/decode_case.psp'.
+# Info: Closed project: decode_case.
+close_project
+# 
+# COMMAND: new_project -name "precision" -folder "C:/prj/Example-4-10/decode/if_mult" -createimpl_name "precision_impl_1"
+# 
+# Info: Saved project file: 'C:/prj/Example-4-10/decode/if_mult/precision.psp'.
+# Info: Input directory: C:/prj/Example-4-10/decode/if_mult/
+# Moving session transcript to file "C:/prj/Example-4-10/decode/if_mult/precision.log"
+# Info: Created project precision in folder 'C:/prj/Example-4-10/decode/if_mult/'.
+# Info: Created directory: 'C:/prj/Example-4-10/decode/if_mult/precision_impl_1/'.
+# Info: Saved project file: 'C:/prj/Example-4-10/decode/if_mult/precision.psp'.
+# Info: Saved implementation file: 'C:/prj/Example-4-10/decode/if_mult/precision_impl_1/precision_impl_1.psi'.
+# Info: Created implementation precision_impl_1 in project precision.
+# Info: Created directory: 'C:/prj/Example-4-10/decode/if_mult/precision_temp_1/'.
+# Info: Results directory: C:/prj/Example-4-10/decode/if_mult/precision_temp_1/
+# Appending project transcript to file "C:/prj/Example-4-10/decode/if_mult/precision_temp_1/precision.log"
+# Info: Activated implementation precision_impl_1 in project precision.
+new_project -name "precision" -folder "C:/prj/Example-4-10/decode/if_mult" -createimpl_name "precision_impl_1"
+# 
+# COMMAND: add_input_file if_mult_decode.v
+# 
+add_input_file if_mult_decode.v
+# 
+# COMMAND: setup_design -manufacturer Lattice -family LatticeEC -part LFEC20E -speed 3 -package FPBGA672
+# 
+# Info: Setting up the design to use synthesis library "lattice_ec.syn"
+# Info: Setting Part to: "LFEC20E"
+# Info: Setting Process to: "3"
+# Info: Setting Package to: "FPBGA672"
+setup_design -manufacturer Lattice -family LatticeEC -part LFEC20E -speed 3 -package FPBGA672
+# 
+# COMMAND: compile
+# 
+# Info: Reading file: 'C:/eda/ispTOOLS5_0/precision/pkgs/psr/techlibs/lattice_ec.syn'.
+# Info: hdl-analyze, Release RTLC-Precision 2005a.10
+# Info: 1002: Analyzing input file "C:/prj/Example-4-10/decode/if_mult/if_mult_decode.v" ...
+# Info: Top of Design has been set to: if_mult_decode.
+# Info: Current working directory: 'C:/prj/Example-4-10/decode/if_mult/precision_temp_1/'.
+# Info: RTLC-Driver, Release RTLC-Precision 2005a.10
+# Info: Last compiled on May 13 2005 21:07:55
+# Info: 4512: Initializing...
+# Info: 4504: Partitioning design .... 
+# Info: RTLCompiler, Release RTLC-Precision 2005a.10
+# Info: Last compiled on May 13 2005 21:12:47
+# Info: 4512: Initializing...
+# Info: 4522: Root Module if_mult_decode: Pre-processing... 
+# Info: 4523: Root Module if_mult_decode: Compiling... 
+# Info: 4842: Compilation successfully completed.
+# Info: 4835: Total CPU time taken for compilation: 0.4 secs.  
+# Info: 4856: Total lines of RTL compiled: 28.
+# Info: Current working directory: 'C:/prj/Example-4-10/decode/if_mult/precision_temp_1/'.
+# Info: Finished compiling design.
+compile
+# 
+# COMMAND: synthesize
+# 
+# Info: Current working directory: 'C:/prj/Example-4-10/decode/if_mult/precision_temp_1/'.
+# -- Optimizing design .work.if_mult_decode.INTERFACE
+# Info: report_timing: There are no timing constraints; no timing information available
+# Info: report_timing: There are no timing constraints; no timing information available
+# Info: report_timing: There are no timing constraints; no timing information available
+# Info: Timing information and timing constraints are not present.
+# -- Saving the design database in C:/prj/Example-4-10/decode/if_mult/precision_temp_1/if_mult_decode.xdb
+# Info: Writing file: 'C:/prj/Example-4-10/decode/if_mult/precision_temp_1/if_mult_decode.edf'.
+# Info: Writing file: 'C:/prj/Example-4-10/decode/if_mult/precision_temp_1/if_mult_decode.prf'.
+# Info: Finished synthesizing design.
+# C:/prj/Example-4-10/decode/if_mult/precision_temp_1/precision_tech.sdc
+synthesize
+# 
+# COMMAND: view_schematic .work.if_mult_decode.INTERFACE_XRTL
+# 
+view_schematic .work.if_mult_decode.INTERFACE_XRTL
+# 
+# COMMAND: view_schematic .work.if_mult_decode.INTERFACE
+# 
+view_schematic .work.if_mult_decode.INTERFACE
+# 
+# COMMAND: save_impl
+# 
+# Info: Saved implementation file: 'C:/prj/Example-4-10/decode/if_mult/precision_temp_1/precision_impl_1.psi'.
+# Info: Created directory: 'C:/prj/Example-4-10/decode/if_mult/precision_impl_1/'.
+# Info: Saved implementation precision_impl_1 in project precision.
+save_impl
+# 
+# COMMAND: close_project
+# 
+# Info: Saved project file: 'C:/prj/Example-4-10/decode/if_mult/precision.psp'.
+# Info: Closed project: precision.
+close_project
+# 
+# COMMAND: new_project -name "precision" -folder "C:/prj/Example-4-10/decode/if_single" -createimpl_name "precision_impl_1"
+# 
+# Info: Saved project file: 'C:/prj/Example-4-10/decode/if_single/precision.psp'.
+# Info: Input directory: C:/prj/Example-4-10/decode/if_single/
+# Moving session transcript to file "C:/prj/Example-4-10/decode/if_single/precision.log"
+# Info: Created project precision in folder 'C:/prj/Example-4-10/decode/if_single/'.
+# Info: Created directory: 'C:/prj/Example-4-10/decode/if_single/precision_impl_1/'.
+# Info: Saved project file: 'C:/prj/Example-4-10/decode/if_single/precision.psp'.
+# Info: Saved implementation file: 'C:/prj/Example-4-10/decode/if_single/precision_impl_1/precision_impl_1.psi'.
+# Info: Created implementation precision_impl_1 in project precision.
+# Info: Created directory: 'C:/prj/Example-4-10/decode/if_single/precision_temp_1/'.
+# Info: Results directory: C:/prj/Example-4-10/decode/if_single/precision_temp_1/
+# Appending project transcript to file "C:/prj/Example-4-10/decode/if_single/precision_temp_1/precision.log"
+# Info: Activated implementation precision_impl_1 in project precision.
+new_project -name "precision" -folder "C:/prj/Example-4-10/decode/if_single" -createimpl_name "precision_impl_1"
+# 
+# COMMAND: add_input_file if_single_decode.v
+# 
+add_input_file if_single_decode.v
+# 
+# COMMAND: setup_design -manufacturer Lattice -family LatticeEC -part LFEC20E -speed 3 -package FPBGA672
+# 
+# Info: Setting up the design to use synthesis library "lattice_ec.syn"
+# Info: Setting Part to: "LFEC20E"
+# Info: Setting Process to: "3"
+# Info: Setting Package to: "FPBGA672"
+setup_design -manufacturer Lattice -family LatticeEC -part LFEC20E -speed 3 -package FPBGA672
+# 
+# COMMAND: save_impl
+# 
+# Info: Saved implementation file: 'C:/prj/Example-4-10/decode/if_single/precision_temp_1/precision_impl_1.psi'.
+# Info: Created directory: 'C:/prj/Example-4-10/decode/if_single/precision_impl_1/'.
+# Info: Saved implementation precision_impl_1 in project precision.
+save_impl
+# 
+# COMMAND: compile
+# 
+# Info: Reading file: 'C:/eda/ispTOOLS5_0/precision/pkgs/psr/techlibs/lattice_ec.syn'.
+# Info: hdl-analyze, Release RTLC-Precision 2005a.10
+# Info: 1002: Analyzing input file "C:/prj/Example-4-10/decode/if_single/if_single_decode.v" ...
+# Info: Top of Design has been set to: if_single_decode.
+# Info: Current working directory: 'C:/prj/Example-4-10/decode/if_single/precision_temp_1/'.
+# Info: RTLC-Driver, Release RTLC-Precision 2005a.10
+# Info: Last compiled on May 13 2005 21:07:55
+# Info: 4512: Initializing...
+# Info: 4504: Partitioning design .... 
+# Info: RTLCompiler, Release RTLC-Precision 2005a.10
+# Info: Last compiled on May 13 2005 21:12:47
+# Info: 4512: Initializing...
+# Info: 4522: Root Module if_single_decode: Pre-processing... 
+# Info: 4523: Root Module if_single_decode: Compiling... 
+# Info: 4842: Compilation successfully completed.
+# Info: 4835: Total CPU time taken for compilation: 0.4 secs.  
+# Info: 4856: Total lines of RTL compiled: 27.
+# Info: Current working directory: 'C:/prj/Example-4-10/decode/if_single/precision_temp_1/'.
+# Info: Finished compiling design.
+compile
+# 
+# COMMAND: synthesize
+# 
+# Info: Current working directory: 'C:/prj/Example-4-10/decode/if_single/precision_temp_1/'.
+# -- Optimizing design .work.if_single_decode.INTERFACE
+# Info: report_timing: There are no timing constraints; no timing information available
+# Info: report_timing: There are no timing constraints; no timing information available
+# Info: report_timing: There are no timing constraints; no timing information available
+# Info: Timing information and timing constraints are not present.
+# -- Saving the design database in C:/prj/Example-4-10/decode/if_single/precision_temp_1/if_single_decode.xdb
+# Info: Writing file: 'C:/prj/Example-4-10/decode/if_single/precision_temp_1/if_single_decode.edf'.
+# Info: Writing file: 'C:/prj/Example-4-10/decode/if_single/precision_temp_1/if_single_decode.prf'.
+# Info: Finished synthesizing design.
+# C:/prj/Example-4-10/decode/if_single/precision_temp_1/precision_tech.sdc
+synthesize
+# 
+# COMMAND: view_schematic .work.if_single_decode.INTERFACE_XRTL
+# 
+view_schematic .work.if_single_decode.INTERFACE_XRTL
+# 
+# COMMAND: view_schematic .work.if_single_decode.INTERFACE
+# 
+view_schematic .work.if_single_decode.INTERFACE
+# 
+# COMMAND: exit
+# 
+# 
+# COMMAND: save_impl
+# 
+# Info: Saved implementation file: 'C:/prj/Example-4-10/decode/if_single/precision_temp_1/precision_impl_1.psi'.
+# Info: Created directory: 'C:/prj/Example-4-10/decode/if_single/precision_impl_1/'.
+# Info: Saved implementation precision_impl_1 in project precision.
+save_impl
+# 
+# COMMAND: close_project -discard
+# 
+# Info: Saved project file: 'C:/prj/Example-4-10/decode/if_single/precision.psp'.
+# Info: Closed project: precision.
+close_project -discard
+exit

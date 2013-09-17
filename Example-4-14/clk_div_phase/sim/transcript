@@ -1,0 +1,74 @@
+# Compile of clk_div_phase.v was successful.
+# Compile of clk_div_phase_tb.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error. 
+# Compile of clk_div_phase_tb.v was successful.
+vsim work.clk_div_phase_tb
+# vsim work.clk_div_phase_tb 
+# Loading work.clk_div_phase_tb
+# Loading work.clk_div_phase
+# ** Warning: (vsim-3009) [TSCALE] - Module 'clk_div_phase' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /clk_div_phase_tb/clk_div_phase_inst
+view *
+# .source .process .signals .variables .dataflow .list .wave .memory
+view structure
+# .structure
+destroy .list
+run -all
+# Break at C:/prj/Example-4-7/clk_div_phase/clk_div_phase_tb.v line 17
+write format wave -window .wave C:/prj/Example-4-7/clk_div_phase/sim/wave.do
+# Compile of clk_div_phase_tb.v was successful.
+vsim work.clk_div_phase_tb
+# vsim work.clk_div_phase_tb 
+# Loading work.clk_div_phase_tb
+# Loading work.clk_div_phase
+# ** Warning: (vsim-3009) [TSCALE] - Module 'clk_div_phase' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /clk_div_phase_tb/clk_div_phase_inst
+do wave.do
+run
+# Break at C:/prj/Example-4-7/clk_div_phase/clk_div_phase_tb.v line 17
+write format wave -window .wave C:/prj/Example-4-7/clk_div_phase/sim/wave.do
+# Compile of clk_div_phase_tb.v was successful.
+vsim work.clk_div_phase_tb
+# vsim work.clk_div_phase_tb 
+# Loading work.clk_div_phase_tb
+# Loading work.clk_div_phase
+# ** Warning: (vsim-3009) [TSCALE] - Module 'clk_div_phase' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /clk_div_phase_tb/clk_div_phase_inst
+write format wave -window .wave C:/prj/Example-4-7/clk_div_phase/sim/wave.do
+run
+# Break at C:/prj/Example-4-7/clk_div_phase/clk_div_phase_tb.v line 17
+vsim work.clk_div_phase_tb
+# vsim work.clk_div_phase_tb 
+# Loading work.clk_div_phase_tb
+# Loading work.clk_div_phase
+# ** Warning: (vsim-3009) [TSCALE] - Module 'clk_div_phase' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /clk_div_phase_tb/clk_div_phase_inst
+do wave.do
+run
+# Break at C:/prj/Example-4-7/clk_div_phase/clk_div_phase_tb.v line 17
+destroy .memory
+# Compile of clk_div_phase.v was successful.
+# Compile of clk_div_phase_tb.v was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim work.clk_div_phase_tb
+# vsim work.clk_div_phase_tb 
+# Loading work.clk_div_phase_tb
+# Loading work.clk_div_phase
+# ** Warning: (vsim-3009) [TSCALE] - Module 'clk_div_phase' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /clk_div_phase_tb/clk_div_phase_inst
+do wave.do
+write format wave -window .wave C:/prj/Example-4-7/clk_div_phase/sim/wave.do
+run
+# Break at C:/prj/Example-4-7/clk_div_phase/clk_div_phase_tb.v line 17
+write format wave -window .wave C:/prj/Example-4-7/clk_div_phase/sim/wave.do
+# Compile of clk_div_phase_tb.v was successful.
+vsim work.clk_div_phase_tb
+# vsim work.clk_div_phase_tb 
+# Loading work.clk_div_phase_tb
+# Loading work.clk_div_phase
+# ** Warning: (vsim-3009) [TSCALE] - Module 'clk_div_phase' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /clk_div_phase_tb/clk_div_phase_inst
+do wave.do
+run
+# Break at C:/prj/Example-4-7/clk_div_phase/clk_div_phase_tb.v line 17
+quit

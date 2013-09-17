@@ -1,0 +1,54 @@
+#### START OF AREA REPORT #####[
+
+Part:			XC3S50TQ144-4 (Xilinx)
+
+-----------------------------------------------------------------------
+########   Utilization report for  Top level view:   srl2pal   ########
+=======================================================================
+
+SEQUENTIAL ELEMENTS
+*******************
+
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     8                  100 %                
+======================================================
+Total SEQUENTIAL ELEMENTS in the block srl2pal:	8 (36.36 % Utilization)
+
+
+COMBINATIONAL LOGIC
+*******************
+
+Name                     Total elements     Utilization     Notes
+-----------------------------------------------------------------
+LUTS                     0                  0.0 %                
+MUXCY                    0                  0.0 %                
+XORCY                    0                  0.0 %                
+MULT18x18/MULT18x18S     0                  0.0 %                
+=================================================================
+Total COMBINATIONAL LOGIC in the block srl2pal:	0 (0.00 % Utilization)
+
+
+MEMORY ELEMENTS
+***************
+
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     0                  0                  0.0 %                
+ROMS          0                  0                  0.0 %                
+=========================================================================
+Total MEMORY ELEMENTS in the block srl2pal:	0 (0.00 % Utilization)
+
+
+IO PADS
+*******
+
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+PADS     11                 100 %                
+=================================================
+Total IO PADS in the block srl2pal:	11 (50.00 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

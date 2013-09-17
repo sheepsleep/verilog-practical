@@ -1,0 +1,17 @@
+Selecting top level module asyn_rst
+@N:"C:\prj\Example-4-9\asyn_rst\asyn_rst.v":1:7:1:14|Synthesizing module asyn_rst
+
+@N: CG179 :"C:\prj\Example-4-9\asyn_rst\asyn_rst.v":20:20:20:23|Removing redundant assignment
+@W: CL190 :"C:\prj\Example-4-9\asyn_rst\asyn_rst.v":9:0:9:5|Optimizing register bit cnt1[2] to a constant 0
+@W: CL190 :"C:\prj\Example-4-9\asyn_rst\asyn_rst.v":9:0:9:5|Optimizing register bit cnt1[3] to a constant 0
+@W: CL190 :"C:\prj\Example-4-9\asyn_rst\asyn_rst.v":9:0:9:5|Optimizing register bit cnt1[4] to a constant 0
+@W: CL171 :"C:\prj\Example-4-9\asyn_rst\asyn_rst.v":9:0:9:5|Pruning Register bit <4> of cnt1[4:0] 
+
+@W: CL171 :"C:\prj\Example-4-9\asyn_rst\asyn_rst.v":9:0:9:5|Pruning Register bit <3> of cnt1[4:0] 
+
+@W: CL171 :"C:\prj\Example-4-9\asyn_rst\asyn_rst.v":9:0:9:5|Pruning Register bit <2> of cnt1[4:0] 
+
+@W: CL171 :"C:\prj\Example-4-9\asyn_rst\asyn_rst.v":9:0:9:5|Pruning Register bit <4> of cnt2[4:0] 
+
+@W: CL171 :"C:\prj\Example-4-9\asyn_rst\asyn_rst.v":9:0:9:5|Pruning Register bit <3> of cnt2[4:0] 
+

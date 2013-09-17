@@ -1,0 +1,4 @@
+Selecting top level module mult_if
+@N:"C:\prj\Example-4-10\if_mult\Latch_if_mult\latch_mult_if.v":1:7:1:13|Synthesizing module mult_if
+
+@W: CL118 :"C:\prj\Example-4-10\if_mult\Latch_if_mult\latch_mult_if.v":11:6:11:7|Latch generated from always block for signal z, probably caused by a missing assignment in an if or case stmt

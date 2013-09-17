@@ -1,0 +1,25 @@
+m255
+cModel Technology
+dC:\Modeltech_5.8b\examples
+vclock_edge
+IHT6K1A37Dc8ID9PKzm^zd0
+V;nSIlbA_96PcIB1I4o>]R2
+dC:\prj\Example-4-2\sim
+w1136920247
+FC:/prj/Example-4-2/sim/clock_edge.v
+L0 1
+OE;L;5.8b;17
+r1
+31
+o-work work
+vclock_edge_tb
+I]9^O5VESFV:9o;aNmJ^FM0
+VZ^gWnPU7XMPPc7@O@Dd7A0
+dC:\prj\Example-4-2\sim
+w1136829703
+FC:/prj/Example-4-2/sim/clock_edge_tb.v
+L0 1
+OE;L;5.8b;17
+r1
+31
+o-work work

@@ -1,0 +1,55 @@
+#
+# Synplicity Verification Interface File
+# Generated using Synplify-pro
+#
+# Copyright (c) 1996-2005 Synplicity, Inc.
+# All rights reserved
+#
+
+# Set logfile options
+vif_set_result_file  complex_bibus.vlf
+
+# Set technology for TCL script
+vif_set_technology -architecture FPGA -vendor Altera
+
+# RTL and technology files
+vif_add_library -original $env(QUARTUS_ROOTDIR)/eda/fv_lib/verilog
+vif_add_file -original -verilog ../counter.v
+vif_add_file -original -verilog ../decode.v
+vif_add_file -original -verilog ../complex_bibus.v
+vif_set_top_module -original -top complex_bibus
+ 
+vif_add_library -translated $env(QUARTUS_ROOTDIR)/eda/fv_lib/verilog
+vif_add_file -translated -verilog complex_bibus.vqm
+vif_set_top_module -translated -top complex_bibus 
+# Read FSM encoding
+
+# Memory map points
+
+# SRL map points
+
+# Compiler constant registers
+
+# Compiler constant latches
+
+# Compiler RTL sequential redundancies
+
+# RTL sequential redundancies
+
+# Technology sequential redundancies
+
+# Inversion map points
+
+# Port mappping and directions
+
+# Black box mapping
+
+
+# Other sequential cells, including multidimensional arrays
+
+# Constant Registers
+
+# Retimed Registers
+
+# Altera MAC annotations
+

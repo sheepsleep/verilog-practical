@@ -1,0 +1,28 @@
+@N:".\gentmp0a01832":4:7:4:9|Synthesizing work.top.gen 
+@N:"syng0a01832":200:7:200:12|Synthesizing work.ram_rw.select_ram 
+@W:"syng0a01832":2707:7:2707:17|Signal out_bus_128 is undriven 
+@W:"syng0a01832":2708:7:2708:16|Bit <0> of signal out_bus_64 is undriven 
+@W:"syng0a01832":2708:7:2708:16|Bit <1> of signal out_bus_64 is undriven 
+@W:"syng0a01832":2708:7:2708:16|Bit <2> of signal out_bus_64 is undriven 
+@W:"syng0a01832":2708:7:2708:16|Bit <3> of signal out_bus_64 is undriven 
+@W:"syng0a01832":2708:7:2708:16|Bit <4> of signal out_bus_64 is undriven 
+@W:"syng0a01832":2708:7:2708:16|Bit <5> of signal out_bus_64 is undriven 
+@W:"syng0a01832":2708:7:2708:16|Bit <6> of signal out_bus_64 is undriven 
+@W:"syng0a01832":2708:7:2708:16|Bit <7> of signal out_bus_64 is undriven 
+@W:"syng0a01832":2709:7:2709:16|Signal out_bus_32 is undriven 
+@W:"syng0a01832":2710:7:2710:16|Signal out_bus_16 is undriven 
+@W:"syng0a01832":2711:7:2711:12|Signal out_en is undriven 
+@W:"syng0a01832":2713:7:2713:15|Signal out_en_32 is undriven 
+@W:"syng0a01832":2714:7:2714:15|Signal out_en_16 is undriven 
+@W:"syng0a01832":2715:7:2715:12|Signal wrt_en is undriven 
+@W:"syng0a01832":2717:7:2717:15|Signal wrt_en_32 is undriven 
+@W:"syng0a01832":2718:7:2718:15|Signal wrt_en_16 is undriven 
+@W:"syng0a01832":2725:7:2725:14|Signal tmp_8_32 is undriven 
+@W:"syng0a01832":2725:17:2725:24|Signal tmp_8_16 is undriven 
+@N:"syng0a01832":52:7:52:15|Synthesizing work.xram64x2s.ram64x2s_v 
+@N:"C:\eda\synplicity\fpga_81\lib\xilinx\unisim.vhd":16253:10:16253:17|Synthesizing unisim.ram64x1s.syn_black_box 
+Post processing for unisim.ram64x1s.syn_black_box
+Post processing for work.xram64x2s.ram64x2s_v
+Post processing for work.ram_rw.select_ram
+@W: CL159 :"syng0a01832":216:8:216:11|Input oclk is unused
+Post processing for work.top.gen

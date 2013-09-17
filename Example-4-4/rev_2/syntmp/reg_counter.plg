@@ -1,0 +1,11 @@
+@P:  Worst Slack : 7.979
+@P:  reg_counter|clock - Estimated Frequency : 494.8 MHz
+@P:  reg_counter|clock - Requested Frequency : 100.0 MHz
+@P:  reg_counter|clock - Estimated Period : 2.021
+@P:  reg_counter|clock - Requested Period : 10.000
+@P:  reg_counter|clock - Slack : 7.979
+@P: reg_counter Part : xc3s100evq100-4
+@P: reg_counter I/O primitives : 9
+@P: reg_counter I/O Register bits : 0
+@P: reg_counter Register bits (Non I/O) : 8 (0%)
+@P: reg_counter Total Luts : 8 (0%)

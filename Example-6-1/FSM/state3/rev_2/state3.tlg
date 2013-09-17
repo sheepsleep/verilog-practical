@@ -1,0 +1,10 @@
+Selecting top level module state2
+@N:"C:\prj\FSM_abc\state3\state3.v":7:7:7:12|Synthesizing module state2
+
+@N: CL201 :"C:\prj\FSM_abc\state3\state3.v":28:0:28:5|Trying to extract state machine for register CS
+Extracted state machine for register CS
+State machine has 4 reachable states with original encodings of:
+   000
+   001
+   010
+   100

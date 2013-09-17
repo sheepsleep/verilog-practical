@@ -1,0 +1,281 @@
+#Program: Synplify Pro 8.1
+#OS: Windows_NT
+
+$ Start of Compile
+#Fri Dec 16 15:01:08 2005
+
+Synplicity Verilog Compiler, version 3.1.0, Build 049R, built May  3 2005
+Copyright (C) 1994-2005, Synplicity Inc.  All Rights Reserved
+
+@I::"C:\eda\synplicity\fpga_81\lib\lucent\ec.v"
+@I::"C:\prj\FSM_abc\state1\state1.v"
+Verilog syntax check successful!
+File C:\prj\FSM_abc\state1\state1.v changed - recompiling
+Selecting top level module state1
+@N:"C:\prj\FSM_abc\state1\state1.v":6:7:6:12|Synthesizing module state1
+
+@N: CL201 :"C:\prj\FSM_abc\state1\state1.v":27:0:27:5|Trying to extract state machine for register NS
+Extracted state machine for register NS
+State machine has 4 reachable states with original encodings of:
+   000
+   001
+   010
+   100
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Dec 16 15:01:09 2005
+
+###########################################################[
+Version 8.1
+Synplicity Lattice ORCA FPGA Technology Mapper, Version 8.1.0, Build 532R, Built Apr 28 2005
+Copyright (C) 1994-2005, Synplicity Inc.  All Rights Reserved
+Setting fanout limit to 100
+Starting Generic Flow
+@N: MT204 |Autoconstrain Mode is ON
+@W: BN132 :|Removing instance o2_22_u,  because it is equivalent to instance N_79_i
+@W: BN132 :|Removing instance o1_23_u,  because it is equivalent to instance N_6_i
+@W: BN132 :"c:\prj\fsm_abc\state1\state1.v":27:0:27:5|Removing instance NS_1_.Q,  because it is equivalent to instance o2.Q
+@W: BN132 :"c:\prj\fsm_abc\state1\state1.v":27:0:27:5|Removing instance NS_0_.Q,  because it is equivalent to instance o1.Q
+---------------------------------------
+Resource Usage Report
+Part: lfec1e-5
+
+Register bits: 3 of 1536 (0%)
+I/O cells:       7
+
+Details:
+FD1S3AX:        3
+GSR:            1
+IB:             4
+OB:             3
+ORCALUT4:       3
+VHI:            1
+VLO:            1
+Found clock state1|clk with period 1.96ns 
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Fri Dec 16 15:01:10 2005
+#
+
+
+Top view:               state1
+Requested Frequency:    509.9 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT195 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT197 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -0.346
+
+                   Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group                
+------------------------------------------------------------------------------------------------------------------------
+state1|clk         509.9 MHz     433.4 MHz     1.961         2.307         -0.346     inferred     Autoconstr_clkgroup_0
+========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                  |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------------
+Starting    Ending      |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------------
+state1|clk  state1|clk  |  1.961       -0.346  |  No paths    -      |  No paths    -      |  No paths    -    
+===============================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+
+====================================
+Detailed Report for Clock: state1|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+             Starting                                    Arrival           
+Instance     Reference      Type        Pin     Net      Time        Slack 
+             Clock                                                         
+---------------------------------------------------------------------------
+o1.Q         state1|clk     FD1S3AX     Q       o1_c     1.207       -0.346
+o2.Q         state1|clk     FD1S3AX     Q       o2_c     1.207       -0.346
+===========================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+             Starting                                      Required           
+Instance     Reference      Type        Pin     Net        Time         Slack 
+             Clock                                                            
+------------------------------------------------------------------------------
+err.Q        state1|clk     FD1S3AX     D       N_87_i     1.730        -0.346
+o1.Q         state1|clk     FD1S3AX     D       o1_23      1.730        -0.346
+o2.Q         state1|clk     FD1S3AX     D       o2_22      1.730        -0.346
+==============================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Requested Period:                        1.961
+    - Setup time:                            0.231
+    = Required time:                         1.730
+
+    - Propagation time:                      2.076
+    = Slack (critical) :                     -0.346
+
+    Number of logic level(s):                1
+    Starting point:                          o1.Q / Q
+    Ending point:                            o1.Q / D
+    The start point is clocked by            state1|clk [rising] on pin CK
+    The end   point is clocked by            state1|clk [rising] on pin CK
+
+Instance / Net                  Pin      Pin               Arrival     No. of    
+Name               Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------
+o1.Q               FD1S3AX      Q        Out     1.207     1.207       -         
+o1_c               Net          -        -       -         -           4         
+N_6_i              ORCALUT4     A        In      0.000     1.207       -         
+N_6_i              ORCALUT4     Z        Out     0.868     2.076       -         
+o1_23              Net          -        -       -         -           1         
+o1.Q               FD1S3AX      D        In      0.000     2.076       -         
+=================================================================================
+
+
+Path information for path number 2: 
+    Requested Period:                        1.961
+    - Setup time:                            0.231
+    = Required time:                         1.730
+
+    - Propagation time:                      2.076
+    = Slack (critical) :                     -0.346
+
+    Number of logic level(s):                1
+    Starting point:                          o2.Q / Q
+    Ending point:                            o1.Q / D
+    The start point is clocked by            state1|clk [rising] on pin CK
+    The end   point is clocked by            state1|clk [rising] on pin CK
+
+Instance / Net                  Pin      Pin               Arrival     No. of    
+Name               Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------
+o2.Q               FD1S3AX      Q        Out     1.207     1.207       -         
+o2_c               Net          -        -       -         -           4         
+N_6_i              ORCALUT4     B        In      0.000     1.207       -         
+N_6_i              ORCALUT4     Z        Out     0.868     2.076       -         
+o1_23              Net          -        -       -         -           1         
+o1.Q               FD1S3AX      D        In      0.000     2.076       -         
+=================================================================================
+
+
+Path information for path number 3: 
+    Requested Period:                        1.961
+    - Setup time:                            0.231
+    = Required time:                         1.730
+
+    - Propagation time:                      2.076
+    = Slack (critical) :                     -0.346
+
+    Number of logic level(s):                1
+    Starting point:                          o1.Q / Q
+    Ending point:                            o2.Q / D
+    The start point is clocked by            state1|clk [rising] on pin CK
+    The end   point is clocked by            state1|clk [rising] on pin CK
+
+Instance / Net                  Pin      Pin               Arrival     No. of    
+Name               Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------
+o1.Q               FD1S3AX      Q        Out     1.207     1.207       -         
+o1_c               Net          -        -       -         -           4         
+N_79_i             ORCALUT4     A        In      0.000     1.207       -         
+N_79_i             ORCALUT4     Z        Out     0.868     2.076       -         
+o2_22              Net          -        -       -         -           1         
+o2.Q               FD1S3AX      D        In      0.000     2.076       -         
+=================================================================================
+
+
+Path information for path number 4: 
+    Requested Period:                        1.961
+    - Setup time:                            0.231
+    = Required time:                         1.730
+
+    - Propagation time:                      2.076
+    = Slack (critical) :                     -0.346
+
+    Number of logic level(s):                1
+    Starting point:                          o1.Q / Q
+    Ending point:                            err.Q / D
+    The start point is clocked by            state1|clk [rising] on pin CK
+    The end   point is clocked by            state1|clk [rising] on pin CK
+
+Instance / Net                  Pin      Pin               Arrival     No. of    
+Name               Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------
+o1.Q               FD1S3AX      Q        Out     1.207     1.207       -         
+o1_c               Net          -        -       -         -           4         
+N_87_i             ORCALUT4     A        In      0.000     1.207       -         
+N_87_i             ORCALUT4     Z        Out     0.868     2.076       -         
+N_87_i             Net          -        -       -         -           1         
+err.Q              FD1S3AX      D        In      0.000     2.076       -         
+=================================================================================
+
+
+Path information for path number 5: 
+    Requested Period:                        1.961
+    - Setup time:                            0.231
+    = Required time:                         1.730
+
+    - Propagation time:                      2.076
+    = Slack (critical) :                     -0.346
+
+    Number of logic level(s):                1
+    Starting point:                          o2.Q / Q
+    Ending point:                            o2.Q / D
+    The start point is clocked by            state1|clk [rising] on pin CK
+    The end   point is clocked by            state1|clk [rising] on pin CK
+
+Instance / Net                  Pin      Pin               Arrival     No. of    
+Name               Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------
+o2.Q               FD1S3AX      Q        Out     1.207     1.207       -         
+o2_c               Net          -        -       -         -           4         
+N_79_i             ORCALUT4     B        In      0.000     1.207       -         
+N_79_i             ORCALUT4     Z        Out     0.868     2.076       -         
+o2_22              Net          -        -       -         -           1         
+o2.Q               FD1S3AX      D        In      0.000     2.076       -         
+=================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Mapper successful!
+Process took 0h:0m:1s realtime, 0h:0m:1s cputime
+###########################################################]

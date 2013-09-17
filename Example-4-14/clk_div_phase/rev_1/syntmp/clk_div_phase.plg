@@ -1,0 +1,11 @@
+@P:  Worst Slack : -0.332
+@P:  clk_div_phase|clk_200M - Estimated Frequency : 452.4 MHz
+@P:  clk_div_phase|clk_200M - Requested Frequency : 532.3 MHz
+@P:  clk_div_phase|clk_200M - Estimated Period : 2.210
+@P:  clk_div_phase|clk_200M - Requested Period : 1.879
+@P:  clk_div_phase|clk_200M - Slack : -0.332
+@P: clk_div_phase Part : xc3s50tq144-4
+@P: clk_div_phase I/O primitives : 4
+@P: clk_div_phase I/O Register bits : 0
+@P: clk_div_phase Register bits (Non I/O) : 6 (0%)
+@P: clk_div_phase Total Luts : 5 (0%)

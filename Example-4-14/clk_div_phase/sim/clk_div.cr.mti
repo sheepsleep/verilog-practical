@@ -1,0 +1,8 @@
+C:/prj/Example-4-7/clk_div_phase/clk_div_phase.v {1 {vlog -work work C:/prj/Example-4-7/clk_div_phase/clk_div_phase.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module clk_div_phase
+
+Top level modules:
+	clk_div_phase
+
+} {} {}}

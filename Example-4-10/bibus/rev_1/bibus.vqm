@@ -1,0 +1,630 @@
+//
+// Written by Synplify
+// Synplify 8.1.0, Build 539R.
+// Mon Jan 02 21:12:02 2006
+//
+// Source file index table:
+// Object locations will have the form <file>:<line>
+// file 0 "noname"
+// file 1 "\c:\eda\synplicity\fpga_81\lib\altera\altera.v "
+// file 2 "\c:\eda\synplicity\fpga_81\lib\altera\cycloneii.v "
+// file 3 "\c:\eda\synplicity\fpga_81\lib\altera\altera_mf.v "
+// file 4 "\c:\eda\synplicity\fpga_81\lib\altera\altera_lpm.v "
+// file 5 "\c:\prj\example-5-1\bibus\decode.v "
+// file 6 "\c:\prj\example-5-1\bibus\bibus.v "
+
+// VQM4.1+ 
+module decode (
+  data_bus_c_7,
+  data_bus_c_6,
+  data_bus_c_5,
+  data_bus_c_4,
+  data_bus_c_3,
+  data_bus_c_2,
+  data_bus_c_1,
+  data_bus_c_0,
+  addr_c_7,
+  addr_c_6,
+  addr_c_2,
+  addr_c_3,
+  addr_c_5,
+  addr_c_4,
+  addr_c_1,
+  addr_c_0,
+  data_bus_out_0,
+  data_bus_out_1,
+  data_bus_out_2,
+  data_bus_out_3,
+  data_bus_out_4,
+  data_bus_out_5,
+  data_bus_out_6,
+  data_bus_out_7,
+  rst_c,
+  clk_c
+);
+input data_bus_c_7 ;
+input data_bus_c_6 ;
+input data_bus_c_5 ;
+input data_bus_c_4 ;
+input data_bus_c_3 ;
+input data_bus_c_2 ;
+input data_bus_c_1 ;
+input data_bus_c_0 ;
+input addr_c_7 ;
+input addr_c_6 ;
+input addr_c_2 ;
+input addr_c_3 ;
+input addr_c_5 ;
+input addr_c_4 ;
+input addr_c_1 ;
+input addr_c_0 ;
+output data_bus_out_0 ;
+output data_bus_out_1 ;
+output data_bus_out_2 ;
+output data_bus_out_3 ;
+output data_bus_out_4 ;
+output data_bus_out_5 ;
+output data_bus_out_6 ;
+output data_bus_out_7 ;
+input rst_c ;
+input clk_c ;
+wire data_bus_c_7 ;
+wire data_bus_c_6 ;
+wire data_bus_c_5 ;
+wire data_bus_c_4 ;
+wire data_bus_c_3 ;
+wire data_bus_c_2 ;
+wire data_bus_c_1 ;
+wire data_bus_c_0 ;
+wire addr_c_7 ;
+wire addr_c_6 ;
+wire addr_c_2 ;
+wire addr_c_3 ;
+wire addr_c_5 ;
+wire addr_c_4 ;
+wire addr_c_1 ;
+wire addr_c_0 ;
+wire data_bus_out_0 ;
+wire data_bus_out_1 ;
+wire data_bus_out_2 ;
+wire data_bus_out_3 ;
+wire data_bus_out_4 ;
+wire data_bus_out_5 ;
+wire data_bus_out_6 ;
+wire data_bus_out_7 ;
+wire rst_c ;
+wire clk_c ;
+wire [7:0] data_bus_out_7_Z;
+wire un1_data_bus_out20_1 ;
+wire data_bus_out19_a ;
+wire data_bus_out19 ;
+wire data_bus_out19_0_x ;
+wire un1_data_bus_out20_1_a_x ;
+wire un1_data_bus_out20_1_a_s ;
+wire GND ;
+wire VCC ;
+  assign VCC = 1'b1;
+  assign GND = 1'b0;
+// @5:11
+  cycloneii_lcell_ff data_bus_out_7__Z (
+	.regout(data_bus_out_7),
+	.datain(data_bus_out_7_Z[7]),
+	.clk(clk_c),
+	.aclr(rst_c)
+);
+// @5:11
+  cycloneii_lcell_ff data_bus_out_6__Z (
+	.regout(data_bus_out_6),
+	.datain(data_bus_out_7_Z[6]),
+	.clk(clk_c),
+	.aclr(rst_c)
+);
+// @5:11
+  cycloneii_lcell_ff data_bus_out_5__Z (
+	.regout(data_bus_out_5),
+	.datain(data_bus_out_7_Z[5]),
+	.clk(clk_c),
+	.aclr(rst_c)
+);
+// @5:11
+  cycloneii_lcell_ff data_bus_out_4__Z (
+	.regout(data_bus_out_4),
+	.datain(data_bus_out_7_Z[4]),
+	.clk(clk_c),
+	.aclr(rst_c)
+);
+// @5:11
+  cycloneii_lcell_ff data_bus_out_3__Z (
+	.regout(data_bus_out_3),
+	.datain(data_bus_out_7_Z[3]),
+	.clk(clk_c),
+	.aclr(rst_c)
+);
+// @5:11
+  cycloneii_lcell_ff data_bus_out_2__Z (
+	.regout(data_bus_out_2),
+	.datain(data_bus_out_7_Z[2]),
+	.clk(clk_c),
+	.aclr(rst_c)
+);
+// @5:11
+  cycloneii_lcell_ff data_bus_out_1__Z (
+	.regout(data_bus_out_1),
+	.datain(data_bus_out_7_Z[1]),
+	.clk(clk_c),
+	.aclr(rst_c)
+);
+// @5:11
+  cycloneii_lcell_ff data_bus_out_0__Z (
+	.regout(data_bus_out_0),
+	.datain(data_bus_out_7_Z[0]),
+	.clk(clk_c),
+	.aclr(rst_c)
+);
+// @5:15
+  cycloneii_lcell_comb data_bus_out_7_0_ (
+	.combout(data_bus_out_7_Z[0]),
+	.dataa(addr_c_0),
+	.datab(addr_c_1),
+	.datac(un1_data_bus_out20_1),
+	.datad(data_bus_c_0)
+);
+defparam data_bus_out_7_0_.lut_mask="f101";
+defparam data_bus_out_7_0_.sum_lutc_input="datac";
+// @5:15
+  cycloneii_lcell_comb data_bus_out_7_1_ (
+	.combout(data_bus_out_7_Z[1]),
+	.dataa(addr_c_0),
+	.datab(addr_c_1),
+	.datac(un1_data_bus_out20_1),
+	.datad(data_bus_c_1)
+);
+defparam data_bus_out_7_1_.lut_mask="f101";
+defparam data_bus_out_7_1_.sum_lutc_input="datac";
+// @5:15
+  cycloneii_lcell_comb data_bus_out_7_2_ (
+	.combout(data_bus_out_7_Z[2]),
+	.dataa(addr_c_0),
+	.datab(addr_c_1),
+	.datac(un1_data_bus_out20_1),
+	.datad(data_bus_c_2)
+);
+defparam data_bus_out_7_2_.lut_mask="f101";
+defparam data_bus_out_7_2_.sum_lutc_input="datac";
+// @5:15
+  cycloneii_lcell_comb data_bus_out_7_3_ (
+	.combout(data_bus_out_7_Z[3]),
+	.dataa(addr_c_0),
+	.datab(addr_c_1),
+	.datac(un1_data_bus_out20_1),
+	.datad(data_bus_c_3)
+);
+defparam data_bus_out_7_3_.lut_mask="f101";
+defparam data_bus_out_7_3_.sum_lutc_input="datac";
+// @5:15
+  cycloneii_lcell_comb data_bus_out_7_4_ (
+	.combout(data_bus_out_7_Z[4]),
+	.dataa(addr_c_4),
+	.datab(addr_c_5),
+	.datac(un1_data_bus_out20_1),
+	.datad(data_bus_c_4)
+);
+defparam data_bus_out_7_4_.lut_mask="f707";
+defparam data_bus_out_7_4_.sum_lutc_input="datac";
+// @5:15
+  cycloneii_lcell_comb data_bus_out_7_5_ (
+	.combout(data_bus_out_7_Z[5]),
+	.dataa(addr_c_4),
+	.datab(addr_c_5),
+	.datac(un1_data_bus_out20_1),
+	.datad(data_bus_c_5)
+);
+defparam data_bus_out_7_5_.lut_mask="f707";
+defparam data_bus_out_7_5_.sum_lutc_input="datac";
+// @5:15
+  cycloneii_lcell_comb data_bus_out_7_6_ (
+	.combout(data_bus_out_7_Z[6]),
+	.dataa(addr_c_4),
+	.datab(addr_c_5),
+	.datac(un1_data_bus_out20_1),
+	.datad(data_bus_c_6)
+);
+defparam data_bus_out_7_6_.lut_mask="f707";
+defparam data_bus_out_7_6_.sum_lutc_input="datac";
+// @5:15
+  cycloneii_lcell_comb data_bus_out_7_7_ (
+	.combout(data_bus_out_7_Z[7]),
+	.dataa(addr_c_4),
+	.datab(addr_c_5),
+	.datac(un1_data_bus_out20_1),
+	.datad(data_bus_c_7)
+);
+defparam data_bus_out_7_7_.lut_mask="f707";
+defparam data_bus_out_7_7_.sum_lutc_input="datac";
+// @5:15
+  cycloneii_lcell_comb data_bus_out19_a_cZ (
+	.combout(data_bus_out19_a),
+	.dataa(addr_c_5),
+	.datab(addr_c_4),
+	.datac(addr_c_3),
+	.datad(addr_c_2)
+);
+defparam data_bus_out19_a_cZ.lut_mask="1000";
+defparam data_bus_out19_a_cZ.sum_lutc_input="datac";
+// @5:15
+  cycloneii_lcell_comb data_bus_out19_cZ (
+	.combout(data_bus_out19),
+	.dataa(addr_c_0),
+	.datab(addr_c_1),
+	.datac(data_bus_out19_0_x),
+	.datad(data_bus_out19_a)
+);
+defparam data_bus_out19_cZ.lut_mask="8000";
+defparam data_bus_out19_cZ.sum_lutc_input="datac";
+// @5:11
+  cycloneii_lcell_comb un1_data_bus_out20_1_cZ (
+	.combout(un1_data_bus_out20_1),
+	.dataa(addr_c_6),
+	.datab(addr_c_4),
+	.datac(un1_data_bus_out20_1_a_x),
+	.datad(data_bus_out19)
+);
+defparam un1_data_bus_out20_1_cZ.lut_mask="00f6";
+defparam un1_data_bus_out20_1_cZ.sum_lutc_input="datac";
+// @5:15
+  cycloneii_lcell_comb data_bus_out19_0_x_cZ (
+	.combout(data_bus_out19_0_x),
+	.dataa(VCC),
+	.datab(VCC),
+	.datac(addr_c_7),
+	.datad(addr_c_6)
+);
+defparam data_bus_out19_0_x_cZ.lut_mask="000f";
+defparam data_bus_out19_0_x_cZ.sum_lutc_input="datac";
+// @5:11
+  cycloneii_lcell_comb un1_data_bus_out20_1_a_s_cZ (
+	.combout(un1_data_bus_out20_1_a_s),
+	.dataa(addr_c_3),
+	.datab(addr_c_2),
+	.datac(addr_c_1),
+	.datad(addr_c_0)
+);
+defparam un1_data_bus_out20_1_a_s_cZ.lut_mask="fffe";
+defparam un1_data_bus_out20_1_a_s_cZ.sum_lutc_input="datac";
+// @5:11
+  cycloneii_lcell_comb un1_data_bus_out20_1_a_x_cZ (
+	.combout(un1_data_bus_out20_1_a_x),
+	.dataa(VCC),
+	.datab(addr_c_7),
+	.datac(addr_c_5),
+	.datad(un1_data_bus_out20_1_a_s)
+);
+defparam un1_data_bus_out20_1_a_x_cZ.lut_mask="ff3f";
+defparam un1_data_bus_out20_1_a_x_cZ.sum_lutc_input="datac";
+endmodule /* decode */
+
+// VQM4.1+ 
+module bibus (
+  clk,
+  rst,
+  sel,
+  data_bus,
+  addr
+);
+input clk ;
+input rst ;
+input sel ;
+inout [7:0] data_bus /* synthesis syn_tristate = 1 */;
+input [7:0] addr ;
+wire clk ;
+wire rst ;
+wire sel ;
+wire [7:0] addr_c;
+wire [7:0] data_bus_c;
+wire [7:0] decode_inst_data_bus_out;
+wire VCC ;
+wire GND ;
+wire sel_c ;
+wire rst_c ;
+wire clk_c ;
+//@1:1
+  assign VCC = 1'b1;
+//@1:1
+  assign GND = 1'b0;
+// @6:3
+  cycloneii_io addr_in_7_ (
+	.padio(addr[7]),
+	.combout(addr_c[7]),
+	.datain(GND),
+	.oe(GND),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam addr_in_7_.operation_mode = "input";
+// @6:3
+  cycloneii_io addr_in_6_ (
+	.padio(addr[6]),
+	.combout(addr_c[6]),
+	.datain(GND),
+	.oe(GND),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam addr_in_6_.operation_mode = "input";
+// @6:3
+  cycloneii_io addr_in_5_ (
+	.padio(addr[5]),
+	.combout(addr_c[5]),
+	.datain(GND),
+	.oe(GND),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam addr_in_5_.operation_mode = "input";
+// @6:3
+  cycloneii_io addr_in_4_ (
+	.padio(addr[4]),
+	.combout(addr_c[4]),
+	.datain(GND),
+	.oe(GND),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam addr_in_4_.operation_mode = "input";
+// @6:3
+  cycloneii_io addr_in_3_ (
+	.padio(addr[3]),
+	.combout(addr_c[3]),
+	.datain(GND),
+	.oe(GND),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam addr_in_3_.operation_mode = "input";
+// @6:3
+  cycloneii_io addr_in_2_ (
+	.padio(addr[2]),
+	.combout(addr_c[2]),
+	.datain(GND),
+	.oe(GND),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam addr_in_2_.operation_mode = "input";
+// @6:3
+  cycloneii_io addr_in_1_ (
+	.padio(addr[1]),
+	.combout(addr_c[1]),
+	.datain(GND),
+	.oe(GND),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam addr_in_1_.operation_mode = "input";
+// @6:3
+  cycloneii_io addr_in_0_ (
+	.padio(addr[0]),
+	.combout(addr_c[0]),
+	.datain(GND),
+	.oe(GND),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam addr_in_0_.operation_mode = "input";
+// @6:2
+  cycloneii_io sel_in (
+	.padio(sel),
+	.combout(sel_c),
+	.datain(GND),
+	.oe(GND),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam sel_in.operation_mode = "input";
+// @6:2
+  cycloneii_io rst_in (
+	.padio(rst),
+	.combout(rst_c),
+	.datain(GND),
+	.oe(GND),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam rst_in.operation_mode = "input";
+// @6:2
+  cycloneii_io clk_in (
+	.padio(clk),
+	.combout(clk_c),
+	.datain(GND),
+	.oe(GND),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam clk_in.operation_mode = "input";
+// @6:4
+  cycloneii_io data_bus_tri_7_ (
+	.padio(data_bus[7]),
+	.combout(data_bus_c[7]),
+	.datain(decode_inst_data_bus_out[7]),
+	.oe(sel_c),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam data_bus_tri_7_.operation_mode = "bidir";
+// @6:4
+  cycloneii_io data_bus_tri_6_ (
+	.padio(data_bus[6]),
+	.combout(data_bus_c[6]),
+	.datain(decode_inst_data_bus_out[6]),
+	.oe(sel_c),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam data_bus_tri_6_.operation_mode = "bidir";
+// @6:4
+  cycloneii_io data_bus_tri_5_ (
+	.padio(data_bus[5]),
+	.combout(data_bus_c[5]),
+	.datain(decode_inst_data_bus_out[5]),
+	.oe(sel_c),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam data_bus_tri_5_.operation_mode = "bidir";
+// @6:4
+  cycloneii_io data_bus_tri_4_ (
+	.padio(data_bus[4]),
+	.combout(data_bus_c[4]),
+	.datain(decode_inst_data_bus_out[4]),
+	.oe(sel_c),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam data_bus_tri_4_.operation_mode = "bidir";
+// @6:4
+  cycloneii_io data_bus_tri_3_ (
+	.padio(data_bus[3]),
+	.combout(data_bus_c[3]),
+	.datain(decode_inst_data_bus_out[3]),
+	.oe(sel_c),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam data_bus_tri_3_.operation_mode = "bidir";
+// @6:4
+  cycloneii_io data_bus_tri_2_ (
+	.padio(data_bus[2]),
+	.combout(data_bus_c[2]),
+	.datain(decode_inst_data_bus_out[2]),
+	.oe(sel_c),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam data_bus_tri_2_.operation_mode = "bidir";
+// @6:4
+  cycloneii_io data_bus_tri_1_ (
+	.padio(data_bus[1]),
+	.combout(data_bus_c[1]),
+	.datain(decode_inst_data_bus_out[1]),
+	.oe(sel_c),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam data_bus_tri_1_.operation_mode = "bidir";
+// @6:4
+  cycloneii_io data_bus_tri_0_ (
+	.padio(data_bus[0]),
+	.combout(data_bus_c[0]),
+	.datain(decode_inst_data_bus_out[0]),
+	.oe(sel_c),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam data_bus_tri_0_.operation_mode = "bidir";
+// @6:10
+  decode decode_inst (
+	.data_bus_c_7(data_bus_c[7]),
+	.data_bus_c_6(data_bus_c[6]),
+	.data_bus_c_5(data_bus_c[5]),
+	.data_bus_c_4(data_bus_c[4]),
+	.data_bus_c_3(data_bus_c[3]),
+	.data_bus_c_2(data_bus_c[2]),
+	.data_bus_c_1(data_bus_c[1]),
+	.data_bus_c_0(data_bus_c[0]),
+	.addr_c_7(addr_c[7]),
+	.addr_c_6(addr_c[6]),
+	.addr_c_2(addr_c[2]),
+	.addr_c_3(addr_c[3]),
+	.addr_c_5(addr_c[5]),
+	.addr_c_4(addr_c[4]),
+	.addr_c_1(addr_c[1]),
+	.addr_c_0(addr_c[0]),
+	.data_bus_out_0(decode_inst_data_bus_out[0]),
+	.data_bus_out_1(decode_inst_data_bus_out[1]),
+	.data_bus_out_2(decode_inst_data_bus_out[2]),
+	.data_bus_out_3(decode_inst_data_bus_out[3]),
+	.data_bus_out_4(decode_inst_data_bus_out[4]),
+	.data_bus_out_5(decode_inst_data_bus_out[5]),
+	.data_bus_out_6(decode_inst_data_bus_out[6]),
+	.data_bus_out_7(decode_inst_data_bus_out[7]),
+	.rst_c(rst_c),
+	.clk_c(clk_c)
+);
+endmodule /* bibus */
+

@@ -1,0 +1,7 @@
+
+BeginView mux NoName
+Inst: mux_out_3_0_c   mux_out_3_0_c_cZ cycloneii_lcell_comb 
+Inst: mux_out_3_0   mux_out_3_0_cZ cycloneii_lcell_comb 
+Inst: en_in[1]   en_in_1_ stratix_io 
+Inst: en_in[0]   en_in_0_ stratix_io 
+EndView mux NoName

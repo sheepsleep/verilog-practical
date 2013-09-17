@@ -1,0 +1,298 @@
+#Program: Synplify Pro 8.1
+#OS: Windows_NT
+
+$ Start of Compile
+#Fri Dec 16 18:27:34 2005
+
+Synplicity Verilog Compiler, version 3.1.0, Build 049R, built May  3 2005
+Copyright (C) 1994-2005, Synplicity Inc.  All Rights Reserved
+
+@I::"C:\eda\synplicity\fpga_81\lib\altera\altera.v"
+@I::"C:\eda\synplicity\fpga_81\lib\altera\stratix.v"
+@I::"C:\eda\synplicity\fpga_81\lib\altera\altera_mf.v"
+@I::"C:\eda\synplicity\fpga_81\lib\altera\altera_lpm.v"
+@I::"C:\prj\Example-6-1\FSM\state2\state2.v"
+Verilog syntax check successful!
+Selecting top level module state2
+@N:"C:\prj\Example-6-1\FSM\state2\state2.v":7:7:7:12|Synthesizing module state2
+
+@N: CL201 :"C:\prj\Example-6-1\FSM\state2\state2.v":28:0:28:5|Trying to extract state machine for register CS
+Extracted state machine for register CS
+State machine has 4 reachable states with original encodings of:
+   000
+   001
+   010
+   100
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Dec 16 18:27:34 2005
+
+###########################################################[
+Version 8.1
+Synplicity Altera Technology Mapper, Version 8.1.0, Build 539R, Built May  6 2005
+Copyright (C) 1994-2005, Synplicity Inc.  All Rights Reserved
+
+
+
+Running FSM Explorer ...
+
+
+FSM Explorer Results
+====================
+FSM (parent lib.cell.view | instance)     Selected encoding style
+-----------------------------------------------------------------
+{work.state2.verilog|i:CS[3:0]}           sequential             
+=================================================================
+
+FSM Explorer successful!
+Process took 0h:0m:2s realtime, 0h:0m:2s cputime
+###########################################################]
+###########################################################[
+Version 8.1
+Synplicity Altera Technology Mapper, Version 8.1.0, Build 539R, Built May  6 2005
+Copyright (C) 1994-2005, Synplicity Inc.  All Rights Reserved
+Reading constraint file: C:\prj\Example-6-1\FSM\state2\rev_1\state2_fsm.sdc
+@N|Using encoding styles selected by FSM Explorer.
+Data created on Fri Dec 16 18:27:37 2005
+Adding property syn_encoding in cell state2, value "sequential", to instance CS[3:0]
+
+
+@N: MT204 |Autoconstrain Mode is ON
+RTL optimization done.
+Encoding state machine work.state2(verilog)-CS[3:0]
+original code -> new code
+   000 -> 00
+   001 -> 01
+   010 -> 10
+   100 -> 11
+
+Writing Analyst data base C:\prj\Example-6-1\FSM\state2\rev_1\state2.srm
+Writing Verilog Netlist and constraint files
+Writing .vqm output for Quartus
+Writing Cross reference file for Quartus to C:\prj\Example-6-1\FSM\state2\rev_1\state2.xrf
+Found clock state2|clk with period 1.00ns 
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Fri Dec 16 18:27:37 2005
+#
+
+
+Top view:               state2
+Requested Frequency:    1000.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    C:\prj\Example-6-1\FSM\state2\rev_1\state2_fsm.sdc
+                       
+@N: MT195 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT197 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -0.060
+
+                   Requested      Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock     Frequency      Frequency     Period        Period        Slack      Type         Group                
+-------------------------------------------------------------------------------------------------------------------------
+state2|clk         1000.0 MHz     943.4 MHz     1.000         1.060         -0.060     inferred     Autoconstr_clkgroup_0
+=========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                  |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------------
+Starting    Ending      |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------------
+state2|clk  state2|clk  |  1.000       -0.060  |  No paths    -      |  No paths    -      |  No paths    -    
+===============================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+
+====================================
+Detailed Report for Clock: state2|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+             Starting                                                 Arrival           
+Instance     Reference      Type                 Pin        Net       Time        Slack 
+             Clock                                                                      
+----------------------------------------------------------------------------------------
+CS[0]        state2|clk     stratix_lcell_ff     regout     CS[0]     0.156       -0.060
+CS[1]        state2|clk     stratix_lcell_ff     regout     CS[1]     0.156       -0.060
+========================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+             Starting                                                Required           
+Instance     Reference      Type                 Pin       Net       Time         Slack 
+             Clock                                                                      
+----------------------------------------------------------------------------------------
+CS[0]        state2|clk     stratix_lcell_ff     datac     CS[0]     0.990        -0.060
+CS[0]        state2|clk     stratix_lcell_ff     datad     CS[1]     0.990        -0.060
+CS[1]        state2|clk     stratix_lcell_ff     datac     CS[0]     0.990        -0.060
+CS[1]        state2|clk     stratix_lcell_ff     datad     CS[1]     0.990        -0.060
+========================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Requested Period:                        1.000
+    - Setup time:                            0.010
+    = Required time:                         0.990
+
+    - Propagation time:                      1.050
+    = Slack (critical) :                     -0.060
+
+    Number of logic level(s):                0
+    Starting point:                          CS[0] / regout
+    Ending point:                            CS[0] / datac
+    The start point is clocked by            state2|clk [rising] on pin clk
+    The end   point is clocked by            state2|clk [rising] on pin clk
+
+Instance / Net                          Pin        Pin               Arrival     No. of    
+Name               Type                 Name       Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+CS[0]              stratix_lcell_ff     regout     Out     0.156     0.156       -         
+CS[0]              Net                  -          -       0.894     -           4         
+CS[0]              stratix_lcell_ff     datac      In      -         1.050       -         
+===========================================================================================
+Total path delay (propagation time + setup) of 1.060 is 0.166(15.7%) logic and 0.894(84.3%) route.
+
+
+Path information for path number 2: 
+    Requested Period:                        1.000
+    - Setup time:                            0.010
+    = Required time:                         0.990
+
+    - Propagation time:                      1.050
+    = Slack (critical) :                     -0.060
+
+    Number of logic level(s):                0
+    Starting point:                          CS[1] / regout
+    Ending point:                            CS[0] / datad
+    The start point is clocked by            state2|clk [rising] on pin clk
+    The end   point is clocked by            state2|clk [rising] on pin clk
+
+Instance / Net                          Pin        Pin               Arrival     No. of    
+Name               Type                 Name       Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+CS[1]              stratix_lcell_ff     regout     Out     0.156     0.156       -         
+CS[1]              Net                  -          -       0.894     -           4         
+CS[0]              stratix_lcell_ff     datad      In      -         1.050       -         
+===========================================================================================
+Total path delay (propagation time + setup) of 1.060 is 0.166(15.7%) logic and 0.894(84.3%) route.
+
+
+Path information for path number 3: 
+    Requested Period:                        1.000
+    - Setup time:                            0.010
+    = Required time:                         0.990
+
+    - Propagation time:                      1.050
+    = Slack (critical) :                     -0.060
+
+    Number of logic level(s):                0
+    Starting point:                          CS[0] / regout
+    Ending point:                            CS[1] / datac
+    The start point is clocked by            state2|clk [rising] on pin clk
+    The end   point is clocked by            state2|clk [rising] on pin clk
+
+Instance / Net                          Pin        Pin               Arrival     No. of    
+Name               Type                 Name       Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+CS[0]              stratix_lcell_ff     regout     Out     0.156     0.156       -         
+CS[0]              Net                  -          -       0.894     -           4         
+CS[1]              stratix_lcell_ff     datac      In      -         1.050       -         
+===========================================================================================
+Total path delay (propagation time + setup) of 1.060 is 0.166(15.7%) logic and 0.894(84.3%) route.
+
+
+Path information for path number 4: 
+    Requested Period:                        1.000
+    - Setup time:                            0.010
+    = Required time:                         0.990
+
+    - Propagation time:                      1.050
+    = Slack (critical) :                     -0.060
+
+    Number of logic level(s):                0
+    Starting point:                          CS[1] / regout
+    Ending point:                            CS[1] / datad
+    The start point is clocked by            state2|clk [rising] on pin clk
+    The end   point is clocked by            state2|clk [rising] on pin clk
+
+Instance / Net                          Pin        Pin               Arrival     No. of    
+Name               Type                 Name       Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+CS[1]              stratix_lcell_ff     regout     Out     0.156     0.156       -         
+CS[1]              Net                  -          -       0.894     -           4         
+CS[1]              stratix_lcell_ff     datad      In      -         1.050       -         
+===========================================================================================
+Total path delay (propagation time + setup) of 1.060 is 0.166(15.7%) logic and 0.894(84.3%) route.
+
+
+
+##### END OF TIMING REPORT #####]
+
+##### START OF AREA REPORT #####[
+Design view:work.state2(verilog)
+Selecting part EP1S10F780C5
+@N: FA174 |The following device usage report estimates place and route data. Please look at the place and route report for final resource usage..
+
+I/O ATOMs:       7
+
+Total LUTs:  5 of 10570 ( 0%)
+Logic resources:  5 ATOMs of 10570 ( 0%)
+ATOM count by mode:
+  normal:       5
+  arithmetic:   0
+
+DSP Blocks:     0  (0 nine-bit DSP elements).
+DSP Utilization: 0.00% of available 6 blocks (48 nine-bit).
+ShiftTap:       0  (0 registers)
+MRAM:           0  (0% of 1)
+M4Ks:           0  (0% of 60)
+M512s:          0  (0% of 94)
+Total ESB:      0 bits 
+
+ATOMs using regout pin: 2
+  also using enable pin: 0
+  also using combout pin: 0
+ATOMs using combout pin: 3
+Number of Inputs on ATOMs: 19
+Number of Nets:   22
+
+##### END OF AREA REPORT #####]
+
+Mapper successful!
+Process took 0h:0m:0s realtime, 0h:0m:0s cputime
+###########################################################]

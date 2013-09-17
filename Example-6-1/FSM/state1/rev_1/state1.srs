@@ -1,0 +1,123 @@
+#
+#
+#
+# Created by Synplify Verilog HDL Compiler version 3.1.0, Build 049R from Synplicity, Inc.
+# Copyright 1994-2004 Synplicity, Inc. , All rights reserved.
+# Synthesis Netlist written on Fri Dec 16 15:01:09 2005
+#
+#
+#OPTIONS:"|-fixsmult|-I|C:\\prj\\FSM_abc\\state1\\|-I|C:\\eda\\synplicity\\fpga_81\\lib|-v2001|-devicelib|C:\\eda\\synplicity\\fpga_81\\lib\\lucent\\ec.v|-autosm|-fid2|-sharing|off|-encrypt|-ui|-pro|-ram|-ll|2000"
+#CUR:"C:\\eda\\synplicity\\fpga_81\\bin\\c_ver.exe":1115125636
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\lucent\\ec.v":1110443424
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\lucent\\ec.v":1110443424
+#CUR:"C:\\prj\\FSM_abc\\state1\\state1.v":1134716328
+#CUR:"C:\\prj\\FSM_abc\\state1\\state1.v":1134716328
+f "C:\eda\synplicity\fpga_81\lib\lucent\ec.v"; # file 0
+af .is_verilog 1;
+f "C:\prj\FSM_abc\state1\state1.v"; # file 1
+af .is_verilog 1;
+@E
+@ 
+ftell;
+@E@MR@n4::n(::R4.I	FsRN#00RC4PHCsD;Fo
+RNP3PH#CDsHF4oR;P
+NR#3H_sPCHoDFR
+4;N3PRFosHhCNlR0"#N40C"N;
+P7RQpj R;P
+NRR144N;
+P.R1R
+.;N PR)))mR
+c;
+@HR@44:.6:4::4.4MURsR#0M0s#;
+
+
+
+@HR@44:.j:.::4..O.RDO	RD
+	;
+@HR@44:d6:4::4d4HnR44RH;
+
+
+
+@HR@44:dU:4::4d4HgR..RH;
+
+
+
+@FR@44:c6:4::4c4FnR44RF;
+
+
+
+@FR@44:cU:4::4c4FgR..RF;
+
+
+
+@FR@44:c4:.::4c.CdRsCsRs
+s;b@R@4.:4::4644.:UMRHPMRk4s_M#k0RMM4_sR#0M0s#;R
+b@:@444d:6d:4:R4nHRMPk_M4Hk4RMH4_44RH;R
+b@:@444d:Ud:4:R4gHRMPk_M4Hk.RMH4_..RH;R
+b@:@j4::44R:.0CskRk0sCsR0k
+C;b@R@j::44::4.NRVDR#CV#NDCNRVD;#C
+@#R@.4:(::j.6(:Rrh1d9:jR#yR0CN0ROlNECHM
+03#N#0CRjjjR4jjRjj4Rj4j
+03#N_0CHFMVR4@@::dUUU:d:R44jRjjQ 7p
+03#N_0CHFMVR4@@::cdUd:c:jgRj14R4#
+30CN0_VHMF@R@4U:c:cU:UR:gjR4j13.
+#00NCM_HV@FR@64:d::U64d:.jR4j)R )
+m)3bHMkN0MlRC#HH.R4O
+3D	FOR	ODR#sHH_MoCC8o
+#3N$_MOsCC#0MRk4s_M#s0RHM#HojRjj4
+-Rj4jRj4jRj
+jRjj4Rj4jRj
+4R4jjRj4jR4
+jRjjjRj4jR-
+4Rjj4Rjj4R4
+4R4jjRjj4R-
+jR4jjR4jjR4
+4RjjjR4jjRj
+-Rj4jRjjjR4
+jRjj4RjjjRj
+-RjjjRjjjRR
+;yMRC8VRFRN#00lCRNHOEMNC
+H$R#M#_Vl8_HR."4((j.4
+";N3HRs_0DFosHMCNlR1"h"b;
+R4@@::dg.d.:gc:.R8NMP1Rh_#4_JGlkN1Rh_#4_JGlkN1RhrRd9H
+4;b@R@4j:c::.4c.j:gMRN8hPR1R..h.1.RRH4H
+.;b@R@44:6::..6d4:dMRN8FPR.__.#kJlGFNR.__.#kJlGhNR19r.R;H.
+@bR@d4:g.:.::dg.NcRMR8Phj1__l#JkRGNhj1__l#JkRGNhd1r9MRk44_H;R
+b@:@4c.4:44:c:RdjNPM8Rdh141RhdH4R4MRk4._H;R
+b@:@4c.4:44:c:RdjNPM8R_h1.J_#lNkGR_h1.J_#lNkGRrh1jk9RMH4_4b;
+R4@@::cn.c4:n.:dR8NMP1Rh6h(R1R6(Hk.RMH4_4b;
+R4@@::cn.c4:n.:dR8NMP4RF_#._JGlkN4RF_#._JGlkN1RhrR49k_M4H
+.;b@R@44:6::..6d4:dMRN8hPR1RU4h41UR4kM_RH4k_M4H
+.;b@R@44:c::.4cd4:jMRHPMRk41_hdk4RMh4_1Rd4h41d;R
+b@:@4c.n:4n:c:Rd.HRMPk_M4h(16R4kM_6h1(1Rh6
+(;b@R@44:c::.4cd4:jMRN8hPR1__4#kJlG4N_R_h14J_#lNkG_h4R19rjR.h1.b;
+R4@@::cn.c4:n.:dR8NMP4RF_#4_JGlkN4RF_#4_JGlkN1RhrR49h.1.;R
+b@:@4c.4:44:c:RdjNPM8R_h1jJ_#lNkG_h4R1__j#kJlG4N_Rrh1jh9R1;d4
+@bR@c4:n4:.::cndN.RMR8PFj4__l#JkRGNFj4__l#JkRGNh41r91Rh6
+(;b@R@44:6::..6d4:dMRN8FPR.__j#kJlGFNR.__j#kJlGhNR19r.RUh14b;
+R4@@::64.6.:4d:dR8NMP.RF_#4_JGlkN.RF_#4_JGlkN1RhrR.9h41d;R
+b@:@4c.4:44:c:RdjNPM8R_F44J_#lNkG_F4R4__4#kJlG4N_Rrh1jk9RMh4_1;d4
+@bR@c4:n4:.::cndN.RMR8PC_ss4J_#lNkGRsCs_#4_JGlkN1RhrR49k_M4h(16;R
+b@:@4dn(:::d(gsRFPMRk44_F_#j_JGlkNMRk44_F_#j_JGlkN4RF_#j_JGlkN.RF_#j_JGlkNR
+RR.RF_#._JGlkNb;
+R4@@::d(n(:d:FgRskPRMF4_4__j#kJlG4N_R4kM__F4jJ_#lNkG_F4R4__j#kJlGFNR4__.#kJlGRN
+RhRR1__j#kJlG4N_;R
+b@:@4dn(:::d(glRbkhGR1n_.rR.9h.1_n9r.Rk0sC1,h_#j_JGlkNR_4V#NDC1,h_#4_JGlkN
+_4RRRRV#NDC1,h_#._JGlkNsR0kFC,4__j#kJlGVNRNCD#,_F44J_#lNkGRDVN#FC,4__.#kJlGRN
+R0RRs,kCFj.__l#JkRGNV#NDC.,F_#4_JGlkNNRVD,#CF..__l#JkRGNV#NDC1,h_#j_JGlkNR
+RRsR0khC,1__4#kJlG
+N;b@R@4(:.:.j:(R:68sVVRsCsRsCsR_h1..nr9DRO	MRk4s_M#
+0;N3HR#_$MbOsFMCNlRs"bFhO_1
+";N3HRs_0DFosHMCNlRs"Cs
+";b@R@4(:d:dn:(R:gbGlkR_F4.FdR4d_.Rk0sCM,k44_F_#j_JGlkNR_4h.1.,_F44J_#lNkG_V4RNCD#,_F44J_#lNkG
+RRRRUh141,hrR.9Hh4,19rd;R
+b@:@4dn(:::d(glRbkFGR.._.R_F..h.R1,d4hj1r9sR0kkC,MF4_4__j#kJlGhNR1,..C_ss4J_#lNkG
+RRRRDVN#FC,.__4#kJlGHNR41,hr;d9
+@bR@.4:(::j.6(:RV8Vs4RFRRF4F.4_dDRO	MRk4s_M#
+0;N3HR#_$MbOsFMCNlRs"bFhO_1
+";N3HRs_0DFosHMCNlR4"F"b;
+R4@@::.(j(:.:86RVRVsFF.R..RF_R..ORD	k_M4M0s#;H
+NR$3#Ms_bFNOMl"CRbOsF_"h1;H
+NR03sDs_FHNoMl"CRF;."
+
+C;

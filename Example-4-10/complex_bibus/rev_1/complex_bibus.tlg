@@ -1,0 +1,7 @@
+Selecting top level module complex_bibus
+@N:"C:\prj\Example-5-1\complex_bibus\decode.v":1:7:1:12|Synthesizing module decode
+
+@N:"C:\prj\Example-5-1\complex_bibus\counter.v":2:7:2:13|Synthesizing module counter
+
+@N:"C:\prj\Example-5-1\complex_bibus\complex_bibus.v":1:7:1:19|Synthesizing module complex_bibus
+

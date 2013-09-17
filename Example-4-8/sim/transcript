@@ -1,0 +1,18 @@
+# Compile of decode_cmb.v was successful.
+# Compile of decode_cmb_tb.v was successful.
+# Compile of decode_cmb2.v was successful.
+# 3 compiles, 0 failed with no errors. 
+vsim work.decode_cmb_tb
+# vsim work.decode_cmb_tb 
+# Loading work.decode_cmb_tb
+# Loading work.decode_cmb
+# ** Warning: (vsim-3009) [TSCALE] - Module 'decode_cmb' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /decode_cmb_tb/decode_cmb_inst
+# Loading work.decode_cmb2
+# ** Warning: (vsim-3009) [TSCALE] - Module 'decode_cmb2' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /decode_cmb_tb/decode_cmb2_inst
+view *
+# .source .process .signals .variables .dataflow .list .wave .memory
+run -all
+# Break at C:/prj/Example-4-3/sim/decode_cmb_tb.v line 27
+run 100 ns

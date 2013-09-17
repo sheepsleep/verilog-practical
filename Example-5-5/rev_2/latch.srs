@@ -1,0 +1,39 @@
+#
+#
+#
+# Created by Synplify Verilog HDL Compiler version 3.1.0, Build 049R from Synplicity, Inc.
+# Copyright 1994-2004 Synplicity, Inc. , All rights reserved.
+# Synthesis Netlist written on Mon Jan 02 22:48:40 2006
+#
+#
+#OPTIONS:"|-primux|-fixsmult|-sdff_counter|-infer_seqShift|-nram|-divnmod|-I|C:\\prj\\Example-5-2\\|-I|C:\\eda\\synplicity\\fpga_81\\lib|-v2001|-devicelib|C:\\eda\\synplicity\\fpga_81\\lib\\xilinx\\unisim.v|-sm|-fid2|-sharing|off|-encrypt|-ui|-pro|-ram|-ll|2000"
+#CUR:"C:\\eda\\synplicity\\fpga_81\\bin\\c_ver.exe":1115125636
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\xilinx\\unisim.v":1113287638
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\xilinx\\unisim.v":1113287638
+#CUR:"C:\\prj\\Example-5-2\\latch.v":1136213317
+#CUR:"C:\\prj\\Example-5-2\\latch.v":1136213317
+f "C:\eda\synplicity\fpga_81\lib\xilinx\unisim.v"; # file 0
+af .is_verilog 1;
+f "C:\prj\Example-5-2\latch.v"; # file 1
+af .is_verilog 1;
+@E
+@ 
+ftell;
+@E@MR@44::4(::R44I	FsR0DNOPERCDsHF
+o;N3PRHC#PsFHDo;R4
+RNP3_H#PHCsDRFo4N;
+PFR3shHoNRlC"0DNO;E"
+@HR@d4::dn::R44O8FM_O4RF_M84
+;
+
+@HR@c4::cn::R4.8NN0_RHM8NN0_;HM
+@FR@64::6(::R4c8NN0_0FkR08NNk_F0b;
+Rj@@:44::.4:Rk0sCsR0k0CRs;kC
+@bR@4j::44::V.RNCD#RDVN#VCRNCD#;R
+b@:@44c4:::446NRD0NR80FN_k80RN_0NFRk08NN0_RHMO8FM_
+4;N3HR#_$MbOsFMCNlRs"bF8O_N_0NF"k0;H
+NR03sDs_FHNoMl"CR8NN0_0Fk"C;
+;
+
+
+

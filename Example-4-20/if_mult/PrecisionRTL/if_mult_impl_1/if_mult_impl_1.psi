@@ -1,0 +1,204 @@
+#
+#
+# Precision RTL Synthesis 2005a.56OEM_Lattice (Production Release) Tue May 24 01:00:50 PDT 2005
+# 
+# Copyright (c) Mentor Graphics Corporation, 1996-2005, All Rights Reserved.
+#            Portions copyright 1991-2004 Compuware Corporation
+#                      UNPUBLISHED, LICENSED SOFTWARE.
+#           CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+#         PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# 
+# Running on Windows 2000 Administrator@LATTICE-WESTOR Service Pack 4 5.00.2195 i686
+# 
+#                                  NOTICE
+#
+# This source code belongs to Mentor Graphics Corporation.  It is considered
+# trade secret and is not to be divulged or used by parties who have not
+# received written authorization from the owner.
+#
+#
+# Date : Mon Jan 16 09:36:32 2006
+# Designer : Administrator
+#
+#<IMPLFILE format='0'>
+error "Error: This file can only be used with Precision version 2003c or later." "load_project failed" E_NEW_PROJECT
+#</IMPLFILE>
+#<OBJ name='impl' version='0'>
+#  <OBJ name='results' version='0'>
+#    <OBJ name='analysis' version='0'>
+#      <PROP key='clock_freqs' type='VT_BOOL' value='true' />
+#      <PROP key='domain_crossings' type='VT_BOOL' value='false' />
+#      <PROP key='missing_constraints' type='VT_BOOL' value='false' />
+#      <PROP key='net_fanout' type='VT_BOOL' value='true' />
+#      <PROP key='num_critical_paths' type='VT_INT' value='1' />
+#      <PROP key='num_summary' type='VT_INT' value='10' />
+#      <PROP key='summary' type='VT_BOOL' value='true' />
+#      <PROP key='timing_violations' type='VT_BOOL' value='true' />
+#    </OBJ>
+#    <OBJ name='dependency' version='0'>
+#    </OBJ>
+#    <OBJ name='include' version='0'>
+#    </OBJ>
+#    <OBJ name='input' version='0'>
+#      <PROP key='inputdir' type='VT_STRING' value='C:/prj/Example-4-10/if_mult/PrecisionRTL/' />
+#      <OBJ name='file' version='0'>
+#        <PROP key='compile_time' type='VT_INT' value='1137375695' />
+#        <PROP key='format' type='VT_STRING' value='Verilog' />
+#        <PROP key='path' type='VT_STRING' value='../mult_if.v' />
+#        <PROP key='work' type='VT_STRING' value='work' />
+#      </OBJ>
+#      <OBJ name='file' version='0'>
+#        <PROP key='compile_time' type='VT_INT' value='1137375695' />
+#        <PROP key='format' type='VT_STRING' value='Synopsys Design Constraints' />
+#        <PROP key='is_rtl' type='VT_BOOL' value='true' />
+#        <PROP key='path' type='VT_STRING' value='precision_rtl.sdc' />
+#        <PROP key='precision_constraint_file' type='VT_BOOL' value='true' />
+#        <PROP key='work' type='VT_STRING' value='work' />
+#      </OBJ>
+#      <OBJ name='file' version='0'>
+#        <PROP key='compile_time' type='VT_INT' value='1137375695' />
+#        <PROP key='format' type='VT_STRING' value='Synopsys Design Constraints' />
+#        <PROP key='is_rtl' type='VT_BOOL' value='false' />
+#        <PROP key='path' type='VT_STRING' value='precision_tech.sdc' />
+#        <PROP key='precision_constraint_file' type='VT_BOOL' value='true' />
+#        <PROP key='work' type='VT_STRING' value='work' />
+#      </OBJ>
+#    </OBJ>
+#    <OBJ name='macro' version='0'>
+#    </OBJ>
+#    <OBJ name='output' version='0'>
+#      <PROP key='base' type='VT_STRING' value='mult_if' />
+#    </OBJ>
+#    <OBJ name='physicaldb' version='0'>
+#    </OBJ>
+#    <OBJ name='place_and_route' version='0'>
+#      <PROP key='currentFlow' type='VT_STRING' value='ispLEVER FPGA' />
+#      <PROP key='defaultVCF' type='VT_BOOL' value='true' />
+#      <OBJ name='flow' version='0'>
+#        <PROP key='flowname' type='VT_STRING' value='ispLEVER ORCA' />
+#        <OBJ name='command' version='0'>
+#          <PROP key='description' type='VT_STRING' value='Integrated Place and Route' />
+#          <PROP key='option' type='VT_STRING' value='install_dir' />
+#          <PROP key='value' type='VT_STRING' value='$LATTICE_HOME' />
+#        </OBJ>
+#        <OBJ name='command' version='0'>
+#          <PROP key='description' type='VT_STRING' value='Integrated Place and Route' />
+#          <PROP key='option' type='VT_STRING' value='no_exec' />
+#          <PROP key='value' type='VT_STRING' value='0' />
+#        </OBJ>
+#        <OBJ name='command' version='0'>
+#          <PROP key='description' type='VT_STRING' value='Integrated Place and Route' />
+#          <PROP key='option' type='VT_STRING' value='ba_format' />
+#          <PROP key='value' type='VT_STRING' value='Verilog' />
+#        </OBJ>
+#        <OBJ name='command' version='0'>
+#          <PROP key='description' type='VT_STRING' value='Integrated Place and Route' />
+#          <PROP key='option' type='VT_STRING' value='bits' />
+#          <PROP key='value' type='VT_STRING' value='0' />
+#        </OBJ>
+#        <OBJ name='command' version='0'>
+#          <PROP key='description' type='VT_STRING' value='Launch ispLEVER' />
+#          <PROP key='option' type='VT_STRING' value='install_dir' />
+#          <PROP key='value' type='VT_STRING' value='$LATTICE_HOME' />
+#        </OBJ>
+#        <OBJ name='command' version='0'>
+#          <PROP key='description' type='VT_STRING' value='Launch ispLEVER' />
+#          <PROP key='option' type='VT_STRING' value='no_exec' />
+#          <PROP key='value' type='VT_STRING' value='0' />
+#        </OBJ>
+#      </OBJ>
+#      <OBJ name='flow' version='0'>
+#        <PROP key='flowname' type='VT_STRING' value='ispLEVER FPGA' />
+#        <OBJ name='command' version='0'>
+#          <PROP key='description' type='VT_STRING' value='Integrated Place and Route' />
+#          <PROP key='option' type='VT_STRING' value='install_dir' />
+#          <PROP key='value' type='VT_STRING' value='$LATTICE_HOME' />
+#        </OBJ>
+#        <OBJ name='command' version='0'>
+#          <PROP key='description' type='VT_STRING' value='Integrated Place and Route' />
+#          <PROP key='option' type='VT_STRING' value='no_exec' />
+#          <PROP key='value' type='VT_STRING' value='0' />
+#        </OBJ>
+#        <OBJ name='command' version='0'>
+#          <PROP key='description' type='VT_STRING' value='Integrated Place and Route' />
+#          <PROP key='option' type='VT_STRING' value='ba_format' />
+#          <PROP key='value' type='VT_STRING' value='Verilog' />
+#        </OBJ>
+#        <OBJ name='command' version='0'>
+#          <PROP key='description' type='VT_STRING' value='Integrated Place and Route' />
+#          <PROP key='option' type='VT_STRING' value='bits' />
+#          <PROP key='value' type='VT_STRING' value='0' />
+#        </OBJ>
+#        <OBJ name='command' version='0'>
+#          <PROP key='description' type='VT_STRING' value='Launch ispLEVER' />
+#          <PROP key='option' type='VT_STRING' value='install_dir' />
+#          <PROP key='value' type='VT_STRING' value='$LATTICE_HOME' />
+#        </OBJ>
+#        <OBJ name='command' version='0'>
+#          <PROP key='description' type='VT_STRING' value='Launch ispLEVER' />
+#          <PROP key='option' type='VT_STRING' value='no_exec' />
+#          <PROP key='value' type='VT_STRING' value='0' />
+#        </OBJ>
+#      </OBJ>
+#    </OBJ>
+#    <OBJ name='reload' version='0'>
+#      <PROP key='RTLDesign' type='VT_INT' value='1' />
+#      <PROP key='TechDesign' type='VT_INT' value='1' />
+#    </OBJ>
+#    <OBJ name='settings' version='0'>
+#      <PROP key='addio' type='VT_BOOL' value='true' />
+#      <PROP key='advanced_fsm_optimization' type='VT_BOOL' value='true' />
+#      <PROP key='altera_mangle_prefix' type='VT_STRING' value='_MGC' />
+#      <PROP key='array_bounds_check' type='VT_BOOL' value='false' />
+#      <PROP key='automap_work' type='VT_BOOL' value='false' />
+#      <PROP key='boundary_opt' type='VT_BOOL' value='true' />
+#      <PROP key='compile_for_area' type='VT_BOOL' value='false' />
+#      <PROP key='default_ucf_value' type='VT_BOOL' value='true' />
+#      <PROP key='defines' type='VT_STRING' value='' />
+#      <PROP key='edif' type='VT_BOOL' value='true' />
+#      <PROP key='enable_synthoff_regions' type='VT_BOOL' value='false' />
+#      <PROP key='encoding' type='VT_STRING' value='auto' />
+#      <PROP key='error_design_contention' type='VT_BOOL' value='false' />
+#      <PROP key='frequency' type='VT_STRING' value='' />
+#      <PROP key='frontend_2004' type='VT_BOOL' value='true' />
+#      <PROP key='generics' type='VT_STRING' value='' />
+#      <PROP key='global_clock_limit' type='VT_STRING' value='' />
+#      <PROP key='ignore_ram_rw_collision' type='VT_BOOL' value='false' />
+#      <PROP key='input_delay' type='VT_STRING' value='' />
+#      <PROP key='output_delay' type='VT_STRING' value='' />
+#      <PROP key='partition_size' type='VT_STRING' value='30000' />
+#      <PROP key='path_compression_effort' type='VT_INT' value='0' />
+#      <PROP key='path_compression_improve_placement' type='VT_INT' value='-1' />
+#      <PROP key='path_compression_run_compression' type='VT_BOOL' value='false' />
+#      <PROP key='radhardmethod' type='VT_STRING' value='' />
+#      <PROP key='resource_sharing' type='VT_BOOL' value='true' />
+#      <PROP key='retiming' type='VT_BOOL' value='false' />
+#      <PROP key='search_path' type='VT_STRING' value='' />
+#      <PROP key='system_verilog' type='VT_BOOL' value='false' />
+#      <PROP key='transform_tristates' type='VT_STRING' value='auto' />
+#      <PROP key='transformations' type='VT_BOOL' value='true' />
+#      <PROP key='translate_ucf_constraints' type='VT_BOOL' value='false' />
+#      <PROP key='use_safe_fsm' type='VT_BOOL' value='false' />
+#      <PROP key='vendor_constraint_file' type='VT_BOOL' value='true' />
+#      <PROP key='verilog' type='VT_BOOL' value='false' />
+#      <PROP key='verilog_2001' type='VT_BOOL' value='true' />
+#      <PROP key='vhdl' type='VT_BOOL' value='false' />
+#    </OBJ>
+#    <OBJ name='state' version='0'>
+#      <PROP key='rtlconstrchanged' type='VT_BOOL' value='false' />
+#      <PROP key='statename' type='VT_STRING' value='synthesized' />
+#    </OBJ>
+#    <OBJ name='tech' version='0'>
+#      <PROP key='btw' type='VT_STRING' value='' />
+#      <PROP key='cim' type='VT_STRING' value='' />
+#      <PROP key='family' type='VT_STRING' value='LatticeEC' />
+#      <PROP key='library' type='VT_STRING' value='lattice_ec' />
+#      <PROP key='manufacturer' type='VT_STRING' value='Lattice' />
+#      <PROP key='package' type='VT_STRING' value='FPBGA672' />
+#      <PROP key='part' type='VT_STRING' value='LFEC20E' />
+#      <PROP key='speed' type='VT_STRING' value='3' />
+#      <PROP key='unset' type='VT_BOOL' value='false' />
+#      <PROP key='wire_table' type='VT_STRING' value='' />
+#    </OBJ>
+#  </OBJ>
+#</OBJ>

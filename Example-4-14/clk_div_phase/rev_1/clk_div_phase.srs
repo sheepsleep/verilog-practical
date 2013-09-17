@@ -1,0 +1,51 @@
+#
+#
+#
+# Created by Synplify Verilog HDL Compiler version 3.1.0, Build 049R from Synplicity, Inc.
+# Copyright 1994-2004 Synplicity, Inc. , All rights reserved.
+# Synthesis Netlist written on Wed Jan 11 02:21:18 2006
+#
+#
+#OPTIONS:"|-primux|-fixsmult|-sdff_counter|-infer_seqShift|-nram|-divnmod|-I|C:\\prj\\Example-4-7\\clk_div_phase\\|-I|C:\\eda\\synplicity\\fpga_81\\lib|-v2001|-devicelib|C:\\eda\\synplicity\\fpga_81\\lib\\xilinx\\unisim.v|-sm|-fid2|-sharing|off|-encrypt|-ui|-pro|-ram|-ll|2000"
+#CUR:"C:\\eda\\synplicity\\fpga_81\\bin\\c_ver.exe":1115125636
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\xilinx\\unisim.v":1113287638
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\xilinx\\unisim.v":1113287638
+#CUR:"C:\\prj\\Example-4-7\\clk_div_phase\\clk_div_phase.v":1136917275
+#CUR:"C:\\prj\\Example-4-7\\clk_div_phase\\clk_div_phase.v":1136917275
+f "C:\eda\synplicity\fpga_81\lib\xilinx\unisim.v"; # file 0
+af .is_verilog 1;
+f "C:\prj\Example-4-7\clk_div_phase\clk_div_phase.v"; # file 1
+af .is_verilog 1;
+@E
+@ 
+ftell;
+@E@MR@44::4(::R4gI	FsR	OD_P8H_NbE#PCRCDsHF
+o;N3PRHC#PsFHDo;R4
+RNP3_H#PHCsDRFo4N;
+PFR3shHoNRlC"	OD_P8H_NbE#;C"
+@HR@c4:::4dc6:4R0s#R0s#;
+
+
+
+@HR@d4:::4ddj:.R	OD_j.jvDRO	j_.j
+v;
+@FR@64:::4d6j:.R	OD_j4jvDRO	j_4j
+v;
+@FR@64:::.d6g:.R	OD_v6jR	OD_v6j;
+
+
+
+@FR@64:::d.6U:dR	OD_v.6R	OD_v.6;R
+b@:@4cd:4:4c:6MRHPMRk4#_s0MRk4#_s0#Rs0b;
+R4@@::4n44g:nn:.RPHMR	OD_j4jvDRO	j_4jOvRMj0r9b;
+R4@@::4(44g:(n:.RPHMR	OD_v6jR	OD_v6jR0OMr;49
+@bR@44:Ug:4::4U.HnRMOPRD.	_6OvRD.	_6OvRM.0r9b;
+Rj@@:44::.4:Rk0sCsR0k0CRs;kC
+@bR@4j::44::V.RNCD#RDVN#VCRNCD#;R
+b@:@444c:dc:4:R.jNR88k_MdOrM0.9:jRdkM_0OMrj.:9MRO0:r.j09Rs;kC
+@bR@44:j::j46j:RV8VsMRO0:r.jO9RM.0r:Rj9k_MdOrM0.9:jR	OD_j.jvMRk4#_s0N;
+H#R3$bM_sMFONRlC"FbsOM_O0
+";N3HRs_0DFosHMCNlRM"O0
+";C
+;
+

@@ -1,0 +1,22 @@
+C:/prj/Example-4-3/sim/decode_cmb.v {1 {vlog -work work C:/prj/Example-4-3/sim/decode_cmb.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module decode_cmb
+
+Top level modules:
+	decode_cmb
+
+} {} {}} C:/prj/Example-4-3/sim/decode_cmb_tb.v {1 {vlog -work work C:/prj/Example-4-3/sim/decode_cmb_tb.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module decode_cmb_tb
+
+Top level modules:
+	decode_cmb_tb
+
+} {} {}} C:/prj/Example-4-3/sim/decode_cmb2.v {1 {vlog -work work C:/prj/Example-4-3/sim/decode_cmb2.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module decode_cmb2
+
+Top level modules:
+	decode_cmb2
+
+} {} {}}

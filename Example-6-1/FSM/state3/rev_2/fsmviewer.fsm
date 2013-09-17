@@ -1,0 +1,32 @@
+fsm_options -device {CS[3:0]}
+
+define_state IDLE 000 {c:\prj\fsm_abc\state3\state3.v} 44 20 44 23
+state_output IDLE {CS[0]} 1
+
+define_state S1 001 {c:\prj\fsm_abc\state3\state3.v} 49 20 49 21
+state_output S1 {CS[1]} 1
+
+define_state S2 010 {c:\prj\fsm_abc\state3\state3.v} 54 20 54 21
+state_output S2 {CS[2]} 1
+
+define_state ERROR 100 {c:\prj\fsm_abc\state3\state3.v} 59 20 59 24
+state_output ERROR {CS[3]} 1
+
+fsm_options -resetState IDLE
+
+define_transition ERROR ERROR {i2,i1 = -1}
+define_transition S2 ERROR {i2,i1 = 00}
+define_transition S1 ERROR {i2,i1 = 10}
+define_transition IDLE ERROR {i2,i1 = 01}
+define_transition S2 S2 {i2,i1 = 1-}
+define_transition S1 S2 {i2,i1 = 11}
+define_transition S1 S1 {i2,i1 = 0-}
+define_transition IDLE S1 {i2,i1 = 11}
+define_transition ERROR IDLE {i2,i1 = -0}
+define_transition S2 IDLE {i2,i1 = 01}
+define_transition IDLE IDLE {i2,i1 = -0}
+fsm_options -SRSPath {C:\\prj\\FSM_abc\\state3\\rev_2\\state3.srs}
+fsm_options -SRSTime 1134717962
+fsm_options -FSMPath {CS[3:0]}
+fsm_options -view {ScratchLib.cell14.netlist|i:CS[3:0]}
+fsm_options -ID {1280281}

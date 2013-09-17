@@ -1,0 +1,30 @@
+#
+#
+#
+# Created by Synplify Verilog HDL Compiler version 3.1.0, Build 049R from Synplicity, Inc.
+# Copyright 1994-2004 Synplicity, Inc. , All rights reserved.
+# Synthesis Netlist written on Wed Mar 08 20:35:29 2006
+#
+#
+#OPTIONS:"|-I|C:\\prj\\Example-4-1\\|-I|C:\\eda\\synplicity\\fpga_81\\lib|-v2001|-sm|-fid2|-sharing|off|-encrypt|-ui|-pro|-ram|-ll|2000"
+#CUR:"C:\\eda\\synplicity\\fpga_81\\bin\\c_ver.exe":1115125636
+#CUR:"C:\\prj\\Example-4-1\\source\\cnt2.v":1141637027
+#CUR:"C:\\prj\\Example-4-1\\source\\cnt2.v":1141637027
+f "C:\prj\Example-4-1\source\cnt2.v"; # file 0
+af .is_verilog 1;
+@E
+@ 
+ftell;
+@E@MR@4j::4(::R4jI	FsR0OM.CRPsFHDoN;
+PHR3#sPCHoDFR
+4;N3PRHP#_CDsHF4oR;P
+NRs3FHNohl"CRO.M0"
+;
+
+@HR@dj:::4ddg:4R0OM_0Fkrjd:9MRO0k_F0:rdj
+9;
+@FR@cj:::4dcc:.R0OM_0Fk_kbD#:rdjO9RMF0_kb0_D_k#4:rdj
+9;b@R@j::44::4.sR0k0CRsRkC0Csk;R
+b@:@j4::44R:.V#NDCNRVDR#CV#NDCb;
+Rj@@:.g:c::gdN6R8O8RMF0_kb0_D_k#4:rdjO9RMF0_kb0_D_k#4:rdjO9RMF0_kd0r:Rj90Csk;;
+C

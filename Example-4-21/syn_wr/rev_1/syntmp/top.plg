@@ -1,0 +1,11 @@
+@P:  Worst Slack : 495.123
+@P:  top|CS_ - Estimated Frequency : 102.5 MHz
+@P:  top|CS_ - Requested Frequency : 1.0 MHz
+@P:  top|CS_ - Estimated Period : 9.754
+@P:  top|CS_ - Requested Period : 1000.000
+@P:  top|CS_ - Slack : 495.123
+@P:  top|clk_cpu - Estimated Frequency : 102.5 MHz
+@P:  top|clk_cpu - Requested Frequency : 1.0 MHz
+@P:  top|clk_cpu - Estimated Period : 9.754
+@P:  top|clk_cpu - Requested Period : 1000.000
+@P:  top|clk_cpu - Slack : 995.849

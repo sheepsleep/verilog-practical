@@ -1,0 +1,66 @@
+# Appending project transcript to file "C:/prj/Example-4-10/decode/if_mult/precision_temp_1/precision.log"
+# Info: Activated implementation precision_impl_1 in project precision.
+new_project -name "precision" -folder "C:/prj/Example-4-10/decode/if_mult" -createimpl_name "precision_impl_1"
+# 
+# COMMAND: add_input_file if_mult_decode.v
+# 
+add_input_file if_mult_decode.v
+# 
+# COMMAND: setup_design -manufacturer Lattice -family LatticeEC -part LFEC20E -speed 3 -package FPBGA672
+# 
+# Info: Setting up the design to use synthesis library "lattice_ec.syn"
+# Info: Setting Part to: "LFEC20E"
+# Info: Setting Process to: "3"
+# Info: Setting Package to: "FPBGA672"
+setup_design -manufacturer Lattice -family LatticeEC -part LFEC20E -speed 3 -package FPBGA672
+# 
+# COMMAND: compile
+# 
+# Info: Reading file: 'C:/eda/ispTOOLS5_0/precision/pkgs/psr/techlibs/lattice_ec.syn'.
+# Info: hdl-analyze, Release RTLC-Precision 2005a.10
+# Info: 1002: Analyzing input file "C:/prj/Example-4-10/decode/if_mult/if_mult_decode.v" ...
+# Info: Top of Design has been set to: if_mult_decode.
+# Info: Current working directory: 'C:/prj/Example-4-10/decode/if_mult/precision_temp_1/'.
+# Info: RTLC-Driver, Release RTLC-Precision 2005a.10
+# Info: Last compiled on May 13 2005 21:07:55
+# Info: 4512: Initializing...
+# Info: 4504: Partitioning design .... 
+# Info: RTLCompiler, Release RTLC-Precision 2005a.10
+# Info: Last compiled on May 13 2005 21:12:47
+# Info: 4512: Initializing...
+# Info: 4522: Root Module if_mult_decode: Pre-processing... 
+# Info: 4523: Root Module if_mult_decode: Compiling... 
+# Info: 4842: Compilation successfully completed.
+# Info: 4835: Total CPU time taken for compilation: 0.4 secs.  
+# Info: 4856: Total lines of RTL compiled: 28.
+# Info: Current working directory: 'C:/prj/Example-4-10/decode/if_mult/precision_temp_1/'.
+# Info: Finished compiling design.
+compile
+# 
+# COMMAND: synthesize
+# 
+# Info: Current working directory: 'C:/prj/Example-4-10/decode/if_mult/precision_temp_1/'.
+# -- Optimizing design .work.if_mult_decode.INTERFACE
+# Info: report_timing: There are no timing constraints; no timing information available
+# Info: report_timing: There are no timing constraints; no timing information available
+# Info: report_timing: There are no timing constraints; no timing information available
+# Info: Timing information and timing constraints are not present.
+# -- Saving the design database in C:/prj/Example-4-10/decode/if_mult/precision_temp_1/if_mult_decode.xdb
+# Info: Writing file: 'C:/prj/Example-4-10/decode/if_mult/precision_temp_1/if_mult_decode.edf'.
+# Info: Writing file: 'C:/prj/Example-4-10/decode/if_mult/precision_temp_1/if_mult_decode.prf'.
+# Info: Finished synthesizing design.
+# C:/prj/Example-4-10/decode/if_mult/precision_temp_1/precision_tech.sdc
+synthesize
+# 
+# COMMAND: view_schematic .work.if_mult_decode.INTERFACE_XRTL
+# 
+view_schematic .work.if_mult_decode.INTERFACE_XRTL
+# 
+# COMMAND: view_schematic .work.if_mult_decode.INTERFACE
+# 
+view_schematic .work.if_mult_decode.INTERFACE
+# 
+# COMMAND: save_impl
+# 
+# Info: Saved implementation file: 'C:/prj/Example-4-10/decode/if_mult/precision_temp_1/precision_impl_1.psi'.
+# Info: Created directory: 'C:/prj/Example-4-10/decode/if_mult/precision_impl_1/'.

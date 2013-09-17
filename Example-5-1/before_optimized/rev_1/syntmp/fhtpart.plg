@@ -1,0 +1,11 @@
+@P:  Part : EP1C3TC100-6
+@P:  Worst Slack : 995.896
+@P:  fhtpart|Clk - Estimated Frequency : 243.7 MHz
+@P:  fhtpart|Clk - Requested Frequency : 1.0 MHz
+@P:  fhtpart|Clk - Estimated Period : 4.104
+@P:  fhtpart|Clk - Requested Period : 1000.000
+@P:  fhtpart|Clk - Slack : 995.896
+@P: fhtpart Part : ep1c3tc100-6
+@P: fhtpart I/O ATOMs : 0
+@P: fhtpart Total LUTs: : 1360 of 2910 (46%)
+@P: fhtpart Logic resources : 1360 ATOMs of 2910 (46%)

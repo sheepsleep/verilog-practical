@@ -1,0 +1,84 @@
+# Compile of ram_basic.v was successful.
+# Compile of ram_basic_tb.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error. 
+# Compile of ram_basic_tb.v failed with 1 errors.
+# Compile of ram_basic_tb.v failed with 1 errors.
+# Compile of ram_basic_tb.v failed with 1 errors.
+# Compile of ram_basic_tb.v failed with 1 errors.
+# Compile of ram_basic_tb.v failed with 1 errors.
+# Compile of ram_basic_tb.v failed with 1 errors.
+# Compile of ram_basic_tb.v was successful.
+# Compile of ram_basic_tb.v was successful.
+vsim work.ram_basic_tb
+# vsim work.ram_basic_tb 
+# Loading work.ram_basic_tb
+# Loading work.ram_basic
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ram_basic' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /ram_basic_tb/ram_basic_inst
+view *
+# .source .process .signals .variables .dataflow .list .wave .memory
+destroy .list
+view structure
+# .structure
+write format wave -window .wave C:/prj/Example-4-6/sim/wave.do
+run -all
+# Break at C:/prj/Example-4-6/sim/ram_basic_tb.v line 25
+# Compile of ram_basic.v was successful.
+# Compile of ram_basic_tb.v was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim work.ram_basic_tb
+# vsim work.ram_basic_tb 
+# Loading work.ram_basic_tb
+# Loading work.ram_basic
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ram_basic' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /ram_basic_tb/ram_basic_inst
+do wave.do
+run
+# Break at C:/prj/Example-4-6/sim/ram_basic_tb.v line 25
+# Compile of ram_basic_tb.v was successful.
+vsim work.ram_basic_tb
+# vsim work.ram_basic_tb 
+# Loading work.ram_basic_tb
+# Loading work.ram_basic
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ram_basic' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /ram_basic_tb/ram_basic_inst
+do wave.do
+run
+# Break at C:/prj/Example-4-6/sim/ram_basic_tb.v line 25
+# Compile of ram_basic_tb.v was successful.
+vsim work.ram_basic_tb
+# vsim work.ram_basic_tb 
+# Loading work.ram_basic_tb
+# Loading work.ram_basic
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ram_basic' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /ram_basic_tb/ram_basic_inst
+do wave.do
+run
+# Break at C:/prj/Example-4-6/sim/ram_basic_tb.v line 25
+# Compile of ram_basic.v was successful.
+vsim work.ram_basic_tb
+# vsim work.ram_basic_tb 
+# Loading work.ram_basic_tb
+# Loading work.ram_basic
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ram_basic' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /ram_basic_tb/ram_basic_inst
+do wave.do
+run
+# Break at C:/prj/Example-4-6/sim/ram_basic_tb.v line 25
+# Compile of ram_basic_tb.v was successful.
+do wave.do
+run
+# Compile of ram_basic.v was successful.
+# Compile of ram_basic_tb.v was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim work.ram_basic_tb
+# vsim work.ram_basic_tb 
+# Loading work.ram_basic_tb
+# Loading work.ram_basic
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ram_basic' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /ram_basic_tb/ram_basic_inst
+do wave.do
+run
+# Break at C:/prj/Example-4-6/sim/ram_basic_tb.v line 31
+view memory
+# .memory

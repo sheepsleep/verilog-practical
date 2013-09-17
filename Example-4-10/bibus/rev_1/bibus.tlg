@@ -1,0 +1,5 @@
+Selecting top level module bibus
+@N:"C:\prj\Example-5-1\bibus\decode.v":1:7:1:12|Synthesizing module decode
+
+@N:"C:\prj\Example-5-1\bibus\bibus.v":1:7:1:11|Synthesizing module bibus
+

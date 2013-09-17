@@ -1,0 +1,11 @@
+@P:  Worst Slack : -0.255
+@P:  srl2pal|clk - Estimated Frequency : 588.0 MHz
+@P:  srl2pal|clk - Requested Frequency : 691.8 MHz
+@P:  srl2pal|clk - Estimated Period : 1.701
+@P:  srl2pal|clk - Requested Period : 1.446
+@P:  srl2pal|clk - Slack : -0.255
+@P: srl2pal Part : xc3s50tq144-4
+@P: srl2pal I/O primitives : 10
+@P: srl2pal I/O Register bits : 0
+@P: srl2pal Register bits (Non I/O) : 8 (0%)
+@P: srl2pal Total Luts : 0 (0%)

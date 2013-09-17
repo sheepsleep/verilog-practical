@@ -1,0 +1,66 @@
+#
+#
+#
+# Created by Synplify Verilog HDL Compiler version 3.1.0, Build 049R from Synplicity, Inc.
+# Copyright 1994-2004 Synplicity, Inc. , All rights reserved.
+# Synthesis Netlist written on Tue Jan 10 03:01:10 2006
+#
+#
+#OPTIONS:"|-fixsmult|-I|C:\\prj\\Example-4-3\\|-I|C:\\eda\\synplicity\\fpga_81\\lib|-v2001|-devicelib|C:\\eda\\synplicity\\fpga_81\\lib\\lucent\\ec.v|-sm|-fid2|-sharing|off|-encrypt|-ui|-pro|-ram|-ll|2000"
+#CUR:"C:\\eda\\synplicity\\fpga_81\\bin\\c_ver.exe":1115125636
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\lucent\\ec.v":1110443424
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\lucent\\ec.v":1110443424
+#CUR:"C:\\prj\\Example-4-3\\decode_cmb.v":1136833261
+#CUR:"C:\\prj\\Example-4-3\\decode_cmb.v":1136833261
+f "C:\eda\synplicity\fpga_81\lib\lucent\ec.v"; # file 0
+af .is_verilog 1;
+f "C:\prj\Example-4-3\decode_cmb.v"; # file 1
+af .is_verilog 1;
+@E
+@ 
+ftell;
+@E@MR@44::4(::R4nI	FsRO8CF_8CORlLPHCsD;Fo
+RNP3PH#CDsHF4oR;P
+NR#3H_sPCHoDFR
+4;N3PRFosHhCNlRC"8OCF8_LOl"N;
+PEROH_b48FCO8jCR;P
+NRHOEb8._C8OFC;R4
+RNPObEHdC_8OCF8R
+.;NOPREcHb_O8CFR8Cd
+;
+
+@HR@d4:::4Ud4:.R8N8s:r(jN9R8r8s(9:j;
+
+
+
+@HR@c4:::4Ucg:4RRB1B
+1;
+@FR@64::6(::OgR#O4R#
+4;
+@FR@64:::4.6c:4R.O#R.O#;
+
+
+
+@FR@64:::4(6g:4RdO#RdO#;
+
+
+
+@FR@64:::..6c:.RcO#RcO#;R
+b@:@4dU:4:.d:4MRHPMRk48_N8(sr:Rn9k_M4Ns88rn(:98RN8(sr:;n9
+@bR@4j::44::0.RsRkC0CskRk0sCb;
+Rj@@:44::.4:RDVN#VCRNCD#RDVN#
+C;b@R@4d:.::4n..d:(MRN8OPR#cc(RcO#(NcR8r8snN9R8r8s(
+9;b@R@4j:.::4n..j:(MRN8OPR#4c(RcO#(k4RMN4_8r8snk9RMN4_8r8s(
+9;b@R@44:.::4n..4:(MRN8OPR#.c(RcO#(N.R8r8snk9RMN4_8r8s(
+9;b@R@4.:.::4n...:(MRN8OPR#dc(RcO#(NdR8r8s(k9RMN4_8r8sn
+9;b@R@4d:.::4n..d:(MRHPMRk4#_OcR(ck_M4O(#cc#ROc;(c
+@bR@.4:jn:4::.j.H(RMkPRMO4_#4c(R4kM_cO#(O4R#4c(;R
+b@:@4.44:n4:.:R.(HRMPk_M4O(#c.MRk4#_OcR(.O(#c.b;
+R4@@::..4.n:.(:.RPHMR4kM_cO#(kdRMO4_#dc(RcO#(
+d;b@R@46:4:4(:6R:UlRkGOR#cOR#ck_M4O(#ccsR0kBCR1b;
+R4@@::46(6:4:lURkOGR#O4R#k4RMO4_#4c(Rk0sC1RB;R
+b@:@44(6:::46UkRlG#RO.#RO.MRk4#_OcR(.0CskR;B1
+@bR@44:6::(4U6:RGlkRdO#RdO#R4kM_cO#(0dRsRkCB
+1;C
+;
+

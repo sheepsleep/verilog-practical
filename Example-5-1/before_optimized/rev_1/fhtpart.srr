@@ -1,0 +1,245 @@
+$ Start of Compile
+#Wed Dec 22 23:53:55 2004
+
+Synplicity Verilog Compiler, version Compilers 2.6.0, Build 102R, built Jan 27 2004
+Copyright (C) 1994-2004, Synplicity Inc.  All Rights Reserved
+
+@I::"D:\prj_D\example-s1-1\FHT_example\before_optimized\fht_unit1.v"
+@I::"D:\prj_D\example-s1-1\FHT_example\before_optimized\fht_unit2.v"
+@I::"D:\prj_D\example-s1-1\FHT_example\before_optimized\fht_unit3.v"
+@I::"D:\prj_D\example-s1-1\FHT_example\before_optimized\fht_unit4.v"
+@I::"D:\prj_D\example-s1-1\FHT_example\before_optimized\fhtpart.v"
+Verilog syntax check successful!
+
+Compiler output is up to date.  No re-compile necessary
+
+Selecting top level module fhtpart
+Synthesizing module fht_unit1
+Synthesizing module fht_unit2
+Synthesizing module fht_unit3
+Synthesizing module fht_unit4
+Synthesizing module fhtpart
+@END
+Process took 0h:0m:0s realtime, 0h:0m:0s cputime
+###########################################################[
+Synplicity Altera Technology Mapper, version 7.3.5, Build 250R, built Mar 18 2004
+Copyright (C) 1994-2004, Synplicity Inc.  All Rights Reserved
+
+
+Automatic dissolve at startup in view:work.fhtpart(verilog) of fht_unit4(fht_unit4)
+Automatic dissolve at startup in view:work.fhtpart(verilog) of fht_unit3(fht_unit3)
+Automatic dissolve at startup in view:work.fhtpart(verilog) of fht_unit2(fht_unit2)
+Automatic dissolve at startup in view:work.fhtpart(verilog) of fht_unit1(fht_unit1)
+
+Writing Analyst data base D:\prj_D\example-s1-1\FHT_example\before_optimized\rev_1\fhtpart.srm
+Writing Verilog Netlist and constraint files
+Writing .vqm output for Quartus
+Writing Cross reference file for Quartus to D:\prj_D\example-s1-1\FHT_example\before_optimized\rev_1\fhtpart.xrf
+Found clock fhtpart|Clk with period 1000.00ns 
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Dec 22 23:54:03 2004
+#
+
+
+Top view:               fhtpart
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT195 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT197 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 995.896
+
+                   Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock     Frequency     Frequency     Period        Period        Slack       Type         Group              
+-----------------------------------------------------------------------------------------------------------------------
+fhtpart|Clk        1.0 MHz       243.7 MHz     1000.000      4.104         995.896     inferred     Inferred_clkgroup_0
+=======================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                    |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------
+Starting     Ending       |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------
+fhtpart|Clk  fhtpart|Clk  |  1000.000    995.896  |  No paths    -      |  No paths    -      |  No paths    -    
+==================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+
+====================================
+Detailed Report for Clock: fhtpart|Clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                       Starting                                                      Arrival            
+Instance               Reference       Type                 Pin        Net           Time        Slack  
+                       Clock                                                                            
+--------------------------------------------------------------------------------------------------------
+fht_unit3.Out8[0]      fhtpart|Clk     cyclone_lcell_ff     regout     Out8_0_0      0.173       995.896
+fht_unit3.Out8[1]      fhtpart|Clk     cyclone_lcell_ff     regout     Out8_1        0.173       995.896
+fht_unit3.Out9[0]      fhtpart|Clk     cyclone_lcell_ff     regout     Out9_0        0.173       995.896
+fht_unit3.Out9[1]      fhtpart|Clk     cyclone_lcell_ff     regout     Out9_1        0.173       995.896
+fht_unit3.Out10[0]     fhtpart|Clk     cyclone_lcell_ff     regout     Out10_0_0     0.173       995.896
+fht_unit3.Out10[1]     fhtpart|Clk     cyclone_lcell_ff     regout     Out10_1       0.173       995.896
+fht_unit3.Out11[0]     fhtpart|Clk     cyclone_lcell_ff     regout     Out11_0       0.173       995.896
+fht_unit3.Out11[1]     fhtpart|Clk     cyclone_lcell_ff     regout     Out11_1       0.173       995.896
+fht_unit3.Out12[0]     fhtpart|Clk     cyclone_lcell_ff     regout     Out12_0_0     0.173       995.896
+fht_unit3.Out12[1]     fhtpart|Clk     cyclone_lcell_ff     regout     Out12_1       0.173       995.896
+========================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                        Starting                                                              Required            
+Instance                Reference       Type                 Pin       Net                    Time         Slack  
+                        Clock                                                                                     
+------------------------------------------------------------------------------------------------------------------
+fht_unit4.Out1[15]      fhtpart|Clk     cyclone_lcell_ff     cin       un3_Out1_carry_14      999.146      995.896
+fht_unit4.Out3[15]      fhtpart|Clk     cyclone_lcell_ff     cin       un3_Out3_carry_14      999.146      995.896
+fht_unit4.Out5[15]      fhtpart|Clk     cyclone_lcell_ff     cin       un3_Out5_carry_14      999.146      995.896
+fht_unit4.Out7[15]      fhtpart|Clk     cyclone_lcell_ff     cin       un3_Out7_carry_14      999.146      995.896
+fht_unit4.Out9[15]      fhtpart|Clk     cyclone_lcell_ff     cin       un3_Out9_carry_14      999.146      995.896
+fht_unit4.Out11[15]     fhtpart|Clk     cyclone_lcell_ff     cin       un3_Out11_carry_14     999.146      995.896
+fht_unit4.Out13[15]     fhtpart|Clk     cyclone_lcell_ff     cin       un3_Out13_carry_14     999.146      995.896
+fht_unit4.Out15[15]     fhtpart|Clk     cyclone_lcell_ff     cin       un3_Out15_carry_14     999.146      995.896
+fht_unit4.Out1[3]       fhtpart|Clk     cyclone_lcell_ff     datab     In8Co[3]               998.128      995.930
+fht_unit4.Out1[4]       fhtpart|Clk     cyclone_lcell_ff     datab     In8Co[4]               998.162      995.930
+==================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Requested Period:                        1000.000
+    - Setup time:                            0.854
+    = Required time:                         999.146
+
+    - Propagation time:                      3.251
+    = Slack (critical) :                     995.896
+
+    Number of logic level(s):                15
+    Starting point:                          fht_unit3.Out8[0] / regout
+    Ending point:                            fht_unit4.Out1[15] / cin
+    The start point is clocked by            fhtpart|Clk [rising] on pin clk
+    The end   point is clocked by            fhtpart|Clk [rising] on pin clk
+
+Instance / Net                              Pin         Pin               Arrival     No. of    
+Name                   Type                 Name        Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------
+fht_unit3.Out8[0]      cyclone_lcell_ff     regout      Out     0.173     0.173       -         
+Out8_0_0               Net                  -           -       0.548     -           4         
+fht_unit4.In8Co[0]     cyclone_lcell        datab       In      -         0.721       -         
+fht_unit4.In8Co[0]     cyclone_lcell        cout        Out     0.645     1.366       -         
+In8Co_cout_2[0]        Net                  -           -       0.000     -           1         
+fht_unit4.In8Co[2]     cyclone_lcell        cin         In      -         1.366       -         
+fht_unit4.In8Co[2]     cyclone_lcell        combout     Out     0.691     2.057       -         
+In8Co[2]               Net                  -           -       0.140     -           1         
+fht_unit4.Out1[2]      cyclone_lcell_ff     datab       In      -         2.197       -         
+fht_unit4.Out1[2]      cyclone_lcell_ff     cout        Out     0.645     2.842       -         
+un3_Out1_carry_2       Net                  -           -       0.000     -           1         
+fht_unit4.Out1[3]      cyclone_lcell_ff     cin         In      -         2.842       -         
+fht_unit4.Out1[3]      cyclone_lcell_ff     cout        Out     0.034     2.877       -         
+un3_Out1_carry_3       Net                  -           -       0.000     -           1         
+fht_unit4.Out1[4]      cyclone_lcell_ff     cin         In      -         2.877       -         
+fht_unit4.Out1[4]      cyclone_lcell_ff     cout        Out     0.034     2.910       -         
+un3_Out1_carry_4       Net                  -           -       0.000     -           1         
+fht_unit4.Out1[5]      cyclone_lcell_ff     cin         In      -         2.910       -         
+fht_unit4.Out1[5]      cyclone_lcell_ff     cout        Out     0.034     2.945       -         
+un3_Out1_carry_5       Net                  -           -       0.000     -           1         
+fht_unit4.Out1[6]      cyclone_lcell_ff     cin         In      -         2.945       -         
+fht_unit4.Out1[6]      cyclone_lcell_ff     cout        Out     0.034     2.978       -         
+un3_Out1_carry_6       Net                  -           -       0.000     -           1         
+fht_unit4.Out1[7]      cyclone_lcell_ff     cin         In      -         2.978       -         
+fht_unit4.Out1[7]      cyclone_lcell_ff     cout        Out     0.034     3.013       -         
+un3_Out1_carry_7       Net                  -           -       0.000     -           1         
+fht_unit4.Out1[8]      cyclone_lcell_ff     cin         In      -         3.013       -         
+fht_unit4.Out1[8]      cyclone_lcell_ff     cout        Out     0.034     3.047       -         
+un3_Out1_carry_8       Net                  -           -       0.000     -           1         
+fht_unit4.Out1[9]      cyclone_lcell_ff     cin         In      -         3.047       -         
+fht_unit4.Out1[9]      cyclone_lcell_ff     cout        Out     0.034     3.080       -         
+un3_Out1_carry_9       Net                  -           -       0.000     -           1         
+fht_unit4.Out1[10]     cyclone_lcell_ff     cin         In      -         3.080       -         
+fht_unit4.Out1[10]     cyclone_lcell_ff     cout        Out     0.034     3.115       -         
+un3_Out1_carry_10      Net                  -           -       0.000     -           1         
+fht_unit4.Out1[11]     cyclone_lcell_ff     cin         In      -         3.115       -         
+fht_unit4.Out1[11]     cyclone_lcell_ff     cout        Out     0.034     3.148       -         
+un3_Out1_carry_11      Net                  -           -       0.000     -           1         
+fht_unit4.Out1[12]     cyclone_lcell_ff     cin         In      -         3.148       -         
+fht_unit4.Out1[12]     cyclone_lcell_ff     cout        Out     0.034     3.183       -         
+un3_Out1_carry_12      Net                  -           -       0.000     -           1         
+fht_unit4.Out1[13]     cyclone_lcell_ff     cin         In      -         3.183       -         
+fht_unit4.Out1[13]     cyclone_lcell_ff     cout        Out     0.034     3.216       -         
+un3_Out1_carry_13      Net                  -           -       0.000     -           1         
+fht_unit4.Out1[14]     cyclone_lcell_ff     cin         In      -         3.216       -         
+fht_unit4.Out1[14]     cyclone_lcell_ff     cout        Out     0.034     3.251       -         
+un3_Out1_carry_14      Net                  -           -       0.000     -           1         
+fht_unit4.Out1[15]     cyclone_lcell_ff     cin         In      -         3.251       -         
+================================================================================================
+Total path delay (propagation time + setup) of 4.104 is 3.416(83.2%) logic and 0.689(16.8%) route.
+
+
+
+##### END OF TIMING REPORT #####]
+
+
+##### START OF AREA REPORT #####[
+Design view:work.fhtpart(verilog)
+Selecting part EP1C3T100C6
+@N: FA174 |The following device usage report estimates place and route data. Please look at the place and route report for final resource usage..
+
+I/O ATOMs:       0
+
+Total LUTs:  1360 of 2910 (46%)
+Logic resources:  1360 ATOMs of 2910 (46%)
+ATOM count by mode:
+  normal:       128
+  arithmetic:   1232
+
+M4Ks:           0  (0% of 13)
+Total ESB:      0 bits 
+
+ATOMs using regout pin: 928
+  also using enable pin: 928
+  also using combout pin: 0
+ATOMs using combout pin: 400
+Number of Inputs on ATOMs: 6704
+Number of Nets:   4604
+
+##### END OF AREA REPORT #####]
+
+Mapper successful!
+Process took 0h:0m:7s realtime, 0h:0m:7s cputime
+###########################################################]

@@ -1,0 +1,25 @@
+#Program: Synplify Pro 8.1
+#OS: Windows_NT
+
+$ Start of Compile
+#Mon Jan 02 21:29:58 2006
+
+Synplicity Verilog Compiler, version 3.1.0, Build 049R, built May  3 2005
+Copyright (C) 1994-2005, Synplicity Inc.  All Rights Reserved
+
+@I::"C:\eda\synplicity\fpga_81\lib\altera\altera.v"
+@I::"C:\eda\synplicity\fpga_81\lib\altera\cycloneii.v"
+@I::"C:\eda\synplicity\fpga_81\lib\altera\altera_mf.v"
+@I::"C:\eda\synplicity\fpga_81\lib\altera\altera_lpm.v"
+@I::"C:\prj\Example-5-1\complex_bibus\complex_bibus.v"
+@E: CG103 :"C:\prj\Example-5-1\complex_bibus\complex_bibus.v":28:33:28:34|Expecting expression
+@E: CS110 :"C:\prj\Example-5-1\complex_bibus\complex_bibus.v":28:41:28:42|Expecting terminal list
+@E: CS110 :"C:\prj\Example-5-1\complex_bibus\complex_bibus.v":28:49:28:50|Expecting terminal list
+@E: CS110 :"C:\prj\Example-5-1\complex_bibus\complex_bibus.v":28:56:28:56|Expecting terminal list
+@I::"C:\prj\Example-5-1\complex_bibus\counter.v"
+@I::"C:\prj\Example-5-1\complex_bibus\decode.v"
+4 syntax errors
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Jan 02 21:29:58 2006
+

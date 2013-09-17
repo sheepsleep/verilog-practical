@@ -1,0 +1,150 @@
+(edif mult_if 
+ (edifVersion 2 0 0)
+ (edifLevel 0)
+ (keywordMap (keywordLevel 0))
+ (status 
+  (written 
+   (timestamp 2006 01 16 01 41 36)
+   (program "Precision RTL Synthesis" (version "2005a.56OEM_Lattice"))
+   (author "Mentor Graphics Corporation")))
+ (external PRIMITIVES 
+  (edifLevel 0)
+  (technology (numberDefinition )))
+ (external lattice_ec 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell OB (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I (direction INPUT))
+     (port O (direction OUTPUT)))))
+  (cell IB (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I (direction INPUT))
+     (port O (direction OUTPUT)))))
+  (cell ORCALUT4 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port C (direction INPUT))
+     (port D (direction INPUT))
+     (port Z (direction OUTPUT))))))
+ (library work 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell mult_if (cellType GENERIC)
+   (view INTERFACE  (viewType NETLIST)
+    (interface 
+     (port a (direction INPUT))
+     (port b (direction INPUT))
+     (port c (direction INPUT))
+     (port d (direction INPUT))
+     (port sel0 (direction INPUT))
+     (port sel1 (direction INPUT))
+     (port sel2 (direction INPUT))
+     (port sel3 (direction INPUT))
+     (port z (direction OUTPUT)))
+    (property AREA (string "0.187500"))
+    (property DESIGN_IS_RTL (string "NO"))
+    (property PICSPEC (string "LFEC20E"))
+    (property PICSPEED (string "3"))
+    (contents 
+     (instance z_obuf (viewRef NETLIST  (cellRef OB (libraryRef lattice_ec ))))
+     (instance sel3_ibuf (viewRef NETLIST  (cellRef IB (libraryRef lattice_ec ))))
+     (instance sel2_ibuf (viewRef NETLIST  (cellRef IB (libraryRef lattice_ec ))))
+     (instance sel1_ibuf (viewRef NETLIST  (cellRef IB (libraryRef lattice_ec ))))
+     (instance sel0_ibuf (viewRef NETLIST  (cellRef IB (libraryRef lattice_ec ))))
+     (instance d_ibuf (viewRef NETLIST  (cellRef IB (libraryRef lattice_ec ))))
+     (instance c_ibuf (viewRef NETLIST  (cellRef IB (libraryRef lattice_ec ))))
+     (instance b_ibuf (viewRef NETLIST  (cellRef IB (libraryRef lattice_ec ))))
+     (instance a_ibuf (viewRef NETLIST  (cellRef IB (libraryRef lattice_ec ))))
+     (instance ix987z1562 (viewRef NETLIST  (cellRef ORCALUT4 (libraryRef lattice_ec )))
+      (property lut_function (string "((C)+(A*B))")))
+     (instance ix987z53700 (viewRef NETLIST  (cellRef ORCALUT4 (libraryRef lattice_ec )))
+      (property lut_function (string "((B*D)+(A*C*!D))")))
+     (instance ix987z4139 (viewRef NETLIST  (cellRef ORCALUT4 (libraryRef lattice_ec )))
+      (property lut_function (string "((A*B*!C)+(!B*!C*D))")))
+     (net a 
+      (joined 
+       (portRef a )
+       (portRef I (instanceRef a_ibuf ))))
+     (net b 
+      (joined 
+       (portRef b )
+       (portRef I (instanceRef b_ibuf ))))
+     (net c 
+      (joined 
+       (portRef c )
+       (portRef I (instanceRef c_ibuf ))))
+     (net d 
+      (joined 
+       (portRef d )
+       (portRef I (instanceRef d_ibuf ))))
+     (net sel0 
+      (joined 
+       (portRef sel0 )
+       (portRef I (instanceRef sel0_ibuf ))))
+     (net sel1 
+      (joined 
+       (portRef sel1 )
+       (portRef I (instanceRef sel1_ibuf ))))
+     (net sel2 
+      (joined 
+       (portRef sel2 )
+       (portRef I (instanceRef sel2_ibuf ))))
+     (net sel3 
+      (joined 
+       (portRef sel3 )
+       (portRef I (instanceRef sel3_ibuf ))))
+     (net a_int 
+      (joined 
+       (portRef O (instanceRef a_ibuf ))
+       (portRef A (instanceRef ix987z53700 ))))
+     (net b_int 
+      (joined 
+       (portRef O (instanceRef b_ibuf ))
+       (portRef B (instanceRef ix987z53700 ))))
+     (net c_int 
+      (joined 
+       (portRef O (instanceRef c_ibuf ))
+       (portRef A (instanceRef ix987z4139 ))))
+     (net d_int 
+      (joined 
+       (portRef O (instanceRef d_ibuf ))
+       (portRef A (instanceRef ix987z1562 ))))
+     (net sel0_int 
+      (joined 
+       (portRef O (instanceRef sel0_ibuf ))
+       (portRef C (instanceRef ix987z53700 ))))
+     (net sel1_int 
+      (joined 
+       (portRef O (instanceRef sel1_ibuf ))
+       (portRef D (instanceRef ix987z53700 ))))
+     (net sel2_int 
+      (joined 
+       (portRef O (instanceRef sel2_ibuf ))
+       (portRef B (instanceRef ix987z4139 ))))
+     (net sel3_int 
+      (joined 
+       (portRef O (instanceRef sel3_ibuf ))
+       (portRef B (instanceRef ix987z1562 ))
+       (portRef C (instanceRef ix987z4139 ))))
+     (net z 
+      (joined 
+       (portRef z )
+       (portRef O (instanceRef z_obuf ))))
+     (net z_dup0 
+      (joined 
+       (portRef Z (instanceRef ix987z1562 ))
+       (portRef I (instanceRef z_obuf ))))
+     (net nx987z2 
+      (joined 
+       (portRef Z (instanceRef ix987z53700 ))
+       (portRef D (instanceRef ix987z4139 ))))
+     (net nx987z1 
+      (joined 
+       (portRef Z (instanceRef ix987z4139 ))
+       (portRef C (instanceRef ix987z1562 ))))))))
+ (design mult_if (cellRef mult_if (libraryRef work ))))

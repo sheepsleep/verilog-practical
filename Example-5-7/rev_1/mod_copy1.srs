@@ -1,0 +1,51 @@
+#
+#
+#
+# Created by Synplify Verilog HDL Compiler version 3.1.0, Build 049R from Synplicity, Inc.
+# Copyright 1994-2004 Synplicity, Inc. , All rights reserved.
+# Synthesis Netlist written on Wed Mar 08 17:56:43 2006
+#
+#
+#OPTIONS:"|-fixsmult|-I|C:\\prj\\Chapter5\\Example-5-7\\|-I|C:\\eda\\synplicity\\fpga_81\\lib|-v2001|-devicelib|C:\\eda\\synplicity\\fpga_81\\lib\\lucent\\xp.v|-sm|-fid2|-sharing|off|-encrypt|-ui|-pro|-ram|-ll|2000"
+#CUR:"C:\\eda\\synplicity\\fpga_81\\bin\\c_ver.exe":1115125636
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\lucent\\xp.v":1110443426
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\lucent\\xp.v":1110443426
+#CUR:"C:\\prj\\Chapter5\\Example-5-7\\source\\mod_copy1.v":1141811782
+#CUR:"C:\\prj\\Chapter5\\Example-5-7\\source\\mod_copy1.v":1141811782
+f "C:\eda\synplicity\fpga_81\lib\lucent\xp.v"; # file 0
+af .is_verilog 1;
+f "C:\prj\Chapter5\Example-5-7\source\mod_copy1.v"; # file 1
+af .is_verilog 1;
+@E
+@ 
+ftell;
+@E@MR@44::4(::R46I	FsR8lF_bOF$P4RCDsHF
+o;N3PRHC#PsFHDo;R4
+RNP3_H#PHCsDRFo4N;
+PFR3shHoNRlC"8lF_bOF$;4"
+@HR@.4::.n::#URC#DRC
+D;
+@HR@.4:::44.4:4RNNR;
+
+
+
+@HR@.4:::4c.c:4RLLR;
+
+
+
+@HR@.4:::4(.(:4ROOR;
+
+
+
+@HR@.4:::.j.j:.R88R;
+
+
+
+@FR@d4::d(::R4c8NN0_0FkR08NNk_F0b;
+Rj@@:44::.4:Rk0sCsR0k0CRs;kC
+@bR@4j::44::V.RNCD#RDVN#VCRNCD#;R
+b@:@466:.:.6:U8RN8MRk4N_80FN_kk0RM84_N_0NFRk0N;RL
+@bR@64:::dd6n:dR8N8RdkM_08NNk_F0MRkdN_80FN_kO0RR
+8;b@R@4::646U::RdUlRkG8NN0_0FkR08NNk_F0MRkdN_80FN_kk0RM84_N_0NFRk0#;CD
+
+C;

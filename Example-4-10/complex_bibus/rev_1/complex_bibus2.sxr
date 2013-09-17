@@ -1,0 +1,97 @@
+
+BeginView complex_bibus NoName
+Inst: I_16_x_i   I_16_x_i_cZ inv 
+Inst: un1_decode_out_2_0[4]   un1_decode_out_2_0_4_ cycloneii_lcell_comb 
+Inst: un1_decode_out_2_0[5]   un1_decode_out_2_0_5_ cycloneii_lcell_comb 
+Inst: un1_decode_out_2_0[6]   un1_decode_out_2_0_6_ cycloneii_lcell_comb 
+Inst: un1_decode_out_2_0[7]   un1_decode_out_2_0_7_ cycloneii_lcell_comb 
+Inst: un1_decode_out_2_0[0]   un1_decode_out_2_0_0_ cycloneii_lcell_comb 
+Inst: un1_decode_out_2_0[1]   un1_decode_out_2_0_1_ cycloneii_lcell_comb 
+Inst: un1_decode_out_2_0[2]   un1_decode_out_2_0_2_ cycloneii_lcell_comb 
+Inst: un1_decode_out_2_0[3]   un1_decode_out_2_0_3_ cycloneii_lcell_comb 
+Inst: un5_data_bus_x   un5_data_bus_x_cZ cycloneii_lcell_comb 
+Inst: addr_in[7]   addr_in_7_ stratix_io 
+Inst: addr_in[6]   addr_in_6_ stratix_io 
+Inst: addr_in[5]   addr_in_5_ stratix_io 
+Inst: addr_in[4]   addr_in_4_ stratix_io 
+Inst: addr_in[3]   addr_in_3_ stratix_io 
+Inst: addr_in[2]   addr_in_2_ stratix_io 
+Inst: addr_in[1]   addr_in_1_ stratix_io 
+Inst: addr_in[0]   addr_in_0_ stratix_io 
+Inst: data_bus_tri[7]   data_bus_tri_7_ stratix_io 
+Inst: data_bus_tri[6]   data_bus_tri_6_ stratix_io 
+Inst: data_bus_tri[5]   data_bus_tri_5_ stratix_io 
+Inst: data_bus_tri[4]   data_bus_tri_4_ stratix_io 
+Inst: data_bus_tri[3]   data_bus_tri_3_ stratix_io 
+Inst: data_bus_tri[2]   data_bus_tri_2_ stratix_io 
+Inst: data_bus_tri[1]   data_bus_tri_1_ stratix_io 
+Inst: data_bus_tri[0]   data_bus_tri_0_ stratix_io 
+Net:  counter_inst.cnt_out[4]   counter_inst_cnt_out[4] 
+Net:  decode_inst.data_bus_out[4]   decode_inst_data_bus_out[4] 
+Net:  counter_inst.cnt_out[5]   counter_inst_cnt_out[5] 
+Net:  decode_inst.data_bus_out[5]   decode_inst_data_bus_out[5] 
+Net:  counter_inst.cnt_out[6]   counter_inst_cnt_out[6] 
+Net:  decode_inst.data_bus_out[6]   decode_inst_data_bus_out[6] 
+Net:  counter_inst.cnt_out[7]   counter_inst_cnt_out[7] 
+Net:  decode_inst.data_bus_out[7]   decode_inst_data_bus_out[7] 
+Net:  counter_inst.cnt_out[0]   counter_inst_cnt_out[0] 
+Net:  decode_inst.data_bus_out[0]   decode_inst_data_bus_out[0] 
+Net:  counter_inst.cnt_out[1]   counter_inst_cnt_out[1] 
+Net:  decode_inst.data_bus_out[1]   decode_inst_data_bus_out[1] 
+Net:  counter_inst.cnt_out[2]   counter_inst_cnt_out[2] 
+Net:  decode_inst.data_bus_out[2]   decode_inst_data_bus_out[2] 
+Net:  counter_inst.cnt_out[3]   counter_inst_cnt_out[3] 
+Net:  decode_inst.data_bus_out[3]   decode_inst_data_bus_out[3] 
+EndView complex_bibus NoName
+
+BeginView decode NoName
+Inst: data_bus_out[7]   data_bus_out_7__Z cycloneii_lcell_ff 
+Inst: data_bus_out[6]   data_bus_out_6__Z cycloneii_lcell_ff 
+Inst: data_bus_out[5]   data_bus_out_5__Z cycloneii_lcell_ff 
+Inst: data_bus_out[4]   data_bus_out_4__Z cycloneii_lcell_ff 
+Inst: data_bus_out[3]   data_bus_out_3__Z cycloneii_lcell_ff 
+Inst: data_bus_out[2]   data_bus_out_2__Z cycloneii_lcell_ff 
+Inst: data_bus_out[1]   data_bus_out_1__Z cycloneii_lcell_ff 
+Inst: data_bus_out[0]   data_bus_out_0__Z cycloneii_lcell_ff 
+Inst: data_bus_out_7[0]   data_bus_out_7_0_ cycloneii_lcell_comb 
+Inst: data_bus_out_7[1]   data_bus_out_7_1_ cycloneii_lcell_comb 
+Inst: data_bus_out_7[2]   data_bus_out_7_2_ cycloneii_lcell_comb 
+Inst: data_bus_out_7[3]   data_bus_out_7_3_ cycloneii_lcell_comb 
+Inst: data_bus_out_7[4]   data_bus_out_7_4_ cycloneii_lcell_comb 
+Inst: data_bus_out_7[5]   data_bus_out_7_5_ cycloneii_lcell_comb 
+Inst: data_bus_out_7[6]   data_bus_out_7_6_ cycloneii_lcell_comb 
+Inst: data_bus_out_7[7]   data_bus_out_7_7_ cycloneii_lcell_comb 
+Inst: data_bus_out19_a   data_bus_out19_a_cZ cycloneii_lcell_comb 
+Inst: data_bus_out19   data_bus_out19_cZ cycloneii_lcell_comb 
+Inst: un1_data_bus_out20_1   un1_data_bus_out20_1_cZ cycloneii_lcell_comb 
+Inst: data_bus_out19_0_x   data_bus_out19_0_x_cZ cycloneii_lcell_comb 
+Inst: un1_data_bus_out20_1_a_s   un1_data_bus_out20_1_a_s_cZ cycloneii_lcell_comb 
+Inst: un1_data_bus_out20_1_a_x   un1_data_bus_out20_1_a_x_cZ cycloneii_lcell_comb 
+Net:  data_bus_out_7[7]   data_bus_out_7_Z[7] 
+Net:  data_bus_out_7[6]   data_bus_out_7_Z[6] 
+Net:  data_bus_out_7[5]   data_bus_out_7_Z[5] 
+Net:  data_bus_out_7[4]   data_bus_out_7_Z[4] 
+Net:  data_bus_out_7[3]   data_bus_out_7_Z[3] 
+Net:  data_bus_out_7[2]   data_bus_out_7_Z[2] 
+Net:  data_bus_out_7[1]   data_bus_out_7_Z[1] 
+Net:  data_bus_out_7[0]   data_bus_out_7_Z[0] 
+EndView decode NoName
+
+BeginView counter NoName
+Inst: cnt_out[7]   cnt_out_7__Z cycloneii_lcell_ff 
+Inst: cnt_out[6]   cnt_out_6__Z cycloneii_lcell_ff 
+Inst: cnt_out[5]   cnt_out_5__Z cycloneii_lcell_ff 
+Inst: cnt_out[4]   cnt_out_4__Z cycloneii_lcell_ff 
+Inst: cnt_out[3]   cnt_out_3__Z cycloneii_lcell_ff 
+Inst: cnt_out[2]   cnt_out_2__Z cycloneii_lcell_ff 
+Inst: cnt_out[1]   cnt_out_1__Z cycloneii_lcell_ff 
+Inst: cnt_out[0]   cnt_out_0__Z cycloneii_lcell_ff 
+Inst: un3_cnt_out[0]   un3_cnt_out_0_ cycloneii_lcell_comb 
+Inst: un3_cnt_out[1]   un3_cnt_out_1_ cycloneii_lcell_comb 
+Inst: un3_cnt_out[2]   un3_cnt_out_2_ cycloneii_lcell_comb 
+Inst: un3_cnt_out[3]   un3_cnt_out_3_ cycloneii_lcell_comb 
+Inst: un3_cnt_out[4]   un3_cnt_out_4_ cycloneii_lcell_comb 
+Inst: un3_cnt_out[5]   un3_cnt_out_5_ cycloneii_lcell_comb 
+Inst: un3_cnt_out[6]   un3_cnt_out_6_ cycloneii_lcell_comb 
+Inst: un3_cnt_out[7]   un3_cnt_out_7_ cycloneii_lcell_comb 
+EndView counter NoName

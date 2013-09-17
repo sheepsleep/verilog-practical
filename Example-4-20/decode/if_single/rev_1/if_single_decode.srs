@@ -1,0 +1,59 @@
+#
+#
+#
+# Created by Synplify Verilog HDL Compiler version 3.1.0, Build 049R from Synplicity, Inc.
+# Copyright 1994-2004 Synplicity, Inc. , All rights reserved.
+# Synthesis Netlist written on Mon Jan 16 09:34:37 2006
+#
+#
+#OPTIONS:"|-fixsmult|-I|C:\\prj\\Example-4-10\\decode\\if_single\\|-I|C:\\eda\\synplicity\\fpga_81\\lib|-v2001|-devicelib|C:\\eda\\synplicity\\fpga_81\\lib\\lucent\\ec.v|-sm|-fid2|-sharing|off|-encrypt|-ui|-pro|-ram|-ll|2000"
+#CUR:"C:\\eda\\synplicity\\fpga_81\\bin\\c_ver.exe":1115125636
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\lucent\\ec.v":1110443424
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\lucent\\ec.v":1110443424
+#CUR:"C:\\prj\\Example-4-10\\decode\\if_single\\if_single_decode.v":1137138785
+#CUR:"C:\\prj\\Example-4-10\\decode\\if_single\\if_single_decode.v":1137138785
+f "C:\eda\synplicity\fpga_81\lib\lucent\ec.v"; # file 0
+af .is_verilog 1;
+f "C:\prj\Example-4-10\decode\if_single\if_single_decode.v"; # file 1
+af .is_verilog 1;
+@E
+@ 
+ftell;
+@E@MR@c4::c(::R..I	FsR_HV#oHMD8C_C8OFCCRPsFHDoN;
+PHR3#sPCHoDFR
+4;N3PRHP#_CDsHF4oR;P
+NRs3FHNohl"CRH#V_HDMoCC_8OCF8"N;
+P]RBQRu4cN;
+P]RBQRu.6N;
+P]RBQRud.N;
+P]RBQRucd
+;
+
+@HR@64:::4d6U:4R8N8sr_].9:jR8N8sr_].9:j;
+
+
+
+@FR@n4:::4dn6:4R4B1R_B1Lrk#j
+9;
+@FR@n4:::4Unj:.R.B1R_B1Lrk#4
+9;
+@FR@n4:::.dn6:.RdB1R_B1Lrk#.
+9;
+@FR@n4:::.Unj:dRcB1R_B1Lrk#d
+9;b@R@4::646d::R4UHRMPk_M4Ns88_.]r:Rj9k_M4Ns88_.]r:Rj9Ns88_.]r:;j9
+@bR@4j::44::0.RsRkC0CskRk0sCb;
+Rj@@:44::.4:RDVN#VCRNCD#RDVN#
+C;b@R@46:4::4U4d6:dMRN8BPR1k_L#R..BL1_k.#.R8N8sr_].k9RMN4_8_8s]9rjR4kM_8N8sr_]4
+9;b@R@46:4::4U4d(:UMRN8BPR1k_L#R.dBL1_kd#.R8N8sr_]jN9R8_8s]9r.R4kM_8N8sr_]4
+9;b@R@46:4::4U4dg:UMRN8BPR1k_L#R.cBL1_kc#.R8N8sr_]4k9RMN4_8_8s]9rjR4kM_8N8sr_].
+9;b@R@46:4::4U.d4:UMRN8BPR1k_L#R.6BL1_k6#.R8N8sr_]jN9R8_8s]9r4R4kM_8N8sr_].
+9;b@R@46:4::4c446:6MRHPMRk41_B_#Lk.k6RMB4_1k_L#R.6BL1_k6#.;R
+b@:@4446:c6:4:R46HRMPk_M4BL1_kc#.R4kM__B1L.k#c1RB_#Lk.
+c;b@R@46:4::4c446:6MRHPMRk41_B_#Lk.kdRMB4_1k_L#R.dBL1_kd#.;R
+b@:@4446:c6:4:R46HRMPk_M4BL1_k.#.R4kM__B1L.k#.1RB_#Lk.
+.;b@R@46:4::4c446:6MRN8kPRMB4_1k_L#_..4MRk41_B_#Lk.4._R4kM__B1L.k#.MRk41_B_#Lk.Rd
+RkRRMB4_1k_L#R.ck_M4BL1_k6#.;R
+b@:@4446:c6:4:R46bGlkR_B1Lrk#d9:jR_B1Lrk#d9:jRDVN#0C,s,kC0Csk,k0sC1,B_#Lk.0.Rs,kCV#NDCs,0k0C,s,kCBL1_kd#.
+RRRRk0sCs,0kVC,NCD#,k0sC1,B_#Lk.0cRs,kC0Csk,k0sCN,VD,#CBL1_k6#.Rk0sCs,0k0C,s,kC0Csk,4kM__B1L.k#.;_4
+
+C;

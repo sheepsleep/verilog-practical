@@ -1,0 +1,11 @@
+@P:  Worst Slack : 1.382
+@P:  clock_edge|clk_50M - Estimated Frequency : 179.5 MHz
+@P:  clock_edge|clk_50M - Requested Frequency : 120.0 MHz
+@P:  clock_edge|clk_50M - Estimated Period : 5.569
+@P:  clock_edge|clk_50M - Requested Period : 8.333
+@P:  clock_edge|clk_50M - Slack : 1.382
+@P:  clock_edge|clk_100M - Estimated Frequency : 359.1 MHz
+@P:  clock_edge|clk_100M - Requested Frequency : 120.0 MHz
+@P:  clock_edge|clk_100M - Estimated Period : 2.785
+@P:  clock_edge|clk_100M - Requested Period : 8.333
+@P:  clock_edge|clk_100M - Slack : 5.549

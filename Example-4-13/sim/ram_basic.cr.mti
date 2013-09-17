@@ -1,0 +1,8 @@
+C:/prj/Example-4-6/sim/ram_basic_tb.v {1 {vlog -work work C:/prj/Example-4-6/sim/ram_basic_tb.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module ram_basic_tb
+
+Top level modules:
+	ram_basic_tb
+
+} {} {}}

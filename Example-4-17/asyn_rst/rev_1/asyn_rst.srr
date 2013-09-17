@@ -1,0 +1,287 @@
+#Program: Synplify Pro 8.1
+#OS: Windows_NT
+
+$ Start of Compile
+#Wed Jan 11 17:07:58 2006
+
+Synplicity Verilog Compiler, version 3.1.0, Build 049R, built May  3 2005
+Copyright (C) 1994-2005, Synplicity Inc.  All Rights Reserved
+
+@I::"C:\eda\synplicity\fpga_81\lib\lucent\xp.v"
+@I::"C:\prj\Example-4-9\asyn_rst\asyn_rst.v"
+Verilog syntax check successful!
+Selecting top level module asyn_rst
+@N:"C:\prj\Example-4-9\asyn_rst\asyn_rst.v":1:7:1:14|Synthesizing module asyn_rst
+
+@N: CG179 :"C:\prj\Example-4-9\asyn_rst\asyn_rst.v":20:20:20:23|Removing redundant assignment
+@W: CL190 :"C:\prj\Example-4-9\asyn_rst\asyn_rst.v":9:0:9:5|Optimizing register bit cnt1[2] to a constant 0
+@W: CL190 :"C:\prj\Example-4-9\asyn_rst\asyn_rst.v":9:0:9:5|Optimizing register bit cnt1[3] to a constant 0
+@W: CL190 :"C:\prj\Example-4-9\asyn_rst\asyn_rst.v":9:0:9:5|Optimizing register bit cnt1[4] to a constant 0
+@W: CL171 :"C:\prj\Example-4-9\asyn_rst\asyn_rst.v":9:0:9:5|Pruning Register bit <4> of cnt1[4:0] 
+
+@W: CL171 :"C:\prj\Example-4-9\asyn_rst\asyn_rst.v":9:0:9:5|Pruning Register bit <3> of cnt1[4:0] 
+
+@W: CL171 :"C:\prj\Example-4-9\asyn_rst\asyn_rst.v":9:0:9:5|Pruning Register bit <2> of cnt1[4:0] 
+
+@W: CL171 :"C:\prj\Example-4-9\asyn_rst\asyn_rst.v":9:0:9:5|Pruning Register bit <4> of cnt2[4:0] 
+
+@W: CL171 :"C:\prj\Example-4-9\asyn_rst\asyn_rst.v":9:0:9:5|Pruning Register bit <3> of cnt2[4:0] 
+
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Jan 11 17:07:58 2006
+
+###########################################################[
+Version 8.1
+Synplicity Lattice ORCA FPGA Technology Mapper, Version 8.1.0, Build 532R, Built Apr 28 2005
+Copyright (C) 1994-2005, Synplicity Inc.  All Rights Reserved
+Setting fanout limit to 100
+Starting Generic Flow
+@N: MT204 |Autoconstrain Mode is ON
+---------------------------------------
+Resource Usage Report
+Part: lfxp10c-3
+
+Register bits: 5 of 9728 (0%)
+I/O cells:       12
+
+Details:
+FD1S3AX:        5
+GSR:            1
+IB:             2
+INV:            2
+OB:             10
+ORCALUT4:       3
+VHI:            1
+VLO:            1
+Found clock asyn_rst|clk with period 3.02ns 
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Jan 11 17:08:00 2006
+#
+
+
+Top view:               asyn_rst
+Requested Frequency:    331.7 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT195 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT197 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -0.532
+
+                   Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group                
+------------------------------------------------------------------------------------------------------------------------
+asyn_rst|clk       331.7 MHz     281.9 MHz     3.015         3.547         -0.532     inferred     Autoconstr_clkgroup_0
+========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                      |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------
+Starting      Ending        |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------
+asyn_rst|clk  asyn_rst|clk  |  3.015       -0.532  |  No paths    -      |  No paths    -      |  No paths    -    
+===================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+
+====================================
+Detailed Report for Clock: asyn_rst|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                Starting                                           Arrival           
+Instance        Reference        Type        Pin     Net           Time        Slack 
+                Clock                                                                
+-------------------------------------------------------------------------------------
+cnt1_1_0_.Q     asyn_rst|clk     FD1S3AX     Q       cnt1_c[0]     1.898       -0.532
+cnt1_1_1_.Q     asyn_rst|clk     FD1S3AX     Q       cnt1_c[1]     1.880       -0.513
+cnt2_1_2_.Q     asyn_rst|clk     FD1S3AX     Q       cnt2_c[4]     1.880       -0.513
+=====================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                Starting                                                         Required           
+Instance        Reference        Type        Pin     Net                         Time         Slack 
+                Clock                                                                               
+----------------------------------------------------------------------------------------------------
+cnt1_1_1_.Q     asyn_rst|clk     FD1S3AX     D       N_16_i                      2.691        -0.532
+cnt2_1_0_.Q     asyn_rst|clk     FD1S3AX     D       cnt1_1_i[0]                 2.691        -0.532
+cnt2_1_1_.Q     asyn_rst|clk     FD1S3AX     D       N_8_i_i                     2.691        -0.532
+cnt2_1_2_.Q     asyn_rst|clk     FD1S3AX     D       un3_cnt2_m_0_a2_0_a2[2]     2.691        -0.532
+cnt1_1_0_.Q     asyn_rst|clk     FD1S3AX     D       cnt2_1_i[2]                 2.691        -0.513
+====================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Requested Period:                        3.015
+    - Setup time:                            0.324
+    = Required time:                         2.691
+
+    - Propagation time:                      3.223
+    = Slack (critical) :                     -0.532
+
+    Number of logic level(s):                1
+    Starting point:                          cnt1_1_0_.Q / Q
+    Ending point:                            cnt2_1_1_.Q / D
+    The start point is clocked by            asyn_rst|clk [rising] on pin CK
+    The end   point is clocked by            asyn_rst|clk [rising] on pin CK
+
+Instance / Net                  Pin      Pin               Arrival     No. of    
+Name               Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------
+cnt1_1_0_.Q        FD1S3AX      Q        Out     1.898     1.898       -         
+cnt1_c[0]          Net          -        -       -         -           5         
+N_8_i_i            ORCALUT4     A        In      0.000     1.898       -         
+N_8_i_i            ORCALUT4     Z        Out     1.325     3.223       -         
+N_8_i_i            Net          -        -       -         -           1         
+cnt2_1_1_.Q        FD1S3AX      D        In      0.000     3.223       -         
+=================================================================================
+
+
+Path information for path number 2: 
+    Requested Period:                        3.015
+    - Setup time:                            0.324
+    = Required time:                         2.691
+
+    - Propagation time:                      3.223
+    = Slack (critical) :                     -0.532
+
+    Number of logic level(s):                1
+    Starting point:                          cnt1_1_0_.Q / Q
+    Ending point:                            cnt2_1_0_.Q / D
+    The start point is clocked by            asyn_rst|clk [rising] on pin CK
+    The end   point is clocked by            asyn_rst|clk [rising] on pin CK
+
+Instance / Net                 Pin      Pin               Arrival     No. of    
+Name               Type        Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------
+cnt1_1_0_.Q        FD1S3AX     Q        Out     1.898     1.898       -         
+cnt1_c[0]          Net         -        -       -         -           5         
+cnt1_1_i[0]        INV         A        In      0.000     1.898       -         
+cnt1_1_i[0]        INV         Z        Out     1.325     3.223       -         
+cnt1_1_i[0]        Net         -        -       -         -           1         
+cnt2_1_0_.Q        FD1S3AX     D        In      0.000     3.223       -         
+================================================================================
+
+
+Path information for path number 3: 
+    Requested Period:                        3.015
+    - Setup time:                            0.324
+    = Required time:                         2.691
+
+    - Propagation time:                      3.223
+    = Slack (critical) :                     -0.532
+
+    Number of logic level(s):                1
+    Starting point:                          cnt1_1_0_.Q / Q
+    Ending point:                            cnt1_1_1_.Q / D
+    The start point is clocked by            asyn_rst|clk [rising] on pin CK
+    The end   point is clocked by            asyn_rst|clk [rising] on pin CK
+
+Instance / Net                  Pin      Pin               Arrival     No. of    
+Name               Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------
+cnt1_1_0_.Q        FD1S3AX      Q        Out     1.898     1.898       -         
+cnt1_c[0]          Net          -        -       -         -           5         
+N_16_i             ORCALUT4     A        In      0.000     1.898       -         
+N_16_i             ORCALUT4     Z        Out     1.325     3.223       -         
+N_16_i             Net          -        -       -         -           1         
+cnt1_1_1_.Q        FD1S3AX      D        In      0.000     3.223       -         
+=================================================================================
+
+
+Path information for path number 4: 
+    Requested Period:                        3.015
+    - Setup time:                            0.324
+    = Required time:                         2.691
+
+    - Propagation time:                      3.223
+    = Slack (critical) :                     -0.532
+
+    Number of logic level(s):                1
+    Starting point:                          cnt1_1_0_.Q / Q
+    Ending point:                            cnt2_1_2_.Q / D
+    The start point is clocked by            asyn_rst|clk [rising] on pin CK
+    The end   point is clocked by            asyn_rst|clk [rising] on pin CK
+
+Instance / Net                           Pin      Pin               Arrival     No. of    
+Name                        Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------
+cnt1_1_0_.Q                 FD1S3AX      Q        Out     1.898     1.898       -         
+cnt1_c[0]                   Net          -        -       -         -           5         
+un3_cnt2_m_0_a2_0_a2[2]     ORCALUT4     A        In      0.000     1.898       -         
+un3_cnt2_m_0_a2_0_a2[2]     ORCALUT4     Z        Out     1.325     3.223       -         
+un3_cnt2_m_0_a2_0_a2[2]     Net          -        -       -         -           1         
+cnt2_1_2_.Q                 FD1S3AX      D        In      0.000     3.223       -         
+==========================================================================================
+
+
+Path information for path number 5: 
+    Requested Period:                        3.015
+    - Setup time:                            0.324
+    = Required time:                         2.691
+
+    - Propagation time:                      3.204
+    = Slack (non-critical) :                 -0.513
+
+    Number of logic level(s):                1
+    Starting point:                          cnt1_1_1_.Q / Q
+    Ending point:                            cnt2_1_1_.Q / D
+    The start point is clocked by            asyn_rst|clk [rising] on pin CK
+    The end   point is clocked by            asyn_rst|clk [rising] on pin CK
+
+Instance / Net                  Pin      Pin               Arrival     No. of    
+Name               Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------
+cnt1_1_1_.Q        FD1S3AX      Q        Out     1.880     1.880       -         
+cnt1_c[1]          Net          -        -       -         -           4         
+N_8_i_i            ORCALUT4     B        In      0.000     1.880       -         
+N_8_i_i            ORCALUT4     Z        Out     1.325     3.204       -         
+N_8_i_i            Net          -        -       -         -           1         
+cnt2_1_1_.Q        FD1S3AX      D        In      0.000     3.204       -         
+=================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Mapper successful!
+Process took 0h:0m:1s realtime, 0h:0m:1s cputime
+###########################################################]

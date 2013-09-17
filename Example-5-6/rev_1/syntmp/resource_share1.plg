@@ -1,0 +1,6 @@
+@P:  Part : EP1C3TC100-6
+@P:  Worst Slack : NA
+@P: resource_share1 Part : ep1c3tc100-6
+@P: resource_share1 I/O ATOMs : 23
+@P: resource_share1 Total LUTs: : 213 of 2910 ( 7%)
+@P: resource_share1 Logic resources : 213 ATOMs of 2910 ( 7%)

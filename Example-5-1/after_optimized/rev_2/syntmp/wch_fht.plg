@@ -1,0 +1,11 @@
+@P:  Part : EP1C3TC100-6
+@P:  Worst Slack : 994.975
+@P:  wch_fht|Clk - Estimated Frequency : 199.0 MHz
+@P:  wch_fht|Clk - Requested Frequency : 1.0 MHz
+@P:  wch_fht|Clk - Estimated Period : 5.025
+@P:  wch_fht|Clk - Requested Period : 1000.000
+@P:  wch_fht|Clk - Slack : 994.975
+@P: wch_fht Part : ep1c3tc100-6
+@P: wch_fht I/O ATOMs : 0
+@P: wch_fht Total LUTs: : 518 of 2910 (17%)
+@P: wch_fht Logic resources : 518 ATOMs of 2910 (17%)

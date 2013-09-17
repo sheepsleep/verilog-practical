@@ -1,0 +1,12 @@
+
+fsm_encoding {1230231} sequential
+
+fsm_state_encoding {1230231} IDLE {00}
+
+fsm_state_encoding {1230231} S1 {01}
+
+fsm_state_encoding {1230231} S2 {10}
+
+fsm_state_encoding {1230231} ERROR {11}
+
+fsm_registers {1230231} {CS[1]}  {CS[0]} 

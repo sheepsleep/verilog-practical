@@ -1,0 +1,13 @@
+#
+# Logical Preferences generated for Lucent by Synplify 8.1.0, Build 532R.
+#
+
+# Period Constraints
+FREQUENCY PORT "clk_50M" 120.0 MHz;
+FREQUENCY PORT "clk_100M" 120.0 MHz;
+# Output Constraints
+# Input Constraints
+
+BLOCK ASYNCPATHS;
+
+# End of generated Logical Preferences.

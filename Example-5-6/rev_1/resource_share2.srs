@@ -1,0 +1,52 @@
+#
+#
+#
+# Created by Synplify Verilog HDL Compiler version 3.1.0, Build 049R from Synplicity, Inc.
+# Copyright 1994-2004 Synplicity, Inc. , All rights reserved.
+# Synthesis Netlist written on Wed Mar 08 17:39:45 2006
+#
+#
+#OPTIONS:"|-fixsmult|-nram|-divnmod|-I|C:\\prj\\Chapter5\\Example-5-6\\|-I|C:\\eda\\synplicity\\fpga_81\\lib|-v2001|-devicelib|C:\\eda\\synplicity\\fpga_81\\lib\\altera\\altera.v|-devicelib|C:\\eda\\synplicity\\fpga_81\\lib\\altera\\cyclone.v|-devicelib|C:\\eda\\synplicity\\fpga_81\\lib\\altera\\altera_mf.v|-devicelib|C:\\eda\\synplicity\\fpga_81\\lib\\altera\\altera_lpm.v|-sm|-fid2|-sharing|off|-encrypt|-ui|-pro|-ram|-ll|2000"
+#CUR:"C:\\eda\\synplicity\\fpga_81\\bin\\c_ver.exe":1115125636
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\altera\\altera.v":1046175234
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\altera\\altera.v":1046175234
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\altera\\cyclone.v":1104225554
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\altera\\cyclone.v":1104225554
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\altera\\altera_mf.v":1092812196
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\altera\\altera_mf.v":1092812196
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\altera\\altera_lpm.v":1111562108
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\altera\\altera_lpm.v":1111562108
+#CUR:"C:\\prj\\Chapter5\\Example-5-6\\source\\resource_share2.v":1141810769
+#CUR:"C:\\prj\\Chapter5\\Example-5-6\\source\\resource_share2.v":1141810769
+f "C:\eda\synplicity\fpga_81\lib\altera\altera.v"; # file 0
+af .is_verilog 1;
+f "C:\eda\synplicity\fpga_81\lib\altera\cyclone.v"; # file 1
+af .is_verilog 1;
+f "C:\eda\synplicity\fpga_81\lib\altera\altera_mf.v"; # file 2
+af .is_verilog 1;
+f "C:\eda\synplicity\fpga_81\lib\altera\altera_lpm.v"; # file 3
+af .is_verilog 1;
+f "C:\prj\Chapter5\Example-5-6\source\resource_share2.v"; # file 4
+af .is_verilog 1;
+@E
+@ 
+ftell;
+@E@MR@4c::4(::R.4I	FsR#sCFOksCE_#N.sCRsPCHoDF;P
+NR#3HPHCsDRFo4N;
+PHR3#C_PsFHDo;R4
+RNP3HFsolhNCsR"Ck#Fs_OC#sENC;."
+@HR@.c:::4c.j:.R08NNM_Hrj(:9NR80HN_M:r(j
+9;
+@FR@dc:::46dj:.Rk#JNrsC4j6:9JR#kCNsr:46j
+9;b@R@c::.4.c::R.jHRMPk_M48NN0_rHM(9:jR4kM_08NNM_Hrj(:9NR80HN_M:r(j
+9;b@R@j::44::4.sR0k0CRsRkC0Csk;R
+b@:@j4::44R:.V#NDCNRVDR#CV#NDCb;
+Rc@@:dn:c::ncN6R8k8RM8._N_0N0rlb(9:jR.kM_08NNl_0b:r(jk9RM84_N_0NH(Mr:Rj90Csk;R
+b@:@cng:4:6n:nkRlGMRk48j_N_0N0rlb(9:4R4kMjN_800N_l(br:R498NN0_rHM(9:4R.kM_08NNl_0b:r(4R9
+R8RRN_0NH(Mr9b;
+Rc@@:4(:n::(dl6RkRD0#NJks4Cr69:jRk#JNrsC4j6:9MRk48j_N_0N0rlb(9:4,08NNM_Hr
+j9RRRRkjM4_08NNl_0b:r(489,N_0NHjMr9C;
+;
+
+
+

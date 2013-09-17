@@ -1,0 +1,247 @@
+#Program: Synplify Pro 8.1
+#OS: Windows_NT
+
+$ Start of Compile
+#Wed Jan 11 03:15:32 2006
+
+Synplicity Verilog Compiler, version 3.1.0, Build 049R, built May  3 2005
+Copyright (C) 1994-2005, Synplicity Inc.  All Rights Reserved
+
+@I::"C:\eda\synplicity\fpga_81\lib\lucent\ec.v"
+@I::"C:\prj\Example-4-2\clock_edge.v"
+Verilog syntax check successful!
+File C:\prj\Example-4-2\clock_edge.v changed - recompiling
+Selecting top level module clock_edge
+@N:"C:\prj\Example-4-2\clock_edge.v":1:7:1:16|Synthesizing module clock_edge
+
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Jan 11 03:15:32 2006
+
+###########################################################[
+Version 8.1
+Synplicity Lattice ORCA FPGA Technology Mapper, Version 8.1.0, Build 532R, Built Apr 28 2005
+Copyright (C) 1994-2005, Synplicity Inc.  All Rights Reserved
+Setting fanout limit to 100
+Starting Generic Flow
+---------------------------------------
+Resource Usage Report
+Part: lfec1e-4
+
+Register bits: 12 of 1536 (1%)
+I/O cells:       11
+
+Details:
+FD1S3AX:        12
+GSR:            1
+IB:             3
+INV:            4
+OB:             8
+ORCALUT4:       13
+VHI:            1
+VLO:            1
+Found clock clock_edge|clk_50M with period 8.33ns 
+Found clock clock_edge|clk_100M with period 8.33ns 
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Jan 11 03:15:34 2006
+#
+
+
+Top view:               clock_edge
+Requested Frequency:    120.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT195 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT197 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 1.382
+
+                        Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock          Frequency     Frequency     Period        Period        Slack     Type         Group              
+--------------------------------------------------------------------------------------------------------------------------
+clock_edge|clk_50M      120.0 MHz     179.5 MHz     8.333         5.569         1.382     inferred     Inferred_clkgroup_0
+clock_edge|clk_100M     120.0 MHz     359.1 MHz     8.333         2.785         5.549     inferred     Inferred_clkgroup_1
+==========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                    |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------------------------------
+Starting             Ending               |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------------------------------
+clock_edge|clk_100M  clock_edge|clk_100M  |  8.333       5.549  |  No paths    -      |  No paths    -      |  No paths    -    
+clock_edge|clk_50M   clock_edge|clk_50M   |  No paths    -      |  No paths    -      |  4.167       1.382  |  4.167       1.382
+================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+
+====================================
+Detailed Report for Clock: clock_edge|clk_50M
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                   Starting                                                    Arrival          
+Instance           Reference              Type        Pin     Net              Time        Slack
+                   Clock                                                                        
+------------------------------------------------------------------------------------------------
+cnt_temp1_0_.Q     clock_edge|clk_50M     FD1S3AX     Q       cnt_temp1[0]     1.465       1.382
+cnt_temp2_0_.Q     clock_edge|clk_50M     FD1S3AX     Q       cnt_temp2[0]     1.465       1.382
+cnt_temp1_1_.Q     clock_edge|clk_50M     FD1S3AX     Q       cnt_temp1[1]     1.449       1.398
+cnt_temp2_1_.Q     clock_edge|clk_50M     FD1S3AX     Q       cnt_temp2[1]     1.449       1.398
+cnt_temp1_2_.Q     clock_edge|clk_50M     FD1S3AX     Q       cnt_temp1[2]     1.417       1.430
+cnt_temp2_2_.Q     clock_edge|clk_50M     FD1S3AX     Q       cnt_temp2[2]     1.417       1.430
+cnt_temp1_3_.Q     clock_edge|clk_50M     FD1S3AX     Q       cnt_temp1[3]     1.336       1.511
+cnt_temp2_3_.Q     clock_edge|clk_50M     FD1S3AX     Q       cnt_temp2[3]     1.336       1.511
+================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                   Starting                                                      Required          
+Instance           Reference              Type        Pin     Net                Time         Slack
+                   Clock                                                                           
+---------------------------------------------------------------------------------------------------
+cnt_temp2_0_.Q     clock_edge|clk_50M     FD1S3AX     D       cnt_temp1_i[0]     3.889        1.382
+cnt_temp2_1_.Q     clock_edge|clk_50M     FD1S3AX     D       N_14               3.889        1.382
+cnt_temp2_2_.Q     clock_edge|clk_50M     FD1S3AX     D       N_15               3.889        1.382
+cnt_temp2_3_.Q     clock_edge|clk_50M     FD1S3AX     D       N_16               3.889        1.382
+cnt_temp1_0_.Q     clock_edge|clk_50M     FD1S3AX     D       cnt_temp2_i[0]     3.889        1.382
+cnt_temp1_1_.Q     clock_edge|clk_50M     FD1S3AX     D       N_18               3.889        1.382
+cnt_temp1_2_.Q     clock_edge|clk_50M     FD1S3AX     D       N_19               3.889        1.382
+cnt_temp1_3_.Q     clock_edge|clk_50M     FD1S3AX     D       N_20               3.889        1.382
+===================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Requested Period:                        4.167
+    - Setup time:                            0.278
+    = Required time:                         3.889
+
+    - Propagation time:                      2.507
+    = Slack (critical) :                     1.382
+
+    Number of logic level(s):                1
+    Starting point:                          cnt_temp1_0_.Q / Q
+    Ending point:                            cnt_temp2_0_.Q / D
+    The start point is clocked by            clock_edge|clk_50M [rising] on pin CK
+    The end   point is clocked by            clock_edge|clk_50M [falling] on pin CK
+
+Instance / Net                              Pin      Pin               Arrival     No. of    
+Name                            Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------
+cnt_temp1_0_.Q                  FD1S3AX     Q        Out     1.465     1.465       -         
+cnt_temp1[0]                    Net         -        -       -         -           5         
+cnt_temp1_0_.cnt_temp1_i[0]     INV         A        In      0.000     1.465       -         
+cnt_temp1_0_.cnt_temp1_i[0]     INV         Z        Out     1.042     2.507       -         
+cnt_temp1_i[0]                  Net         -        -       -         -           1         
+cnt_temp2_0_.Q                  FD1S3AX     D        In      0.000     2.507       -         
+=============================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: clock_edge|clk_100M
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+              Starting                                                  Arrival          
+Instance      Reference               Type        Pin     Net           Time        Slack
+              Clock                                                                      
+-----------------------------------------------------------------------------------------
+cnt2_0_.Q     clock_edge|clk_100M     FD1S3AX     Q       cnt2_c[0]     1.465       5.549
+cnt2_1_.Q     clock_edge|clk_100M     FD1S3AX     Q       cnt2_c[1]     1.449       5.565
+cnt2_2_.Q     clock_edge|clk_100M     FD1S3AX     Q       cnt2_c[2]     1.417       5.597
+cnt2_3_.Q     clock_edge|clk_100M     FD1S3AX     Q       cnt2_c[3]     1.336       5.677
+=========================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+              Starting                                                    Required          
+Instance      Reference               Type        Pin     Net             Time         Slack
+              Clock                                                                         
+--------------------------------------------------------------------------------------------
+cnt2_0_.Q     clock_edge|clk_100M     FD1S3AX     D       cnt2_c_i[0]     8.056        5.549
+cnt2_1_.Q     clock_edge|clk_100M     FD1S3AX     D       cnt2_n1         8.056        5.549
+cnt2_2_.Q     clock_edge|clk_100M     FD1S3AX     D       cnt2_n2         8.056        5.549
+cnt2_3_.Q     clock_edge|clk_100M     FD1S3AX     D       cnt2_n3         8.056        5.549
+============================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Requested Period:                        8.333
+    - Setup time:                            0.278
+    = Required time:                         8.056
+
+    - Propagation time:                      2.507
+    = Slack (non-critical) :                 5.549
+
+    Number of logic level(s):                1
+    Starting point:                          cnt2_0_.Q / Q
+    Ending point:                            cnt2_0_.Q / D
+    The start point is clocked by            clock_edge|clk_100M [rising] on pin CK
+    The end   point is clocked by            clock_edge|clk_100M [rising] on pin CK
+
+Instance / Net                 Pin      Pin               Arrival     No. of    
+Name               Type        Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------
+cnt2_0_.Q          FD1S3AX     Q        Out     1.465     1.465       -         
+cnt2_c[0]          Net         -        -       -         -           5         
+cnt2_c_i[0]        INV         A        In      0.000     1.465       -         
+cnt2_c_i[0]        INV         Z        Out     1.042     2.507       -         
+cnt2_c_i[0]        Net         -        -       -         -           1         
+cnt2_0_.Q          FD1S3AX     D        In      0.000     2.507       -         
+================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Mapper successful!
+Process took 0h:0m:1s realtime, 0h:0m:1s cputime
+###########################################################]

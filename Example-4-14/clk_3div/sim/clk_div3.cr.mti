@@ -1,0 +1,15 @@
+C:/prj/Example-4-14/clk_3div/clk_3div.v {1 {vlog -work work C:/prj/Example-4-14/clk_3div/clk_3div.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module clk_3div
+
+Top level modules:
+	clk_3div
+
+} {} {}} C:/prj/Example-4-14/clk_3div/clk_3div_tb.v {1 {vlog -work work C:/prj/Example-4-14/clk_3div/clk_3div_tb.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module clk_3div_tb
+
+Top level modules:
+	clk_3div_tb
+
+} {} {}}

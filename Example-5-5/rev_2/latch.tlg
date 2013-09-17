@@ -1,0 +1,4 @@
+Selecting top level module latch
+@N:"C:\prj\Example-5-2\latch.v":1:7:1:11|Synthesizing module latch
+
+@W: CL118 :"C:\prj\Example-5-2\latch.v":11:4:11:5|Latch generated from always block for signal data_out, probably caused by a missing assignment in an if or case stmt

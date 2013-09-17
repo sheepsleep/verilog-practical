@@ -1,0 +1,15 @@
+Selecting top level module top
+@N:"C:\prj\Example-4-21\oe_edge\decode.v":3:7:3:12|Synthesizing module decode
+
+@W: CL118 :"C:\prj\Example-4-21\oe_edge\decode.v":17:2:17:3|Latch generated from always block for signal CS_reg3, probably caused by a missing assignment in an if or case stmt
+@W: CL118 :"C:\prj\Example-4-21\oe_edge\decode.v":17:2:17:3|Latch generated from always block for signal CS_reg2, probably caused by a missing assignment in an if or case stmt
+@W: CL118 :"C:\prj\Example-4-21\oe_edge\decode.v":17:2:17:3|Latch generated from always block for signal CS_reg1, probably caused by a missing assignment in an if or case stmt
+@N:"C:\prj\Example-4-21\oe_edge\write_reg.v":2:7:2:15|Synthesizing module write_reg
+
+@N: CG179 :"C:\prj\Example-4-21\oe_edge\write_reg.v":29:29:29:32|Removing redundant assignment
+@N: CG179 :"C:\prj\Example-4-21\oe_edge\write_reg.v":30:29:30:32|Removing redundant assignment
+@N: CG179 :"C:\prj\Example-4-21\oe_edge\write_reg.v":31:29:31:32|Removing redundant assignment
+@N:"C:\prj\Example-4-21\oe_edge\read_reg.v":2:7:2:14|Synthesizing module read_reg
+
+@N:"C:\prj\Example-4-21\oe_edge\top.v":1:7:1:9|Synthesizing module top
+

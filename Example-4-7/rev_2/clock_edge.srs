@@ -1,0 +1,62 @@
+#
+#
+#
+# Created by Synplify Verilog HDL Compiler version 3.1.0, Build 049R from Synplicity, Inc.
+# Copyright 1994-2004 Synplicity, Inc. , All rights reserved.
+# Synthesis Netlist written on Wed Jan 11 03:15:32 2006
+#
+#
+#OPTIONS:"|-fixsmult|-I|C:\\prj\\Example-4-2\\|-I|C:\\eda\\synplicity\\fpga_81\\lib|-v2001|-devicelib|C:\\eda\\synplicity\\fpga_81\\lib\\lucent\\ec.v|-sm|-fid2|-sharing|off|-encrypt|-ui|-pro|-ram|-ll|2000"
+#CUR:"C:\\eda\\synplicity\\fpga_81\\bin\\c_ver.exe":1115125636
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\lucent\\ec.v":1110443424
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\lucent\\ec.v":1110443424
+#CUR:"C:\\prj\\Example-4-2\\clock_edge.v":1136920247
+#CUR:"C:\\prj\\Example-4-2\\clock_edge.v":1136920247
+f "C:\eda\synplicity\fpga_81\lib\lucent\ec.v"; # file 0
+af .is_verilog 1;
+f "C:\prj\Example-4-2\clock_edge.v"; # file 1
+af .is_verilog 1;
+@E
+@ 
+ftell;
+@E@MR@44::4(::R4nI	FsRFODOC	_8RoCPHCsD;Fo
+RNP3PH#CDsHF4oR;P
+NR#3H_sPCHoDFR
+4;N3PRFosHhCNlRD"OF_O	CC8o"
+;
+
+@HR@d4:::4ddg:4R	OD_v6jR	OD_v6j;
+
+
+
+@HR@d4:::..dg:.R	OD_j4jvDRO	j_4j
+v;
+@HR@d4:::d.d6:dR0s#_#Rs0
+_;
+@FR@c4:::4dcn:4R0OM4:rdjO9RMr04d9:j;
+
+
+
+@FR@c4:::4gc.:.R0OM.:rdjO9RMr0.d9:j;R
+b@:@4d.:d:dd:6MRHPMRk4#_s0k_RMs4_#R0_s_#0;R
+b@:@4dd:4:4d:gMRHPMRk4D_O	j_6vMRk4D_O	j_6vDRO	j_6vb;
+Rj@@:44::.4:Rk0sCsR0k0CRs;kC
+@bR@4j::44::V.RNCD#RDVN#VCRNCD#;R
+b@:@4.4j:6j:.:RcnlRkGO4M0rjd:9MRO0d4r:Rj9O_M00bCl4:rdjO9RM00_C.lbrjd:9DRO	j_6vb;
+R4@@::4.44g:..:dR8N8RdkM_0OM_l0Cbd4r:Rj9k_MdO_M00bCl4:rdjO9RM00_C.lbrjd:9sR0k
+C;b@R@4U:4::4g4dU:.8RN8MRkdM_O0C_0lrb.d9:jRdkM_0OM_l0Cbd.r:Rj9O_M00bCl4:rdj09Rs;kC
+@bR@.4:nc:4::.n.N.R8k8RMOd_Mr0.d9:jRdkM_0OM.:rdjO9RMr0.d9:jRk0sCb;
+R4@@:jU::6U:RV8VsMRO0C_0lrb4d9:jR0OM_l0Cbd4r:Rj9k_MdO_M00bCl4:rdjO9RD6	_jRv
+RkRRMs4_#;0_
+RNH3M#$_FbsOlMNCbR"s_FOO_M00bCl4
+";N3HRs_0DFosHMCNlRM"O0C_0l"b4;R
+b@:@44jc:::4c6VR8VOsRM00_C.lbrjd:9MRO0C_0lrb.d9:jRdkM_0OM_l0Cbd.r:Rj9k_M4O_D	6
+jvRRRRk_M4s_#0;H
+NR$3#Ms_bFNOMl"CRbOsF_0OM_l0Cb;."
+RNH3Ds0_HFsolMNCOR"M00_C.lb"b;
+R4@@::..j.:.:86RVRVsO.M0rjd:9MRO0d.r:Rj9k_MdO.M0rjd:9DRO	j_4jkvRMs4_#;0_
+RNH3M#$_FbsOlMNCbR"s_FOO.M0"N;
+HsR30FD_sMHoNRlC"0OM.
+";C
+;
+

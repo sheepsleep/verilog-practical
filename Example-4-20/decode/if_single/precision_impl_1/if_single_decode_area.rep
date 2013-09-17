@@ -1,0 +1,34 @@
+***********************************************
+Device Utilization for LFEC20E-3F672CES
+***********************************************
+Resource                Used    Avail   Utilization
+-----------------------------------------------
+IOs                     7       400       1.75%
+LUTs                    4       19700     0.02%
+PFUs                    1       4925      0.02%
+Flipflops               0       19700     0.00%
+Block RAMs              0       46        0.00%
+
+-----------------------------------------------
+
+**********************************************************
+
+Library: work    Cell: if_single_decode    View: INTERFACE
+
+**********************************************************
+
+  Cell       Library  References     Total Area
+
+ IB          lattice_ec     3 x
+ OB          lattice_ec     4 x
+ ORCALUT3    lattice_ec     4 x      1      4 LUTs
+
+ Number of ports :                       7
+ Number of nets :                       14
+ Number of instances :                  11
+ Number of references to this view :     0
+
+Total accumulated area : 
+ Number of LUTs :                        4
+ Number of gates :                       0
+ Number of accumulated instances :      11

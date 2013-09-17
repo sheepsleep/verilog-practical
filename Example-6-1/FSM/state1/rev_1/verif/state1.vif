@@ -1,0 +1,62 @@
+#
+# Synplicity Verification Interface File
+# Generated using Synplify-pro
+#
+# Copyright (c) 1996-2005 Synplicity, Inc.
+# All rights reserved
+#
+
+# Set logfile options
+vif_set_result_file  state1.vlf
+
+# Set technology for TCL script
+vif_set_technology -architecture FPGA -vendor Altera
+
+# RTL and technology files
+vif_add_library -original $env(QUARTUS_ROOTDIR)/eda/fv_lib/verilog
+vif_add_file -original -verilog ../state1.v
+vif_set_top_module -original -top state1
+ 
+vif_add_library -translated $env(QUARTUS_ROOTDIR)/eda/fv_lib/verilog
+vif_add_file -translated -verilog state1.vqm
+vif_set_top_module -translated -top state1 
+# Read FSM encoding
+vif_set_fsm -fsm fsm_0
+vif_set_fsmreg -original -fsm fsm_0 NS[2:0]
+vif_set_fsmreg -translated -fsm  fsm_0 NS[1:0]
+vif_set_state_map -fsm fsm_0 -original "000" -translated "00"
+vif_set_state_map -fsm fsm_0 -original "001" -translated "01"
+vif_set_state_map -fsm fsm_0 -original "010" -translated "10"
+vif_set_state_map -fsm fsm_0 -original "100" -translated "11"
+
+# Memory map points
+
+# SRL map points
+
+# Compiler constant registers
+
+# Compiler constant latches
+
+# Compiler RTL sequential redundancies
+
+# RTL sequential redundancies
+vif_set_merge -original -fsmopt  NS[0] o1
+vif_set_merge -original -fsmopt  NS[1] o2
+
+# Technology sequential redundancies
+
+# Inversion map points
+
+# Port mappping and directions
+
+# Black box mapping
+
+
+# Other sequential cells, including multidimensional arrays
+
+# Constant Registers
+
+# Retimed Registers
+
+# Altera MAC annotations
+

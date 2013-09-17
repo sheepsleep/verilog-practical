@@ -1,0 +1,324 @@
+#Program: Synplify Pro 8.1
+#OS: Windows_NT
+
+$ Start of Compile
+#Wed Jan 11 02:21:18 2006
+
+Synplicity Verilog Compiler, version 3.1.0, Build 049R, built May  3 2005
+Copyright (C) 1994-2005, Synplicity Inc.  All Rights Reserved
+
+@I::"C:\eda\synplicity\fpga_81\lib\xilinx\unisim.v"
+@I::"C:\prj\Example-4-7\clk_div_phase\clk_div_phase.v"
+Verilog syntax check successful!
+File C:\prj\Example-4-7\clk_div_phase\clk_div_phase.v changed - recompiling
+Selecting top level module clk_div_phase
+@N:"C:\prj\Example-4-7\clk_div_phase\clk_div_phase.v":1:7:1:19|Synthesizing module clk_div_phase
+
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Jan 11 02:21:18 2006
+
+###########################################################[
+Version 8.1
+Synplicity Xilinx Technology Mapper, Version 8.1.0, Build 540R, Built May  9 2005
+Copyright (C) 1994-2005, Synplicity Inc.  All Rights Reserved
+Reading Xilinx I/O pad type table from file <C:\eda\synplicity\fpga_81\lib/xilinx/x_io_tbl.txt> 
+Reading Xilinx Rocket I/O parameter type table from file <C:\eda\synplicity\fpga_81\lib/xilinx/gttype.txt> 
+
+
+@N: MT204 |Autoconstrain Mode is ON
+RTL optimization done.
+
+Clock Buffers:
+  Inserting Clock buffer for port clk_200M,	TNM=clk_200M
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+------------------------------------------------------------
+
+Timing driven replication report
+No replication required.
+
+Timing driven replication report
+No replication required.
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+------------------------------------------------------------
+
+Timing driven replication report
+No replication required.
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+------------------------------------------------------------
+
+Net buffering Report for view:work.clk_div_phase(verilog):
+No nets needed buffering.
+
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+Writing Analyst data base C:\prj\Example-4-7\clk_div_phase\rev_1\clk_div_phase.srm
+Writing EDIF Netlist and constraint files
+Found clock clk_div_phase|clk_200M with period 1.88ns 
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Jan 11 02:21:20 2006
+#
+
+
+Top view:               clk_div_phase
+Requested Frequency:    532.3 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT195 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT197 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -0.332
+
+                           Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock             Frequency     Frequency     Period        Period        Slack      Type         Group                
+--------------------------------------------------------------------------------------------------------------------------------
+clk_div_phase|clk_200M     532.3 MHz     452.4 MHz     1.879         2.210         -0.332     inferred     Autoconstr_clkgroup_0
+================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                          |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------------------------------------
+Starting                Ending                  |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------------------------------------
+clk_div_phase|clk_200M  clk_div_phase|clk_200M  |  1.879       -0.332  |  No paths    -      |  No paths    -      |  No paths    -    
+=======================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+
+====================================
+Detailed Report for Clock: clk_div_phase|clk_200M
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+             Starting                                               Arrival           
+Instance     Reference                  Type     Pin     Net        Time        Slack 
+             Clock                                                                    
+--------------------------------------------------------------------------------------
+cnt[0]       clk_div_phase|clk_200M     FDC      Q       cnt[0]     0.720       -0.332
+cnt[1]       clk_div_phase|clk_200M     FDC      Q       cnt[1]     0.720       -0.322
+cnt[2]       clk_div_phase|clk_200M     FDC      Q       cnt[2]     0.720       -0.309
+======================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                  Starting                                                       Required           
+Instance          Reference                  Type     Pin     Net                Time         Slack 
+                  Clock                                                                             
+----------------------------------------------------------------------------------------------------
+cnt[0]            clk_div_phase|clk_200M     FDC      D       cnt_i[0]           1.768        -0.332
+cnt[1]            clk_div_phase|clk_200M     FDC      D       un3_cnt_axbxc1     1.768        -0.332
+cnt[2]            clk_div_phase|clk_200M     FDC      D       un3_cnt_axbxc2     1.768        -0.332
+cnt_rep0_i[1]     clk_div_phase|clk_200M     FDP      D       N_2_i              1.768        -0.332
+cnt_rep0_i[2]     clk_div_phase|clk_200M     FDP      D       N_3_i              1.768        -0.332
+cnt_rep0_i[0]     clk_div_phase|clk_200M     FDP      D       cnt[0]             1.676        0.156 
+====================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Requested Period:                        1.879
+    - Setup time:                            0.111
+    = Required time:                         1.768
+
+    - Propagation time:                      2.099
+    = Slack (critical) :                     -0.332
+
+    Number of logic level(s):                1
+    Starting point:                          cnt[0] / Q
+    Ending point:                            cnt_rep0_i[1] / D
+    The start point is clocked by            clk_div_phase|clk_200M [rising] on pin C
+    The end   point is clocked by            clk_div_phase|clk_200M [rising] on pin C
+
+Instance / Net                Pin      Pin               Arrival     No. of    
+Name               Type       Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------
+cnt[0]             FDC        Q        Out     0.720     0.720       -         
+cnt[0]             Net        -        -       0.800     -           6         
+N_2_i              LUT2_L     I0       In      -         1.520       -         
+N_2_i              LUT2_L     LO       Out     0.579     2.099       -         
+N_2_i              Net        -        -       0.000     -           1         
+cnt_rep0_i[1]      FDP        D        In      -         2.099       -         
+===============================================================================
+Total path delay (propagation time + setup) of 2.210 is 1.410(63.8%) logic and 0.800(36.2%) route.
+
+
+Path information for path number 2: 
+    Requested Period:                        1.879
+    - Setup time:                            0.111
+    = Required time:                         1.768
+
+    - Propagation time:                      2.099
+    = Slack (critical) :                     -0.332
+
+    Number of logic level(s):                1
+    Starting point:                          cnt[0] / Q
+    Ending point:                            cnt_rep0_i[2] / D
+    The start point is clocked by            clk_div_phase|clk_200M [rising] on pin C
+    The end   point is clocked by            clk_div_phase|clk_200M [rising] on pin C
+
+Instance / Net                Pin      Pin               Arrival     No. of    
+Name               Type       Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------
+cnt[0]             FDC        Q        Out     0.720     0.720       -         
+cnt[0]             Net        -        -       0.800     -           6         
+N_3_i              LUT3_L     I0       In      -         1.520       -         
+N_3_i              LUT3_L     LO       Out     0.579     2.099       -         
+N_3_i              Net        -        -       0.000     -           1         
+cnt_rep0_i[2]      FDP        D        In      -         2.099       -         
+===============================================================================
+Total path delay (propagation time + setup) of 2.210 is 1.410(63.8%) logic and 0.800(36.2%) route.
+
+
+Path information for path number 3: 
+    Requested Period:                        1.879
+    - Setup time:                            0.111
+    = Required time:                         1.768
+
+    - Propagation time:                      2.099
+    = Slack (critical) :                     -0.332
+
+    Number of logic level(s):                1
+    Starting point:                          cnt[0] / Q
+    Ending point:                            cnt[2] / D
+    The start point is clocked by            clk_div_phase|clk_200M [rising] on pin C
+    The end   point is clocked by            clk_div_phase|clk_200M [rising] on pin C
+
+Instance / Net                Pin      Pin               Arrival     No. of    
+Name               Type       Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------
+cnt[0]             FDC        Q        Out     0.720     0.720       -         
+cnt[0]             Net        -        -       0.800     -           6         
+un3_cnt_axbxc2     LUT3_L     I0       In      -         1.520       -         
+un3_cnt_axbxc2     LUT3_L     LO       Out     0.579     2.099       -         
+un3_cnt_axbxc2     Net        -        -       0.000     -           1         
+cnt[2]             FDC        D        In      -         2.099       -         
+===============================================================================
+Total path delay (propagation time + setup) of 2.210 is 1.410(63.8%) logic and 0.800(36.2%) route.
+
+
+Path information for path number 4: 
+    Requested Period:                        1.879
+    - Setup time:                            0.111
+    = Required time:                         1.768
+
+    - Propagation time:                      2.099
+    = Slack (critical) :                     -0.332
+
+    Number of logic level(s):                1
+    Starting point:                          cnt[0] / Q
+    Ending point:                            cnt[1] / D
+    The start point is clocked by            clk_div_phase|clk_200M [rising] on pin C
+    The end   point is clocked by            clk_div_phase|clk_200M [rising] on pin C
+
+Instance / Net                Pin      Pin               Arrival     No. of    
+Name               Type       Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------
+cnt[0]             FDC        Q        Out     0.720     0.720       -         
+cnt[0]             Net        -        -       0.800     -           6         
+un3_cnt_axbxc1     LUT2_L     I0       In      -         1.520       -         
+un3_cnt_axbxc1     LUT2_L     LO       Out     0.579     2.099       -         
+un3_cnt_axbxc1     Net        -        -       0.000     -           1         
+cnt[1]             FDC        D        In      -         2.099       -         
+===============================================================================
+Total path delay (propagation time + setup) of 2.210 is 1.410(63.8%) logic and 0.800(36.2%) route.
+
+
+Path information for path number 5: 
+    Requested Period:                        1.879
+    - Setup time:                            0.111
+    = Required time:                         1.768
+
+    - Propagation time:                      2.099
+    = Slack (critical) :                     -0.332
+
+    Number of logic level(s):                1
+    Starting point:                          cnt[0] / Q
+    Ending point:                            cnt[0] / D
+    The start point is clocked by            clk_div_phase|clk_200M [rising] on pin C
+    The end   point is clocked by            clk_div_phase|clk_200M [rising] on pin C
+
+Instance / Net                Pin      Pin               Arrival     No. of    
+Name               Type       Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------
+cnt[0]             FDC        Q        Out     0.720     0.720       -         
+cnt[0]             Net        -        -       0.800     -           6         
+un3_cnt_axbxc0     LUT1_L     I0       In      -         1.520       -         
+un3_cnt_axbxc0     LUT1_L     LO       Out     0.579     2.099       -         
+cnt_i[0]           Net        -        -       0.000     -           1         
+cnt[0]             FDC        D        In      -         2.099       -         
+===============================================================================
+Total path delay (propagation time + setup) of 2.210 is 1.410(63.8%) logic and 0.800(36.2%) route.
+
+
+
+##### END OF TIMING REPORT #####]
+
+---------------------------------------
+Resource Usage Report for clk_div_phase 
+
+Mapping to part: xc3s50tq144-4
+Cell usage:
+FDC             3 uses
+FDP             3 uses
+LUT1            1 use
+LUT2            2 uses
+LUT3            2 uses
+
+I/O primitives: 4
+IBUF           1 use
+OBUF           3 uses
+
+BUFGP          1 use
+
+I/O Register bits:                  0
+Register bits not including I/Os:   6 (0%)
+
+Global Clock Buffers: 1 of 8 (12%)
+
+
+Mapping Summary:
+Total  LUTs: 5 (0%)
+
+Mapper successful!
+Process took 0h:0m:1s realtime, 0h:0m:1s cputime
+###########################################################]

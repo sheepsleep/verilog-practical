@@ -1,0 +1,58 @@
+#
+#
+#
+# Created by Synplify Verilog HDL Compiler version 3.1.0, Build 049R from Synplicity, Inc.
+# Copyright 1994-2004 Synplicity, Inc. , All rights reserved.
+# Synthesis Netlist written on Tue Jan 10 23:28:54 2006
+#
+#
+#OPTIONS:"|-primux|-fixsmult|-sdff_counter|-infer_seqShift|-nram|-divnmod|-I|C:\\prj\\Example-4-5\\|-I|C:\\eda\\synplicity\\fpga_81\\lib|-v2001|-devicelib|C:\\eda\\synplicity\\fpga_81\\lib\\xilinx\\unisim.v|-sm|-fid2|-sharing|off|-encrypt|-ui|-pro|-ram|-ll|2000"
+#CUR:"C:\\eda\\synplicity\\fpga_81\\bin\\c_ver.exe":1115125636
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\xilinx\\unisim.v":1113287638
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\xilinx\\unisim.v":1113287638
+#CUR:"C:\\prj\\Example-4-5\\mux.v":1136906797
+#CUR:"C:\\prj\\Example-4-5\\mux.v":1136906797
+f "C:\eda\synplicity\fpga_81\lib\xilinx\unisim.v"; # file 0
+af .is_verilog 1;
+f "C:\prj\Example-4-5\mux.v"; # file 1
+af .is_verilog 1;
+@E
+@ 
+ftell;
+@E@MR@44::4(::IgRFRs	lRkGPHCsD;Fo
+RNP3PH#CDsHF4oR;P
+NR#3H_sPCHoDFR
+4;N3PRFosHhCNlRk"lG
+";
+@HR@d4:::4ddc:4RrCM49:jRrCM49:j;
+
+
+
+@HR@c4:::4dcd:4RNNR;
+
+
+
+@HR@c4:::4ncn:4RLLR;
+
+
+
+@HR@c4:::4gcg:4ROOR;
+
+
+
+@HR@c4:::..c.:.R88R;
+
+
+
+@FR@64:::4d6g:4RGlk_0FkRGlk_0Fk;R
+b@:@4dd:4:4d:cMRHPMRk4M_Crj4:9MRk4M_Crj4:9MRCrj4:9b;
+Rj@@:44::.4:Rk0sCsR0k0CRs;kC
+@bR@4j::44::V.RNCD#RDVN#VCRNCD#;R
+b@:@44Uc:::4c4N.RMR8Pl_kGFgk0RGlk_0FkgMRCrRj9C4Mr9b;
+R4@@::44U4:4:R4.NPM8RGlk_0FknkRlGk_F0knRMC4_M9rjR4kM_rCM4
+9;b@R@4.:4:4U:..:4R8NMPkRlGk_F0l(RkFG_kR0(CjMr9MRk4M_Cr;49
+@bR@44:d::U44d:.MRN8lPRkFG_kR0Ul_kGFUk0RrCM4k9RMC4_M9rj;R
+b@:@44nj:::4jglRbklGRkFG_kl0RkFG_kN0R,Glk_0Fkn,RLl_kGF(k0RlO,kFG_kR0U8k,lGk_F0
+g;C
+;
+

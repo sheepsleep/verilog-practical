@@ -1,0 +1,4 @@
+Selecting top level module ram_basic
+@N:"C:\prj\Example-4-13\ram_basic\ram_basic.v":1:7:1:15|Synthesizing module ram_basic
+
+@N: CL134 :"C:\prj\Example-4-13\ram_basic\ram_basic.v":13:5:13:10|Found RAM RAM8x64, depth=64, width=8

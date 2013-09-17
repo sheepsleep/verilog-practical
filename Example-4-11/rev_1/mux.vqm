@@ -1,0 +1,164 @@
+//
+// Written by Synplify
+// Synplify 8.1.0, Build 539R.
+// Tue Jan 10 23:28:11 2006
+//
+// Source file index table:
+// Object locations will have the form <file>:<line>
+// file 0 "noname"
+// file 1 "\c:\eda\synplicity\fpga_81\lib\altera\altera.v "
+// file 2 "\c:\eda\synplicity\fpga_81\lib\altera\cycloneii.v "
+// file 3 "\c:\eda\synplicity\fpga_81\lib\altera\altera_mf.v "
+// file 4 "\c:\eda\synplicity\fpga_81\lib\altera\altera_lpm.v "
+// file 5 "\c:\prj\example-4-5\mux.v "
+
+// VQM4.1+ 
+module mux (
+  en,
+  a,
+  b,
+  c,
+  d,
+  mux_out
+);
+input [1:0] en ;
+input a ;
+input b ;
+input c ;
+input d ;
+output mux_out /* synthesis syn_tristate = 1 */;
+wire a ;
+wire b ;
+wire c ;
+wire d ;
+wire mux_out ;
+wire [1:0] en_c;
+wire VCC ;
+wire GND ;
+wire mux_out_3_0_c ;
+wire c_c ;
+wire a_c ;
+wire mux_out_3_0 ;
+wire d_c ;
+wire b_c ;
+//@1:1
+  assign VCC = 1'b1;
+//@1:1
+  assign GND = 1'b0;
+  cycloneii_lcell_comb mux_out_3_0_c_cZ (
+	.combout(mux_out_3_0_c),
+	.dataa(en_c[0]),
+	.datab(en_c[1]),
+	.datac(c_c),
+	.datad(a_c)
+);
+defparam mux_out_3_0_c_cZ.lut_mask="d9c8";
+defparam mux_out_3_0_c_cZ.sum_lutc_input="datac";
+  cycloneii_lcell_comb mux_out_3_0_cZ (
+	.combout(mux_out_3_0),
+	.dataa(en_c[0]),
+	.datab(d_c),
+	.datac(b_c),
+	.datad(mux_out_3_0_c)
+);
+defparam mux_out_3_0_cZ.lut_mask="dda0";
+defparam mux_out_3_0_cZ.sum_lutc_input="datac";
+// @5:4
+  cycloneii_io d_in (
+	.padio(d),
+	.combout(d_c),
+	.datain(GND),
+	.oe(GND),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam d_in.operation_mode = "input";
+// @5:4
+  cycloneii_io c_in (
+	.padio(c),
+	.combout(c_c),
+	.datain(GND),
+	.oe(GND),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam c_in.operation_mode = "input";
+// @5:4
+  cycloneii_io b_in (
+	.padio(b),
+	.combout(b_c),
+	.datain(GND),
+	.oe(GND),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam b_in.operation_mode = "input";
+// @5:4
+  cycloneii_io a_in (
+	.padio(a),
+	.combout(a_c),
+	.datain(GND),
+	.oe(GND),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam a_in.operation_mode = "input";
+// @5:3
+  cycloneii_io en_in_1_ (
+	.padio(en[1]),
+	.combout(en_c[1]),
+	.datain(GND),
+	.oe(GND),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam en_in_1_.operation_mode = "input";
+// @5:3
+  cycloneii_io en_in_0_ (
+	.padio(en[0]),
+	.combout(en_c[0]),
+	.datain(GND),
+	.oe(GND),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam en_in_0_.operation_mode = "input";
+// @5:5
+  cycloneii_io mux_out_out (
+	.padio(mux_out),
+	.datain(mux_out_3_0),
+	.oe(VCC),
+	.outclk(GND),
+	.outclkena(VCC),
+	.inclk(GND),
+	.inclkena(VCC),
+	.areset(GND),
+	.sreset(GND)
+);
+defparam mux_out_out.operation_mode = "output";
+endmodule /* mux */
+

@@ -1,0 +1,57 @@
+#
+#
+#
+# Created by Synplify Verilog HDL Compiler version 3.1.0, Build 049R from Synplicity, Inc.
+# Copyright 1994-2004 Synplicity, Inc. , All rights reserved.
+# Synthesis Netlist written on Fri Jan 13 16:06:50 2006
+#
+#
+#OPTIONS:"|-fixsmult|-I|C:\\prj\\Example-4-10\\decode\\case\\|-I|C:\\eda\\synplicity\\fpga_81\\lib|-v2001|-devicelib|C:\\eda\\synplicity\\fpga_81\\lib\\lucent\\ec.v|-sm|-fid2|-sharing|off|-encrypt|-ui|-pro|-ram|-ll|2000"
+#CUR:"C:\\eda\\synplicity\\fpga_81\\bin\\c_ver.exe":1115125636
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\lucent\\ec.v":1110443424
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\lucent\\ec.v":1110443424
+#CUR:"C:\\prj\\Example-4-10\\decode\\case\\case_decode.v":1137138622
+#CUR:"C:\\prj\\Example-4-10\\decode\\case\\case_decode.v":1137138622
+f "C:\eda\synplicity\fpga_81\lib\lucent\ec.v"; # file 0
+af .is_verilog 1;
+f "C:\prj\Example-4-10\decode\case\case_decode.v"; # file 1
+af .is_verilog 1;
+@E
+@ 
+ftell;
+@E@MR@c4::c(::R4(I	FsR#ONCC_8OCF8RsPCHoDF;P
+NR#3HPHCsDRFo4N;
+PHR3#C_PsFHDo;R4
+RNP3HFsolhNCOR"N_#C8FCO8;C"
+RNPBu]Q4;Rc
+RNPBu]Q.;R6
+RNPBu]Qd;R.
+RNPBu]Qc;Rd
+@HR@n4:::4dnU:4R8N8sr_].9:jR8N8sr_].9:j;
+
+
+
+@FR@(4:::4d(6:4R4B1R_B1Lrk#j
+9;
+@FR@(4:::4U(j:.R.B1R_B1Lrk#4
+9;
+@FR@(4:::.d(6:.RdB1R_B1Lrk#.
+9;
+@FR@(4:::.U(j:dRcB1R_B1Lrk#d
+9;b@R@4::n4nd::R4UHRMPk_M4Ns88_.]r:Rj9k_M4Ns88_.]r:Rj9Ns88_.]r:;j9
+@bR@4j::44::0.RsRkC0CskRk0sCb;
+Rj@@:44::.4:RDVN#VCRNCD#RDVN#
+C;b@R@4(:4::4g4.(:dMRN8BPR1k_L#R..BL1_k.#.R8N8sr_].k9RMN4_8_8s]9rjR4kM_8N8sr_]4
+9;b@R@4U:4::4g4.U:dMRN8BPR1k_L#R.dBL1_kd#.R8N8sr_]jN9R8_8s]9r.R4kM_8N8sr_]4
+9;b@R@4g:4::4g4.g:dMRN8BPR1k_L#R.cBL1_kc#.R8N8sr_]4k9RMN4_8_8s]9rjR4kM_8N8sr_].
+9;b@R@4j:.::4g..j:dMRN8BPR1k_L#R.6BL1_k6#.R8N8sr_]jN9R8_8s]9r4R4kM_8N8sr_].
+9;b@R@4n:4::4c44n:(MRHPMRk41_B_#Lk.k.RMB4_1k_L#R..BL1_k.#.;R
+b@:@444n:cn:4:R4(HRMPk_M4BL1_kd#.R4kM__B1L.k#d1RB_#Lk.
+d;b@R@4n:4::4c44n:(MRHPMRk41_B_#Lk.kcRMB4_1k_L#R.cBL1_kc#.;R
+b@:@444n:cn:4:R4(HRMPk_M4BL1_k6#.R4kM__B1L.k#61RB_#Lk.
+6;b@R@4n:4::4c44n:(MRN8kPRMB4_1k_L#_.64MRk41_B_#Lk.46_R4kM__B1L.k#6MRk41_B_#Lk.Rc
+RkRRMB4_1k_L#R.dk_M4BL1_k.#.;R
+b@:@444n:cn:4:R4(bGlkR_B1Lrk#d9:jR_B1Lrk#d9:jRDVN#0C,s,kC0Csk,k0sC1,B_#Lk.0.Rs,kCV#NDCs,0k0C,s,kCBL1_kd#.
+RRRRk0sCs,0kVC,NCD#,k0sC1,B_#Lk.0cRs,kC0Csk,k0sCN,VD,#CBL1_k6#.Rk0sCs,0k0C,s,kC0Csk,4kM__B1L.k#6;_4
+
+C;

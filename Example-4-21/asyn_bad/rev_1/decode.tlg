@@ -1,0 +1,21 @@
+Selecting top level module top
+@N:"C:\prj\Example-4-21\asyn_bad\decode.v":3:7:3:12|Synthesizing module decode
+
+@W: CL118 :"C:\prj\Example-4-21\asyn_bad\decode.v":17:2:17:3|Latch generated from always block for signal CS_reg3, probably caused by a missing assignment in an if or case stmt
+@W: CL118 :"C:\prj\Example-4-21\asyn_bad\decode.v":17:2:17:3|Latch generated from always block for signal CS_reg2, probably caused by a missing assignment in an if or case stmt
+@W: CL118 :"C:\prj\Example-4-21\asyn_bad\decode.v":17:2:17:3|Latch generated from always block for signal CS_reg1, probably caused by a missing assignment in an if or case stmt
+@N:"C:\prj\Example-4-21\asyn_bad\write_reg.v":2:7:2:15|Synthesizing module write_reg
+
+@N: CG179 :"C:\prj\Example-4-21\asyn_bad\write_reg.v":22:29:22:32|Removing redundant assignment
+@N: CG179 :"C:\prj\Example-4-21\asyn_bad\write_reg.v":23:29:23:32|Removing redundant assignment
+@N: CG179 :"C:\prj\Example-4-21\asyn_bad\write_reg.v":24:29:24:32|Removing redundant assignment
+@W: CL118 :"C:\prj\Example-4-21\asyn_bad\write_reg.v":11:12:11:13|Latch generated from always block for signal reg3[7:0], probably caused by a missing assignment in an if or case stmt
+@W: CL118 :"C:\prj\Example-4-21\asyn_bad\write_reg.v":11:12:11:13|Latch generated from always block for signal reg2[7:0], probably caused by a missing assignment in an if or case stmt
+@W: CL118 :"C:\prj\Example-4-21\asyn_bad\write_reg.v":11:12:11:13|Latch generated from always block for signal reg1[7:0], probably caused by a missing assignment in an if or case stmt
+@W: CL159 :"C:\prj\Example-4-21\asyn_bad\write_reg.v":4:13:4:15|Input rst is unused
+@N:"C:\prj\Example-4-21\asyn_bad\read_reg.v":2:7:2:14|Synthesizing module read_reg
+
+@W: CL118 :"C:\prj\Example-4-21\asyn_bad\read_reg.v":11:12:11:13|Latch generated from always block for signal data_out[7:0], probably caused by a missing assignment in an if or case stmt
+@W: CL159 :"C:\prj\Example-4-21\asyn_bad\read_reg.v":4:13:4:15|Input rst is unused
+@N:"C:\prj\Example-4-21\asyn_bad\top.v":1:7:1:9|Synthesizing module top
+

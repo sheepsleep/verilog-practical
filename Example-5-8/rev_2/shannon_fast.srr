@@ -1,0 +1,101 @@
+#Program: Synplify Pro 8.1
+#OS: Windows_NT
+
+$ Start of Compile
+#Wed Mar 08 18:30:32 2006
+
+Synplicity Verilog Compiler, version 3.1.0, Build 049R, built May  3 2005
+Copyright (C) 1994-2005, Synplicity Inc.  All Rights Reserved
+
+@I::"C:\eda\synplicity\fpga_81\lib\altera\altera.v"
+@I::"C:\eda\synplicity\fpga_81\lib\altera\cyclone.v"
+@I::"C:\eda\synplicity\fpga_81\lib\altera\altera_mf.v"
+@I::"C:\eda\synplicity\fpga_81\lib\altera\altera_lpm.v"
+@I::"C:\prj\Chapter5\Example-5-8\source\shannon_fast.v"
+Verilog syntax check successful!
+Selecting top level module shannon_fast
+@N:"C:\prj\Chapter5\Example-5-8\source\shannon_fast.v":1:7:1:18|Synthesizing module shannon_fast
+
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Mar 08 18:30:32 2006
+
+###########################################################[
+Version 8.1
+Synplicity Altera Technology Mapper, Version 8.1.0, Build 539R, Built May  6 2005
+Copyright (C) 1994-2005, Synplicity Inc.  All Rights Reserved
+
+
+@N: MT204 |Autoconstrain Mode is ON
+@N|Only System clock will be Autoconstrained
+RTL optimization done.
+
+Writing Analyst data base C:\prj\Chapter5\Example-5-8\rev_2\shannon_fast.srm
+Writing Verilog Netlist and constraint files
+Writing .vqm output for Quartus
+Writing Cross reference file for Quartus to C:\prj\Chapter5\Example-5-8\rev_2\shannon_fast.xrf
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Mar 08 18:30:33 2006
+#
+
+
+Top view:               shannon_fast
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT195 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT197 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: NA
+
+
+
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+##### END OF TIMING REPORT #####]
+
+##### START OF AREA REPORT #####[
+Design view:work.shannon_fast(verilog)
+Selecting part EP1C3T100C6
+@N: FA174 |The following device usage report estimates place and route data. Please look at the place and route report for final resource usage..
+
+I/O ATOMs:       27
+
+Total LUTs:  25 of 2910 ( 0%)
+Logic resources:  25 ATOMs of 2910 ( 0%)
+ATOM count by mode:
+  normal:       11
+  arithmetic:   14
+
+ShiftTap:       0  (0 registers)
+Total ESB:      0 bits   (0% of 53248)
+
+ATOMs using regout pin: 0
+  also using enable pin: 0
+  also using combout pin: 0
+ATOMs using combout pin: 25
+Number of Inputs on ATOMs: 80
+Number of Nets:   94
+
+##### END OF AREA REPORT #####]
+
+Mapper successful!
+Process took 0h:0m:0s realtime, 0h:0m:0s cputime
+###########################################################]

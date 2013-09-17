@@ -1,0 +1,59 @@
+#
+#
+#
+# Created by Synplify Verilog HDL Compiler version 3.1.0, Build 049R from Synplicity, Inc.
+# Copyright 1994-2004 Synplicity, Inc. , All rights reserved.
+# Synthesis Netlist written on Wed Mar 08 21:20:06 2006
+#
+#
+#OPTIONS:"|-primux|-fixsmult|-sdff_counter|-infer_seqShift|-nram|-divnmod|-I|C:\\prj\\Example-4-13\\ram_basic\\|-I|C:\\eda\\synplicity\\fpga_81\\lib|-v2001|-devicelib|C:\\eda\\synplicity\\fpga_81\\lib\\xilinx\\unisim.v|-sm|-fid2|-sharing|off|-encrypt|-ui|-pro|-ram|-ll|2000"
+#CUR:"C:\\eda\\synplicity\\fpga_81\\bin\\c_ver.exe":1115125636
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\xilinx\\unisim.v":1113287638
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\xilinx\\unisim.v":1113287638
+#CUR:"C:\\prj\\Example-4-13\\ram_basic\\ram_basic.v":1141823822
+#CUR:"C:\\prj\\Example-4-13\\ram_basic\\ram_basic.v":1141823822
+f "C:\eda\synplicity\fpga_81\lib\xilinx\unisim.v"; # file 0
+af .is_verilog 1;
+f "C:\prj\Example-4-13\ram_basic\ram_basic.v"; # file 1
+af .is_verilog 1;
+@E
+@ 
+ftell;
+@E@MR@44::4(::R46I	FsRlsN_#LNHPORCDsHF
+o;N3PRHC#PsFHDo;R4
+RNP3_H#PHCsDRFo4N;
+PFR3shHoNRlC"lsN_#LNH;O"
+@HR@.4:::46.(:4R	ODR	OD;
+
+
+
+@HR@d4:::46dn:4RRB1B
+1;
+@HR@c4:::46cn:4RRW)W
+);
+@HR@n4:::46nU:4R8N8s:r6jN9R8r8s69:j;
+
+
+
+@HR@(4:::46(4:.R08NNM_Hrj(:9NR80HN_M:r(j
+9;
+@FR@U4:::46U.:.R08NNk_F0:r(j89RN_0NF_k049r(,llC_08NN:rnj
+9;
+@HR@64:::466n:4RRCMC
+M;b@R@4::c4c6::R4nHRMPk_M4Wk)RMW4_))RW;R
+b@:@446d:::4d4HjRMkPRMl4_C8l_Nr0N(k9RMl4_C8l_Nr0N(l9RC8l_Nr0N(
+9;b@R@j::44::4.sR0k0CRsRkC0Csk;R
+b@:@j4::44R:.V#NDCNRVDR#CV#NDCb;
+R4@@::4c44d:c4:.R8NMPCRllN_80RNcl_Cl8NN0c1RBR;W)
+@bR@44:cd:4::4n.NURMR8Pl_Cl8NN06CRllN_80RN6Bk1RMW4_)b;
+R4@@::4g.44:g4:(RGlkR08NNk_F0r_4(89RN_0NF_k049r(R4kM_llC_08NN9r(RllC_08NN9r(
+RRRR;CM
+@bR@44:d::644d:jNRsl)4RqGvUn(cr:Rj9)UqvGrnc(9:jR8N8s:r6j89RN_0NH(Mr:Rj9Ns88rj6:9R
+RRCRllN_80RNcO;D	
+RNH3M#$_FbsOlMNCbR"s_FO)UqvG"nc;H
+NRH3Eo8EN8nsRdN;
+HDR3F8IN8jsR;R
+b@:@446d:::4d48jRVRVCl_Cl8NN0rj(:9CRllN_80(Nr:Rj9)UqvGrnc(9:jR	ODRllC_08NN
+6;N3HR#_$MbOsFMCNlRs"bF)O_qGvUn;c"
+RNH3Ds0_HFsolMNClR"C8l_N"0N;;
+C

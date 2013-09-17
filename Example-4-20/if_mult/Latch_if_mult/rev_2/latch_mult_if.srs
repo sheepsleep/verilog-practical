@@ -1,0 +1,67 @@
+#
+#
+#
+# Created by Synplify Verilog HDL Compiler version 3.1.0, Build 049R from Synplicity, Inc.
+# Copyright 1994-2004 Synplicity, Inc. , All rights reserved.
+# Synthesis Netlist written on Wed Jan 18 18:10:03 2006
+#
+#
+#OPTIONS:"|-fixsmult|-I|C:\\prj\\Example-4-10\\if_mult\\Latch_if_mult\\|-I|C:\\eda\\synplicity\\fpga_81\\lib|-v2001|-devicelib|C:\\eda\\synplicity\\fpga_81\\lib\\lucent\\ec.v|-sm|-fid2|-sharing|off|-encrypt|-ui|-pro|-ram|-ll|2000"
+#CUR:"C:\\eda\\synplicity\\fpga_81\\bin\\c_ver.exe":1115125636
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\lucent\\ec.v":1110443424
+#CUR:"C:\\eda\\synplicity\\fpga_81\\lib\\lucent\\ec.v":1110443424
+#CUR:"C:\\prj\\Example-4-10\\if_mult\\Latch_if_mult\\latch_mult_if.v":1137578324
+#CUR:"C:\\prj\\Example-4-10\\if_mult\\Latch_if_mult\\latch_mult_if.v":1137578324
+f "C:\eda\synplicity\fpga_81\lib\lucent\ec.v"; # file 0
+af .is_verilog 1;
+f "C:\prj\Example-4-10\if_mult\Latch_if_mult\latch_mult_if.v"; # file 1
+af .is_verilog 1;
+@E
+@ 
+ftell;
+@E@MR@44::4(::R4dI	FsRDlk0V_HRsPCHoDF;P
+NR#3HPHCsDRFo4N;
+PHR3#C_PsFHDo;R4
+RNP3HFsolhNClR"k_D0H;V"
+@HR@.4::.n::NnRR
+N;
+@HR@.4::.g::LgRR
+L;
+@HR@.4:::4...:4ROOR;
+
+
+
+@HR@.4:::46.6:4R88R;
+
+
+
+@HR@d4::dn::#gRCRDj#jCD;
+
+
+
+@HR@d4:::4.d6:4RD#C4CR#D
+4;
+@HR@d4:::4Ud4:.RD#C.CR#D
+.;
+@HR@d4:::.cd(:.RD#CdCR#D
+d;
+@FR@c4::c(::x(RR
+x;b@R@4::d.dc::R.(HRMPk_M4#dCDR4kM_D#CdCR#D
+d;b@R@4::d4dU::R.4HRMPk_M4#.CDR4kM_D#C.CR#D
+.;b@R@4::d4d.::R46HRMPk_M4#4CDR4kM_D#C4CR#D
+4;b@R@4::dn::dgMRHPMRk4C_#DkjRM#4_CRDj#jCD;R
+b@:@j4::44R:.0CskRk0sCsR0k
+C;b@R@j::44::4.NRVDR#CV#NDCNRVD;#C
+@bR@n4:::6dnn:6R8NMP_RxjJ_#lNkGRjx__l#JkRGN#.CDR4kM_D#Cdb;
+R4@@:6n:d::n6NnRMR8Px__4#kJlGxNR_#4_JGlkNMRk4C_#Dk.RM#4_C;Dd
+@bR@n4:::6dnn:6R8NMP_RxjJ_#lNkG_x4R_#j_JGlkNR_4#4CDR4x__l#Jk;GN
+@bR@n4:::6dnn:6R8NMP_Rx4J_#lNkG_x4R_#4_JGlkNR_4k_M4#4CDR4x__l#Jk;GN
+@bR@n4:::6dnn:6R8NMP_Rx4J_#lNkG_x.R_#4_JGlkNR_.k_M4#jCDR4x__l#Jk_GN4b;
+R4@@:6n:d::n6HnRMkPRMx4__#4_JGlkNMRk4__x4J_#lNkGR4x__l#Jk_GN.b;
+R4@@::44n4:4:b(RlRkGxR_4xR_48C,#DOdR,jx__l#JkRGNL_,xjJ_#lNkG_N4R,4x__l#Jk_GN4b;
+R4@@::44n4:4:D(RNx0RRxxR_k4RMx4__#4_JGlkNN;
+H#R3$bM_sMFONRlC"FbsO"_x;H
+NR03sDs_FHNoMl"CRx
+";C
+;
+

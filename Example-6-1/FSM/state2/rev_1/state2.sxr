@@ -1,0 +1,10 @@
+
+BeginView state2 NoName
+Inst: CS[1]   CS_1__Z stratix_lcell_ff 
+Inst: CS[0]   CS_0__Z stratix_lcell_ff 
+Inst: o2_x   o2_x_cZ stratix_lcell 
+Inst: err_0_x   err_0_x_cZ stratix_lcell 
+Inst: err_x   err_x_cZ stratix_lcell 
+Inst: CS[3:0]   CS_3_0_ ghost 
+Inst: nrst_c_i   nrst_c_i_cZ inv 
+EndView state2 NoName

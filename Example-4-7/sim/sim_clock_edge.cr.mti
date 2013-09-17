@@ -1,0 +1,15 @@
+C:/prj/Example-4-2/sim/clock_edge.v {1 {vlog -work work C:/prj/Example-4-2/sim/clock_edge.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module clock_edge
+
+Top level modules:
+	clock_edge
+
+} {} {}} C:/prj/Example-4-2/sim/clock_edge_tb.v {1 {vlog -work work C:/prj/Example-4-2/sim/clock_edge_tb.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module clock_edge_tb
+
+Top level modules:
+	clock_edge_tb
+
+} {} {}}

@@ -1,0 +1,15 @@
+Selecting top level module decode_cmb2
+@N:"C:\prj\Example-4-3\decode_cmb2.v":1:7:1:17|Synthesizing module decode_cmb2
+
+@W:"C:\prj\Example-4-3\decode_cmb2.v":3:18:3:21|Input port bit <5> of addr[7:0] is unused
+
+@W:"C:\prj\Example-4-3\decode_cmb2.v":3:18:3:21|Input port bit <4> of addr[7:0] is unused
+
+@W:"C:\prj\Example-4-3\decode_cmb2.v":3:18:3:21|Input port bit <3> of addr[7:0] is unused
+
+@W:"C:\prj\Example-4-3\decode_cmb2.v":3:18:3:21|Input port bit <2> of addr[7:0] is unused
+
+@W:"C:\prj\Example-4-3\decode_cmb2.v":3:18:3:21|Input port bit <1> of addr[7:0] is unused
+
+@W:"C:\prj\Example-4-3\decode_cmb2.v":3:18:3:21|Input port bit <0> of addr[7:0] is unused
+

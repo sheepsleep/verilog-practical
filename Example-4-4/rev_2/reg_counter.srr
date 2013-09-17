@@ -1,0 +1,204 @@
+#Program: Synplify Pro 8.1
+#OS: Windows_NT
+
+$ Start of Compile
+#Tue Jan 10 01:15:31 2006
+
+Synplicity Verilog Compiler, version 3.1.0, Build 049R, built May  3 2005
+Copyright (C) 1994-2005, Synplicity Inc.  All Rights Reserved
+
+@I::"C:\eda\synplicity\fpga_81\lib\xilinx\unisim.v"
+@I::"C:\prj\Example-4-1\reg_counter.v"
+Verilog syntax check successful!
+Selecting top level module reg_counter
+@N:"C:\prj\Example-4-1\reg_counter.v":1:7:1:17|Synthesizing module reg_counter
+
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jan 10 01:15:31 2006
+
+###########################################################[
+Version 8.1
+Synplicity Xilinx Technology Mapper, Version 8.1.0, Build 540R, Built May  9 2005
+Copyright (C) 1994-2005, Synplicity Inc.  All Rights Reserved
+Reading Xilinx I/O pad type table from file <C:\eda\synplicity\fpga_81\lib/xilinx/x_io_tbl.txt> 
+Reading Xilinx Rocket I/O parameter type table from file <C:\eda\synplicity\fpga_81\lib/xilinx/gttype.txt> 
+
+
+RTL optimization done.
+
+Clock Buffers:
+  Inserting Clock buffer for port clock,	TNM=clock
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+------------------------------------------------------------
+
+Net buffering Report for view:work.reg_counter(verilog):
+No nets needed buffering.
+
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+Writing Analyst data base C:\prj\Example-4-1\rev_2\reg_counter.srm
+Writing EDIF Netlist and constraint files
+Found clock reg_counter|clock with period 10.00ns 
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Jan 10 01:15:34 2006
+#
+
+
+Top view:               reg_counter
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT195 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT197 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 7.979
+
+                      Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock        Frequency     Frequency     Period        Period        Slack     Type         Group              
+------------------------------------------------------------------------------------------------------------------------
+reg_counter|clock     100.0 MHz     494.8 MHz     10.000        2.021         7.979     inferred     Inferred_clkgroup_0
+========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------------
+Starting           Ending             |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------------
+reg_counter|clock  reg_counter|clock  |  10.000      7.979  |  No paths    -      |  No paths    -      |  No paths    -    
+============================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+
+====================================
+Detailed Report for Clock: reg_counter|clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                 Starting                                                  Arrival          
+Instance         Reference             Type     Pin     Net                Time        Slack
+                 Clock                                                                      
+--------------------------------------------------------------------------------------------
+cnt_reg_a[0]     reg_counter|clock     FDR      Q       cnt_reg_a_c[0]     0.520       7.979
+cnt_reg_s[0]     reg_counter|clock     FDC      Q       cnt_reg_s_c[0]     0.520       7.979
+cnt_reg_a[1]     reg_counter|clock     FDR      Q       cnt_reg_a_c[1]     0.520       7.989
+cnt_reg_s[1]     reg_counter|clock     FDC      Q       cnt_reg_s_c[1]     0.520       7.989
+cnt_reg_a[2]     reg_counter|clock     FDR      Q       cnt_reg_a_c[2]     0.520       8.029
+cnt_reg_a[3]     reg_counter|clock     FDR      Q       cnt_reg_a_c[3]     0.520       8.029
+cnt_reg_s[2]     reg_counter|clock     FDC      Q       cnt_reg_s_c[2]     0.520       8.029
+cnt_reg_s[3]     reg_counter|clock     FDC      Q       cnt_reg_s_c[3]     0.520       8.029
+============================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                 Starting                                                        Required          
+Instance         Reference             Type     Pin     Net                      Time         Slack
+                 Clock                                                                             
+---------------------------------------------------------------------------------------------------
+cnt_reg_a[0]     reg_counter|clock     FDR      D       un3_cnt_reg_a_axbxc0     10.232       7.979
+cnt_reg_a[1]     reg_counter|clock     FDR      D       un3_cnt_reg_a_axbxc1     10.232       7.979
+cnt_reg_a[2]     reg_counter|clock     FDR      D       un3_cnt_reg_a_axbxc2     10.232       7.979
+cnt_reg_s[0]     reg_counter|clock     FDC      D       un3_cnt_reg_s_axbxc0     10.232       7.979
+cnt_reg_s[1]     reg_counter|clock     FDC      D       un3_cnt_reg_s_axbxc1     10.232       7.979
+cnt_reg_s[2]     reg_counter|clock     FDC      D       un3_cnt_reg_s_axbxc2     10.232       7.979
+cnt_reg_a[3]     reg_counter|clock     FDR      D       cnt_reg_a_c_i[3]         10.232       8.029
+cnt_reg_s[3]     reg_counter|clock     FDC      D       cnt_reg_s_c_i[3]         10.232       8.029
+===================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Requested Period:                        10.000
+    - Setup time:                            -0.232
+    = Required time:                         10.232
+
+    - Propagation time:                      2.253
+    = Slack (critical) :                     7.979
+
+    Number of logic level(s):                1
+    Starting point:                          cnt_reg_a[0] / Q
+    Ending point:                            cnt_reg_a[0] / D
+    The start point is clocked by            reg_counter|clock [rising] on pin C
+    The end   point is clocked by            reg_counter|clock [rising] on pin C
+
+Instance / Net                      Pin      Pin               Arrival     No. of    
+Name                     Type       Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------
+cnt_reg_a[0]             FDR        Q        Out     0.520     0.520       -         
+cnt_reg_a_c[0]           Net        -        -       0.980     -           4         
+un3_cnt_reg_a_axbxc0     LUT1_L     I0       In      -         1.500       -         
+un3_cnt_reg_a_axbxc0     LUT1_L     LO       Out     0.753     2.253       -         
+un3_cnt_reg_a_axbxc0     Net        -        -       0.000     -           1         
+cnt_reg_a[0]             FDR        D        In      -         2.253       -         
+=====================================================================================
+Total path delay (propagation time + setup) of 2.021 is 1.041(51.5%) logic and 0.980(48.5%) route.
+
+
+
+##### END OF TIMING REPORT #####]
+
+---------------------------------------
+Resource Usage Report for reg_counter 
+
+Mapping to part: xc3s100evq100-4
+Cell usage:
+FDC             4 uses
+FDR             4 uses
+LUT1            4 uses
+LUT2            2 uses
+LUT3            2 uses
+
+I/O primitives: 9
+IBUF           1 use
+OBUF           8 uses
+
+BUFGP          1 use
+
+I/O Register bits:                  0
+Register bits not including I/Os:   8 (0%)
+
+Global Clock Buffers: 1 of 24 (4%)
+
+
+Mapping Summary:
+Total  LUTs: 8 (0%)
+
+Mapper successful!
+Process took 0h:0m:1s realtime, 0h:0m:2s cputime
+###########################################################]

@@ -1,0 +1,17 @@
+Selecting top level module syn_rst
+@N:"C:\prj\Example-4-9\syn_rst\syn_rst.v":1:7:1:13|Synthesizing module syn_rst
+
+@N: CG179 :"C:\prj\Example-4-9\syn_rst\syn_rst.v":20:20:20:23|Removing redundant assignment
+@W: CL189 :"C:\prj\Example-4-9\syn_rst\syn_rst.v":9:0:9:5|Register bit cnt1[2] is always 0, optimizing ...
+@W: CL189 :"C:\prj\Example-4-9\syn_rst\syn_rst.v":9:0:9:5|Register bit cnt1[3] is always 0, optimizing ...
+@W: CL189 :"C:\prj\Example-4-9\syn_rst\syn_rst.v":9:0:9:5|Register bit cnt1[4] is always 0, optimizing ...
+@W: CL171 :"C:\prj\Example-4-9\syn_rst\syn_rst.v":9:0:9:5|Pruning Register bit <4> of cnt1[4:0] 
+
+@W: CL171 :"C:\prj\Example-4-9\syn_rst\syn_rst.v":9:0:9:5|Pruning Register bit <3> of cnt1[4:0] 
+
+@W: CL171 :"C:\prj\Example-4-9\syn_rst\syn_rst.v":9:0:9:5|Pruning Register bit <2> of cnt1[4:0] 
+
+@W: CL171 :"C:\prj\Example-4-9\syn_rst\syn_rst.v":9:0:9:5|Pruning Register bit <4> of cnt2[4:0] 
+
+@W: CL171 :"C:\prj\Example-4-9\syn_rst\syn_rst.v":9:0:9:5|Pruning Register bit <3> of cnt2[4:0] 
+

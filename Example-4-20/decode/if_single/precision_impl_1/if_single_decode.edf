@@ -1,0 +1,130 @@
+(edif if_single_decode 
+ (edifVersion 2 0 0)
+ (edifLevel 0)
+ (keywordMap (keywordLevel 0))
+ (status 
+  (written 
+   (timestamp 2006 01 16 01 49 04)
+   (program "Precision RTL Synthesis" (version "2005a.56OEM_Lattice"))
+   (author "Mentor Graphics Corporation")))
+ (external PRIMITIVES 
+  (edifLevel 0)
+  (technology (numberDefinition )))
+ (external lattice_ec 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell OB (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I (direction INPUT))
+     (port O (direction OUTPUT)))))
+  (cell IB (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I (direction INPUT))
+     (port O (direction OUTPUT)))))
+  (cell ORCALUT4 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port C (direction INPUT))
+     (port D (direction INPUT))
+     (port Z (direction OUTPUT))))))
+ (library work 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell if_single_decode (cellType GENERIC)
+   (view INTERFACE  (viewType NETLIST)
+    (interface 
+     (port (array (rename addr_H "addr_H(2:0)") 3 )(direction INPUT))
+     (port CS1 (direction OUTPUT))
+     (port CS2 (direction OUTPUT))
+     (port CS3 (direction OUTPUT))
+     (port CS4 (direction OUTPUT)))
+    (property AREA (string "0.250000"))
+    (property DESIGN_IS_RTL (string "NO"))
+    (property PICSPEC (string "LFEC20E"))
+    (property PICSPEED (string "3"))
+    (contents 
+     (instance CS4_obuf (viewRef NETLIST  (cellRef OB (libraryRef lattice_ec ))))
+     (instance CS3_obuf (viewRef NETLIST  (cellRef OB (libraryRef lattice_ec ))))
+     (instance CS2_obuf (viewRef NETLIST  (cellRef OB (libraryRef lattice_ec ))))
+     (instance CS1_obuf (viewRef NETLIST  (cellRef OB (libraryRef lattice_ec ))))
+     (instance (rename addr_H_ibuf_0_ "addr_H_ibuf(0)") (viewRef NETLIST  (cellRef IB (libraryRef lattice_ec ))))
+     (instance (rename addr_H_ibuf_1_ "addr_H_ibuf(1)") (viewRef NETLIST  (cellRef IB (libraryRef lattice_ec ))))
+     (instance (rename addr_H_ibuf_2_ "addr_H_ibuf(2)") (viewRef NETLIST  (cellRef IB (libraryRef lattice_ec ))))
+     (instance ix31354z1505 (viewRef NETLIST  (cellRef ORCALUT4 (libraryRef lattice_ec )))
+      (property lut_function (string "((A)+(!B)+(!C))")))
+     (instance ix23567z1565 (viewRef NETLIST  (cellRef ORCALUT4 (libraryRef lattice_ec )))
+      (property lut_function (string "((A)+(!B)+(C))")))
+     (instance ix15780z1537 (viewRef NETLIST  (cellRef ORCALUT4 (libraryRef lattice_ec )))
+      (property lut_function (string "((!A)+(B)+(!C))")))
+     (instance ix7993z1567 (viewRef NETLIST  (cellRef ORCALUT4 (libraryRef lattice_ec )))
+      (property lut_function (string "((!A)+(B)+(C))")))
+     (net (rename addr_H_2_ "addr_H(2)") 
+      (joined 
+       (portRef (member addr_H 0))
+       (portRef I (instanceRef addr_H_ibuf_2_ ))))
+     (net (rename addr_H_1_ "addr_H(1)") 
+      (joined 
+       (portRef (member addr_H 1))
+       (portRef I (instanceRef addr_H_ibuf_1_ ))))
+     (net (rename addr_H_0_ "addr_H(0)") 
+      (joined 
+       (portRef (member addr_H 2))
+       (portRef I (instanceRef addr_H_ibuf_0_ ))))
+     (net (rename addr_H_int_2_ "addr_H_int(2)") 
+      (joined 
+       (portRef O (instanceRef addr_H_ibuf_2_ ))
+       (portRef A (instanceRef ix7993z1567 ))
+       (portRef A (instanceRef ix15780z1537 ))
+       (portRef A (instanceRef ix23567z1565 ))
+       (portRef A (instanceRef ix31354z1505 ))))
+     (net (rename addr_H_int_1_ "addr_H_int(1)") 
+      (joined 
+       (portRef O (instanceRef addr_H_ibuf_1_ ))
+       (portRef B (instanceRef ix7993z1567 ))
+       (portRef B (instanceRef ix15780z1537 ))
+       (portRef B (instanceRef ix23567z1565 ))
+       (portRef B (instanceRef ix31354z1505 ))))
+     (net (rename addr_H_int_0_ "addr_H_int(0)") 
+      (joined 
+       (portRef O (instanceRef addr_H_ibuf_0_ ))
+       (portRef C (instanceRef ix7993z1567 ))
+       (portRef C (instanceRef ix15780z1537 ))
+       (portRef C (instanceRef ix23567z1565 ))
+       (portRef C (instanceRef ix31354z1505 ))))
+     (net CS4 
+      (joined 
+       (portRef CS4 )
+       (portRef O (instanceRef CS4_obuf ))))
+     (net CS3 
+      (joined 
+       (portRef CS3 )
+       (portRef O (instanceRef CS3_obuf ))))
+     (net CS2 
+      (joined 
+       (portRef CS2 )
+       (portRef O (instanceRef CS2_obuf ))))
+     (net CS1 
+      (joined 
+       (portRef CS1 )
+       (portRef O (instanceRef CS1_obuf ))))
+     (net CS1_dup0 
+      (joined 
+       (portRef Z (instanceRef ix31354z1505 ))
+       (portRef I (instanceRef CS1_obuf ))))
+     (net CS2_dup0 
+      (joined 
+       (portRef Z (instanceRef ix23567z1565 ))
+       (portRef I (instanceRef CS2_obuf ))))
+     (net CS3_dup0 
+      (joined 
+       (portRef Z (instanceRef ix15780z1537 ))
+       (portRef I (instanceRef CS3_obuf ))))
+     (net CS4_dup0 
+      (joined 
+       (portRef Z (instanceRef ix7993z1567 ))
+       (portRef I (instanceRef CS4_obuf ))))))))
+ (design if_single_decode (cellRef if_single_decode (libraryRef work ))))
